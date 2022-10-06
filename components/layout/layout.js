@@ -5,7 +5,7 @@ export default function Layout({ children }) {
   return (
     <div className="wrap" id="wrap">
       <Header />
-      <main style={{ background: "yellow" }}>{children}</main>
+      <main id="main">{children}</main>
       <Footer />
     </div>
   );

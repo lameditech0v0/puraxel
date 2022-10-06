@@ -1,16 +1,14 @@
 import Head from "next/head";
 import Script from "next/script";
 import Layout from "components/layout/layout";
-<<<<<<< HEAD
-import "../styles/globals.css";
-import "../styles/style.scss";
-=======
 import * as gtag from "lib/gtag";
 import "styles/globals.css";
+import "styles/style.scss";
 import "swiper/css/bundle";
+import "swiper/scss";
+import "swiper/scss/pagination";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
->>>>>>> 9c1600457134a3ac099309f4bd6bdb77dfa849f4
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();

@@ -83,7 +83,6 @@ textarea {
   font-size: 10px;
   line-height: 1.4;
   color: #202020;
-  font-family: "Pretendard" !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -150,14 +149,13 @@ select {
 }
 
 #wrap {
-  width: 100vw;
-  height: 100vh;
+  width: calc(100vw - 1px);
+  height: calc(100vh - 1px);
 }
 
 #header {
   position: sticky;
   top: 0;
-  z-index: 1;
 }
 
 #footer {
