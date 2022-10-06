@@ -53,9 +53,9 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 `${_.me__page1__wrap} ${_.main}`;
 ```
 
-```cs
-.me__page1__wrap{
-    font-size:16px;
+```css
+.me__page1__wrap {
+  font-size: 16px;
 }
 ```
 
