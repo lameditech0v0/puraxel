@@ -6,12 +6,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-<<<<<<< HEAD
-  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-=======
   font-family: "Pretendard" !important;
->>>>>>> 9c1600457134a3ac099309f4bd6bdb77dfa849f4
 }
 
 a {
@@ -88,12 +83,7 @@ textarea {
   font-size: 10px;
   line-height: 1.4;
   color: #202020;
-<<<<<<< HEAD
-  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Malgun Gothic",
-    "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
-=======
   font-family: "Pretendard" !important;
->>>>>>> 9c1600457134a3ac099309f4bd6bdb77dfa849f4
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
