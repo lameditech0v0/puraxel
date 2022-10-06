@@ -15,12 +15,38 @@ function Page1() {
           <a href="#" className="shop">
             쇼핑몰 바로가기
           </a>
+          <svg
+            width="38"
+            height="24"
+            viewBox="0 0 38 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.486486 12.2444H36M36 12.2444L24.8108 1M36 12.2444H0M36 12.2444L24.6575 23"
+              stroke="#1A1A1A"
+              stroke-width="2"
+            />
+          </svg>
         </div>
         <div className="btn__bottom">
           <div className="black"></div>
           <a href="#" className="inquery">
             문의 신청 하기
           </a>
+          <svg
+            width="38"
+            height="24"
+            viewBox="0 0 38 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.486486 12.2444H36M36 12.2444L24.8108 1M36 12.2444H0M36 12.2444L24.6575 23"
+              stroke="#1A1A1A"
+              stroke-width="2"
+            />
+          </svg>
         </div>
       </div>
       <Swiper

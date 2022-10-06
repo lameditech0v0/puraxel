@@ -1,4 +1,5 @@
 #header {
+  width: 100%;
   font-weight: 500;
   color: #1d1f36;
   background: #ffffff80;
@@ -6,9 +7,10 @@
   align-items: center;
   justify-content: space-between;
   padding: 20px 10%;
-  z-index: 2;
+  z-index: 10000;
   position: sticky;
-  top: 0;
+
+  backdrop-filter: blur(40px);
   .header__left {
     font-size: 2.4rem;
     display: flex;
