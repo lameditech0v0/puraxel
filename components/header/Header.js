@@ -1,5 +1,6 @@
 import logo from "../../public/header/logo.png";
 import Image from "next/image";
+
 export default function Header() {
   return (
     <header id="header">
@@ -9,7 +10,7 @@ export default function Header() {
         </div>
         <nav className="nav__left">
           <ul>
-            <li>PURAXEL-Me</li>
+            <li onClick={(e) => (e.href = "/me")}>PURAXEL-Me</li>
             <li>PURAXEL</li>
             <li>PURAXEL-Hair</li>
           </ul>
