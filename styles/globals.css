@@ -8,7 +8,7 @@ body {
   margin: 0;
   font-family: "Pretendard" !important;
   opacity: 1;
-  transition: opacity 0.5s;
+  transition: opacity 500ms ease-in;
 }
 
 a {
@@ -151,8 +151,8 @@ select {
 }
 
 #wrap {
-  width: calc(100vw - 1px);
-  height: calc(100vh - 1px);
+  width: 100vw;
+  height: 100vh;
 }
 
 #header {
@@ -161,4 +161,8 @@ select {
 }
 
 #footer {
+}
+
+li {
+  cursor: pointer;
 }

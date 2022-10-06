@@ -1,7 +1,3 @@
-import Page1 from "components/pages/me/Page1";
-import Page2 from "components/pages/me/Page2";
-import Page3 from "components/pages/me/Page3";
-import Page4 from "components/pages/me/Page4";
 import Head from "next/head";
 import Image from "next/image";
 

@@ -1,18 +1,20 @@
-import logo from "../../public/header/logo.png";
+import logo from "public/header/logo.png";
 import Image from "next/image";
 
 export default function Header() {
   return (
     <header id="header">
       <div className="header__left">
-        <div className="logo">
+        <div className="logo" onClick={() => (window.location.href = "/")}>
           <Image src={logo} width={106} layout={"fixed"} />
         </div>
         <nav className="nav__left">
           <ul>
-            <li onClick={(e) => (e.href = "/me")}>PURAXEL-Me</li>
-            <li>PURAXEL</li>
-            <li>PURAXEL-Hair</li>
+            <li onClick={() => (window.location.href = "/me")}>PURAXEL-Me</li>
+            <li onClick={() => (window.location.href = "/fx5000")}>PURAXEL</li>
+            <li onClick={() => (window.location.href = "/hair")}>
+              PURAXEL-Hair
+            </li>
           </ul>
         </nav>
       </div>
