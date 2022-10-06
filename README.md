@@ -50,7 +50,13 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ### CSS.module.css
 
 ```js
-`${_.body} ${_.main}`;
+`${_.me__page1__wrap} ${_.main}`;
+```
+
+```cs
+.me__page1__wrap{
+    font-size:16px;
+}
 ```
 
 ## 명명 구조
