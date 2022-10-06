@@ -47,7 +47,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - hair
 - me
 
-<<<<<<< HEAD
 ### CSS.module.css
 
 ```js
@@ -60,8 +59,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 }
 ```
 
-=======
->>>>>>> 7b1aa66cd11be18548b6f97c519ec48bf92ca578
 ## 명명 구조
 
 - JS: camelCase
