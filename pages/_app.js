@@ -3,7 +3,10 @@ import Script from "next/script";
 import Layout from "components/layout/layout";
 import * as gtag from "lib/gtag";
 import "styles/globals.css";
+import "styles/style.scss";
 import "swiper/css/bundle";
+import "swiper/scss";
+import "swiper/scss/pagination";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 
