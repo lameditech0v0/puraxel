@@ -152,11 +152,3 @@ select {
   width: calc(100vw - 1px);
   height: calc(100vh - 1px);
 }
-
-#header {
-  position: sticky;
-  top: 0;
-}
-
-#footer {
-}
