@@ -46,3 +46,15 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - fx5000
 - hair
 - me
+
+### CSS.module.css
+
+```js
+`${_.body} ${_.main}`;
+```
+
+## 명명 구조
+
+- JS: camelCase
+- CSS: page\_\_
+- json: 추후결정
