@@ -47,20 +47,14 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - hair
 - me
 
-### CSS.module.css
-
-```js
-`${_.me__page1__wrap} ${_.main}`;
-```
-
-```cs
-.me__page1__wrap{
-    font-size:16px;
-}
-```
-
 ## 명명 구조
 
 - JS: camelCase
 - CSS: page\_\_
 - json: 추후결정
+
+## css 컨트롤
+
+- style 폴더에 최상위 scss 파일을 만들어서 안에 각 페이지 scss를 import
+- 각 페이지 마다 scss를 import 할 필요 없어짐
+- 클래스와 아이디 네임이 간단해질 필요가 있어서 선택
