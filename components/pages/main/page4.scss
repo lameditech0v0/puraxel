@@ -2,32 +2,34 @@
   margin-bottom: 10.42vw;
   .page4__header {
     text-align: center;
-    position: relative;
 
-    p {
-      font-weight: 500;
-      font-size: 2.5vw;
-      line-height: 150%;
-      color: #1a1a1a;
-    }
-    h1 {
-      font-weight: 700;
-      font-size: 5vw;
-      line-height: 120%;
-      color: #1a1a1a;
-      padding-bottom: 6.46vw;
-    }
-    .page4__header__bg {
-      z-index: -1;
-      position: absolute;
-      top: 50%;
-      left: 30%;
-      width: 42vw;
-      height: 12.5vw;
-      background: url(../../../public/main/page4/best_product.png);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
+    .page4__header__text {
+      position: relative;
+      p {
+        font-weight: 500;
+        font-size: 2.5vw;
+        line-height: 150%;
+        color: #1a1a1a;
+      }
+      h1 {
+        font-weight: 700;
+        font-size: 5vw;
+        line-height: 120%;
+        color: #1a1a1a;
+        padding-bottom: 6.46vw;
+      }
+      .page4__header__bg {
+        z-index: -1;
+        position: absolute;
+        top: 30%;
+        left: 30%;
+        width: 42vw;
+        height: 12.5vw;
+        background: url(../../../public/main/page4/best_product.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
     }
   }
   .swiper-slide.swiper__product {

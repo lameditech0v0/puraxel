@@ -8,9 +8,11 @@ function Page4() {
   return (
     <section id="page4">
       <articel className="page4__header">
-        <p>가장 많이 찾는</p>
-        <h1>퓨라셀 인기 제품</h1>
-        <div className="page4__header__bg"></div>
+        <div className="page4__header__text">
+          <p>가장 많이 찾는</p>
+          <h1>퓨라셀 인기 제품</h1>
+          <div className="page4__header__bg"></div>
+        </div>
       </articel>
       <>
         <Swiper
