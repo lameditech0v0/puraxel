@@ -1,11 +1,11 @@
 .footer__container {
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
   margin-bottom: 4.3229vw;
   background-color: #fbfbfc;
-  padding: 1vw 0;
+  padding: 2.9167vw 0;
 }
 
 /* 회사 정보 컨테이너 */
