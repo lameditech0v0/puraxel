@@ -12,6 +12,7 @@ export default function Footer() {
           alt="lameditech logo"
           width={140}
           height={140}
+          layout={"fixed"}
         />
 
         <div className={_.footer__company__text__info__container}>
