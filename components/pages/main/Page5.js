@@ -44,6 +44,7 @@ function Page5() {
         <div className="page5__header__text">
           <p>PURAXEL 새 소식</p>
           <h1>공지사항</h1>
+          <div className="page5__header__bg"></div>
         </div>
         <div className="page5__header__btn">
           <a href="#" className="page5__header__btn1">
