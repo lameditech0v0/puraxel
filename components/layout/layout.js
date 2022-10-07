@@ -5,11 +5,11 @@ import Header from "components/header/Header";
 export default function Layout({ children }) {
   return (
     <div className="wrap" id="wrap">
-      <Header />
       <PageTransision>
+        <Header />
         <main id="main">{children}</main>
+        <Footer />
       </PageTransision>
-      <Footer />
     </div>
   );
 }
