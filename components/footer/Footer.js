@@ -28,9 +28,37 @@ export default function Footer() {
 
       <section className={_.footer__company__sns__container}>
         <ul className={_.footer__company__sns}>
-          <li>Instagram</li>
-          <li>Facebook</li>
-          <li>Youtube</li>
+          <li
+          // onClick={() =>
+          //   window.open("https://www.instagram.com/puraxel/", "_blank")
+          // }
+          >
+            <a
+              href="https://www.instagram.com/puraxel/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Instagram
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/Puraxel.official/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Facebook
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/channel/UC7X6D4v-G-b7NmNeU2j-jwQ"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Youtube
+            </a>
+          </li>
         </ul>
       </section>
     </footer>
