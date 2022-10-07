@@ -1,7 +1,18 @@
 import logo from "public/header/logo.png";
 import Image from "next/image";
+import { useEffect } from "react";
 
 export default function Header() {
+  useEffect(() => {
+    document.querySelectorAll("a[href^='#']").forEach((el) => {
+      el.addEventListener("click", (event) => {
+        event.preventDefault();
+        document.querySelector(el.getAttribute("href")).scrollIntoView({
+          behavior: "smooth",
+        });
+      });
+    });
+  }, []);
   return (
     <header id="header">
       <div className="header__left">
@@ -45,8 +56,8 @@ export default function Header() {
             >
               쇼핑몰
             </li>
-            <li onClick={() => (window.location.href = "#공지사항id나클래스")}>
-              공지사항
+            <li>
+              <a href="#page5">공지사항</a>
             </li>
           </ul>
           <ul className="nav__right__right">
