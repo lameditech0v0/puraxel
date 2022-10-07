@@ -2,7 +2,11 @@
   width: 100%;
   font-weight: 500;
   color: #1d1f36;
-  background: #ffffff80;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -10,11 +14,12 @@
   z-index: 10000;
   position: sticky;
   top: 0;
-  backdrop-filter: blur(40px);
+
   .header__left {
     font-size: 1.25vw;
     display: flex;
     align-items: center;
+
     .logo {
       padding-right: 3.33vw;
       display: flex;
