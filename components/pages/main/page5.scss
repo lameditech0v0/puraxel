@@ -1,0 +1,80 @@
+#page5 {
+  .page5__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(180deg, #f8f2f0 0%, rgba(248, 242, 240, 0) 100%),
+      #ffffff;
+    padding-right: 8.33vw;
+    padding-left: 13.54vw;
+    padding-top: 6.25vw;
+    .page5__header__text {
+      p {
+        font-weight: 500;
+        font-size: 1.67vw;
+        line-height: 128%;
+        color: #1a1a1ab2;
+        margin-bottom: 1.09vw;
+      }
+      h1 {
+        font-weight: 700;
+        font-size: 5vw;
+        line-height: 120%;
+        color: #1a1a1a;
+      }
+    }
+    .page5__header__btn {
+      display: flex;
+      align-items: center;
+      background: #1d1f36;
+      width: 19.27vw;
+      height: 5vw;
+      box-shadow: 0px 12px 28px rgba(29, 31, 54, 0.12);
+      .page5__header__btn1 {
+        margin-right: 7.97vw;
+        margin-left: 1.25vw;
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 1.46vw;
+        line-height: 128%;
+      }
+    }
+  }
+  .page5__desc {
+    display: flex;
+    padding-left: 13.54vw;
+    margin-top: 3.7vw;
+    .page5__desc__img {
+      img {
+        width: 29.95vw;
+        height: 16.67vw;
+      }
+      :nth-child(1) {
+        margin-bottom: 2.08vw;
+      }
+      margin-right: 2.08vw;
+    }
+    .page5__desc__text {
+      width: 46.04vw;
+      color: #1a1a1a;
+      h1 {
+        margin-bottom: 0.83vw;
+        font-weight: 700;
+        font-size: 1.88vw;
+        line-height: 140%;
+      }
+      p {
+        font-weight: 400;
+        font-size: 1.25vw;
+        line-height: 150%;
+        margin-bottom: 4.17vw;
+      }
+      .page5__desc__text__date {
+        font-weight: 400;
+        font-size: 1.04vw;
+        line-height: 150%;
+        color: #1a1a1a80;
+      }
+    }
+  }
+}
