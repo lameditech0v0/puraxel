@@ -2,7 +2,7 @@
   margin-top: -100px;
 }
 .swiper__banner {
-  height: 102.4rem;
+  height: 53.33vw;
 }
 .swiper-slide.s1 {
   background: url(../../../public/main/banner/home_main_01.png) no-repeat
@@ -26,15 +26,15 @@
 }
 .swiper-pagination {
   position: absolute;
-  top: 25%;
+  top: 11.56vw;
   left: 0 !important;
   width: 100% !important;
   height: 0 !important;
   text-align: left !important;
-  margin-left: 16%;
+  margin-left: 19.01vw;
 }
 .swiper-pagination-bullet {
-  margin-right: 16px !important;
+  margin-right: 0.83vw !important;
   width: 4px !important;
   height: 4px !important;
   background: #343c67 !important;
@@ -43,52 +43,57 @@
 .desc {
   position: absolute;
   z-index: 3;
-  margin-left: 16%;
-  margin-top: 27.2rem;
+  margin-left: 14.84vw;
+  margin-top: 7.4vw;
+  background: #ffffffbf;
+  padding-left: 4.01vw;
+  padding-top: 6.46vw;
+  padding-right: 3.13vw;
+
   h1 {
     font-weight: 700;
-    font-size: 10.4rem;
+    font-size: 5.42vw;
   }
   p {
-    margin-top: 2.2rem;
-    margin-bottom: 9.5rem;
+    margin-top: 1.15vw;
+    margin-bottom: 8.33vw;
     font-weight: 500;
-    font-size: 3.2rem;
+    font-size: 1.67vw;
   }
   .btn__top {
     display: flex;
     align-items: center;
-    width: 36.9rem;
+    width: 19.22vw;
     background: #f6f6f6;
-    margin-bottom: 1.6rem;
+    margin-bottom: 0.83vw;
     border: 1px solid #e4e7eb;
     .red {
-      width: 1.6rem;
-      height: 8.4rem;
+      width: 0.83vw;
+      height: 4.38vw;
       background: red;
     }
     .shop {
-      padding: 2.2rem 7.1rem 2.2rem 4rem;
+      padding: 1.15vw 3.7vw 1.15vw 1.15vw;
       font-weight: 700;
-      font-size: 2.8rem;
+      font-size: 1.46vw;
     }
   }
   .btn__bottom {
     display: flex;
     align-items: center;
-    width: 36.9rem;
+    width: 19.22vw;
     background: #f6f6f6;
     border: 1px solid #e4e7eb;
-
+    margin-bottom: 5.05vw;
     .black {
-      width: 1.6rem;
-      height: 8.4rem;
+      width: 0.83vw;
+      height: 4.38vw;
       background: black;
     }
     .inquery {
-      padding: 2.2rem 8.5rem 2.2rem 4rem;
+      padding: 1.15vw 4.43vw 1.15vw 1.15vw;
       font-weight: 700;
-      font-size: 2.8rem;
+      font-size: 1.46vw;
     }
   }
 }
