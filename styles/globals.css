@@ -155,14 +155,6 @@ select {
   height: 100vh;
 }
 
-#header {
-  position: sticky;
-  top: 0;
-}
-
-#footer {
-}
-
 li {
   cursor: pointer;
 }

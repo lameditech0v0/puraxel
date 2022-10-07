@@ -1,35 +1,10 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import Image from "next/image";
-
-import banner from "public/main/page1/banner1.png";
-
-function Page1() {
+function Page2() {
   return (
-    <section id="banner">
-      <Swiper>
-        <SwiperSlide>
-          <div>
-            <Image src={banner} layout={"responsive"} />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={banner} layout={"responsive"} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={banner} layout={"responsive"} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={banner} layout={"responsive"} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={banner} layout={"responsive"} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={banner} layout={"responsive"} />
-        </SwiperSlide>
-      </Swiper>
+    <section id="page1">
+      <article></article>
+      <article className=""></article>
     </section>
   );
 }
 
-export default Page1;
+export default Page2;
