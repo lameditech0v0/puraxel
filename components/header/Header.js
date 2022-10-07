@@ -1,5 +1,6 @@
 import logo from "public/header/logo.png";
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect } from "react";
 
 export default function Header() {
@@ -13,6 +14,7 @@ export default function Header() {
       });
     });
   }, []);
+
   return (
     <header id="header">
       <div className="header__left">
@@ -41,13 +43,19 @@ export default function Header() {
         <nav className="nav__left">
           <ul>
             <li>
-              <a href="/me">PURAXEL-Me</a>
+              <Link href="/me">
+                <a>PURAXEL-Me</a>
+              </Link>
             </li>
             <li>
-              <a href="/fx5000">PURAXEL</a>
+              <Link href="/fx5000">
+                <a>PURAXEL</a>
+              </Link>
             </li>
             <li>
-              <a href="/hair">PURAXEL-Hair</a>
+              <Link href="/hair">
+                <a>PURAXEL-Hair</a>
+              </Link>
             </li>
           </ul>
         </nav>
@@ -56,16 +64,18 @@ export default function Header() {
         <nav className="nav__right">
           <ul className="nav__right__left">
             <li>
-              <a
+              <Link
                 href="https://lmdt.cafe24.com//"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                쇼핑몰
-              </a>
+                <a>쇼핑몰</a>
+              </Link>
             </li>
             <li>
-              <a href="#page5">공지사항</a>
+              <Link href="#page5">
+                <a>공지사항</a>
+              </Link>
             </li>
           </ul>
           <ul className="nav__right__right">

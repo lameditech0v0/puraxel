@@ -1,6 +1,7 @@
 import Image from "next/image";
 import logoLameditech from "public/footer/footer-logo-lameditech.webp";
 import _ from "./footer.module.css";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -28,36 +29,32 @@ export default function Footer() {
 
       <section className={_.footer__company__sns__container}>
         <ul className={_.footer__company__sns}>
-          <li
-          // onClick={() =>
-          //   window.open("https://www.instagram.com/puraxel/", "_blank")
-          // }
-          >
-            <a
+          <li>
+            <Link
               href="https://www.instagram.com/puraxel/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Instagram
-            </a>
+              <a>Instagram</a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               href="https://www.facebook.com/Puraxel.official/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Facebook
-            </a>
+              <a>Facebook</a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               href="https://www.youtube.com/channel/UC7X6D4v-G-b7NmNeU2j-jwQ"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Youtube
-            </a>
+              <a>Youtube</a>
+            </Link>
           </li>
         </ul>
       </section>
