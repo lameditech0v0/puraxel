@@ -7,7 +7,12 @@ export default function Footer() {
   return (
     <footer id="footer" className={_.footer__container}>
       <section className={_.footer__company__info__container}>
-        <Image src={logoLameditech} alt="lameditech logo" />
+        <Image
+          src={logoLameditech}
+          alt="lameditech logo"
+          width={140}
+          height={140}
+        />
 
         <div className={_.footer__company__text__info__container}>
           <h1 className={_.footer__company__title}>주식회사 라메디텍</h1>
@@ -30,30 +35,24 @@ export default function Footer() {
       <section className={_.footer__company__sns__container}>
         <ul className={_.footer__company__sns}>
           <li>
-            <Link
-              href="https://www.instagram.com/puraxel/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <a>Instagram</a>
+            <Link href="https://www.instagram.com/puraxel/">
+              <a target="_blank" rel="noopener noreferrer">
+                Instagram
+              </a>
             </Link>
           </li>
           <li>
-            <Link
-              href="https://www.facebook.com/Puraxel.official/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <a>Facebook</a>
+            <Link href="https://www.facebook.com/Puraxel.official/">
+              <a target="_blank" rel="noopener noreferrer">
+                Facebook
+              </a>
             </Link>
           </li>
           <li>
-            <Link
-              href="https://www.youtube.com/channel/UC7X6D4v-G-b7NmNeU2j-jwQ"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <a>Youtube</a>
+            <Link href="https://www.youtube.com/channel/UC7X6D4v-G-b7NmNeU2j-jwQ">
+              <a target="_blank" rel="noopener noreferrer">
+                Youtube
+              </a>
             </Link>
           </li>
         </ul>

@@ -4,7 +4,7 @@
   align-items: center;
   width: 100%;
   margin-bottom: 4.3229vw;
-  background-color: gray;
+  background-color: #fbfbfc;
   padding: 1vw 0;
 }
 
@@ -16,6 +16,9 @@
 
 .footer__company__text__info__container {
   padding-left: 2.1354vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .footer__company__title {

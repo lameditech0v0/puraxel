@@ -64,12 +64,10 @@ export default function Header() {
         <nav className="nav__right">
           <ul className="nav__right__left">
             <li>
-              <Link
-                href="https://lmdt.cafe24.com//"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <a>쇼핑몰</a>
+              <Link href="https://lmdt.cafe24.com/">
+                <a target="_blank" rel="noopener noreferrer">
+                  쇼핑몰
+                </a>
               </Link>
             </li>
             <li>
