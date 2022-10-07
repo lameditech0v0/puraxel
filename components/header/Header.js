@@ -29,10 +29,14 @@ export default function Header() {
         </div>
         <nav className="nav__left">
           <ul>
-            <li onClick={() => (window.location.href = "/me")}>PURAXEL-Me</li>
-            <li onClick={() => (window.location.href = "/fx5000")}>PURAXEL</li>
-            <li onClick={() => (window.location.href = "/hair")}>
-              PURAXEL-Hair
+            <li>
+              <a href="/me">PURAXEL-Me</a>
+            </li>
+            <li>
+              <a href="/fx5000">PURAXEL</a>
+            </li>
+            <li>
+              <a href="/hair">PURAXEL-Hair</a>
             </li>
           </ul>
         </nav>
@@ -40,13 +44,17 @@ export default function Header() {
       <div className="header__right">
         <nav className="nav__right">
           <ul className="nav__right__left">
-            <li
-              onClick={() => window.open("https://lmdt.cafe24.com/", "_blank")}
-            >
-              쇼핑몰
+            <li>
+              <a
+                href="https://lmdt.cafe24.com//"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                쇼핑몰
+              </a>
             </li>
-            <li onClick={() => (window.location.href = "#공지사항id나클래스")}>
-              공지사항
+            <li>
+              <a href="#page5">공지사항</a>
             </li>
           </ul>
           <ul className="nav__right__right">
