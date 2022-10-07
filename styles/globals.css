@@ -4,11 +4,16 @@
 
 html,
 body {
+  font-size: 10px;
+  -ms-overflow-style: none;
   padding: 0;
   margin: 0;
   font-family: "Pretendard" !important;
   opacity: 1;
   transition: opacity 500ms ease-in;
+}
+::-webkit-scrollbar {
+  display: none;
 }
 
 a {
@@ -40,7 +45,6 @@ a {
 }
 /* 가로모드 글씨 확대 초기화 */
 html {
-  font-size: 10px;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -157,4 +161,13 @@ select {
 
 li {
   cursor: pointer;
+}
+
+@media screen and (max-width: 1250px) {
+  html {
+    font-size: 8px;
+  }
+  #page1 {
+    flex-wrap: wrap;
+  }
 }

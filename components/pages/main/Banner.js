@@ -16,8 +16,8 @@ function Banner() {
             쇼핑몰 바로가기
           </a>
           <svg
-            width="38"
-            height="24"
+            width="3.8rem"
+            height="2.4rem"
             viewBox="0 0 38 24"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -35,8 +35,8 @@ function Banner() {
             문의 신청 하기
           </a>
           <svg
-            width="38"
-            height="24"
+            width="3.8rem"
+            height="2.4rem"
             viewBox="0 0 38 24"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -50,6 +50,7 @@ function Banner() {
         </div>
       </div>
       <Swiper
+        className="swiper__banner"
         modules={[Autoplay, Pagination, Navigation]}
         autoplay={{ delay: 3000, disableOnInteraction: false }}
         loop={true}

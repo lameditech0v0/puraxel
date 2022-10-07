@@ -6,17 +6,17 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 10%;
+  padding: 2rem 10%;
   z-index: 10000;
   position: sticky;
   top: 0;
   backdrop-filter: blur(40px);
   .header__left {
-    font-size: 2.4rem;
+    font-size: 1.25vw;
     display: flex;
     align-items: center;
     .logo {
-      padding-right: 64px;
+      padding-right: 3.33vw;
       display: flex;
       align-items: center;
       cursor: pointer;
@@ -26,10 +26,10 @@
       ul {
         display: flex;
         :nth-child(1) {
-          padding-right: 40px;
+          padding-right: 2.08vw;
         }
         :nth-child(2) {
-          padding-right: 40px;
+          padding-right: 2.08vw;
         }
       }
     }
@@ -39,18 +39,18 @@
       display: flex;
       align-items: center;
       .nav__right__left {
-        font-size: 2.4rem;
+        font-size: 1vw;
         display: flex;
-        padding-right: 80px;
+        padding-right: 4.17vw;
         :nth-child(1) {
-          padding-right: 40px;
+          padding-right: 2.08vw;
         }
       }
       .nav__right__right {
-        font-size: 1.7rem;
+        font-size: 0.9vw;
         display: flex;
         :nth-child(1) {
-          padding-right: 24px;
+          padding-right: 1.25vw;
         }
       }
     }
