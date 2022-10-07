@@ -70,3 +70,44 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - style 폴더에 최상위 scss 파일을 만들어서 안에 각 페이지 scss를 import
 - 각 페이지 마다 scss를 import 할 필요 없어짐
 - 클래스와 아이디 네임이 간단해질 필요가 있어서 선택
+
+### 폰트
+
+- 폰트만 `vw`
+- http://publishing.kr/vw/
+- https://netfolder.github.io/vw_calc.html
+- 이하 계산 방법
+
+```
+1920 1vw(1%) = 19.2
+
+1920 * 0.01 = 19.2
+
+x = 알고 싶은 vw 값
+
+y = 폰트크기
+
+1920 * x = y * 100
+
+x = y * 100 / 기준크기
+
+가로 1920px에서 폰트크기 24px를 원한다면
+
+x = 24 * 100 / 1920
+
+x = 1.25
+```
+
+## html 구조
+
+```html
+<section>
+  <article></article>
+  <article></article>
+  <article></article>
+  <article></article>
+</section>
+```
+
+- section : Page 감싸는 것
+- article : Page 내용들
