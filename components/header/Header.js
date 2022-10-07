@@ -40,8 +40,14 @@ export default function Header() {
       <div className="header__right">
         <nav className="nav__right">
           <ul className="nav__right__left">
-            <li>쇼핑몰</li>
-            <li>공지사항</li>
+            <li
+              onClick={() => window.open("https://lmdt.cafe24.com/", "_blank")}
+            >
+              쇼핑몰
+            </li>
+            <li onClick={() => (window.location.href = "#공지사항id나클래스")}>
+              공지사항
+            </li>
           </ul>
           <ul className="nav__right__right">
             <li>KR</li>
