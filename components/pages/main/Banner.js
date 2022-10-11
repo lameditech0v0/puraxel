@@ -1,5 +1,6 @@
 import { Autoplay, Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+import Link from "next/link";
 
 function Banner() {
   return (
@@ -24,9 +25,11 @@ function Banner() {
           </p>
           <div className="btn__top">
             <div className="red"></div>
-            <a href="#" className="shop">
-              쇼핑몰 바로가기
-            </a>
+            <Link href="https://lmdt.cafe24.com/">
+              <a target="_blank" rel="noopener noreferrer" className="shop">
+                쇼핑몰 바로가기
+              </a>
+            </Link>
             <svg
               width="3.8rem"
               height="2.4rem"
@@ -43,9 +46,9 @@ function Banner() {
           </div>
           <div className="btn__bottom">
             <div className="black"></div>
-            <a href="#" className="inquery">
-              문의 신청 하기
-            </a>
+            <Link href="#page6">
+              <a className="inquery">문의 신청 하기</a>
+            </Link>
             <svg
               width="3.8rem"
               height="2.4rem"
