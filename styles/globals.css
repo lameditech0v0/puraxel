@@ -169,7 +169,16 @@ li {
 }
 
 .swiper-button-next::after {
-  color: #000;
+  margin-right: 6.67vw;
+  padding: 20px 30px 20px 30px;
+  border-radius: 50%;
+  background: #ffffff66;
+  color: #55576f;
 }
-.swiper-button-prev {
+.swiper-button-prev::after {
+  margin-left: 6.67vw;
+  padding: 20px 30px 20px 30px;
+  border-radius: 50%;
+  background: #ffffff66;
+  color: #55576f;
 }

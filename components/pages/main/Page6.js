@@ -18,7 +18,7 @@ const theme3 = createTheme({
     MuiTypography: {
       styleOverrides: {
         root: {
-          color: "#1A1A1A",
+          color: "red",
           fontFamily: "Pretendard",
           fontSize: "1.04vw",
         },

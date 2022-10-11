@@ -21,7 +21,7 @@ function Page4() {
           loop={true}
           speed={2000}
           navigation={true}
-          spaceBetween={40}
+          spaceBetween={15}
           slidesPerView={4.5}
         >
           <SwiperSlide className="swiper__product">
