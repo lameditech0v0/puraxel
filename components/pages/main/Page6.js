@@ -162,8 +162,6 @@ function Page6() {
               control={
                 <Checkbox
                   sx={{
-                    width: "1.67vw",
-                    height: "1.67vw",
                     color: "#FFFFFF",
                   }}
                   icon={<CheckCircleOutline />}
