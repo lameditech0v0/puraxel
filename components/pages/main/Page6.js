@@ -182,7 +182,7 @@ function Page6() {
                 <path
                   d="M16 0.432432L16 32L16 0M16 0.432509L16 32.0001"
                   stroke="#1D1F36"
-                  stroke-width="2"
+                  strokeWidth="2"
                 />
                 <path
                   d="M0.432432 16L32 16L0 16M0.432509 16L32.0001 16"
