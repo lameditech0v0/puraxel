@@ -4,9 +4,11 @@ import FX5000 from "public/main/page2/fx-5000.png";
 function Page1() {
   return (
     <section id="page2">
+      {/* image */}
       <figure className="page2__img">
         <div className="page2__img__bg"></div>
       </figure>
+      {/* desc */}
       <article className="page2__desc">
         <span className="page2__desc__span1">에스테틱 레이저의 시작</span>
         <h1>FX-5000</h1>

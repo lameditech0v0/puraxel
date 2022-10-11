@@ -11,12 +11,19 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div>
+      {/* banner */}
       <Banner />
+      {/* Page1 */}
       <Page1 />
+      {/* Page2 */}
       <Page2 />
+      {/* Page3 */}
       <Page3 />
+      {/* Page4 */}
       <Page4 />
+      {/* Page5 */}
       <Page5 />
+      {/* Page6 */}
       <Page6 />
     </div>
   );

@@ -36,6 +36,7 @@ function Page6() {
   const [data, setData] = useState("");
   return (
     <section id="page6">
+      {/* inquiry */}
       <article className="page6__inquiry">
         <div className="page6__header__text">
           <h1>제품 문의</h1>
@@ -117,6 +118,7 @@ function Page6() {
         </form>
       </article>
 
+      {/* page6__newsLetter */}
       <article className="page6__newsLetter">
         <div className="page6__header__text">
           <h1>뉴스레터</h1>

@@ -7,6 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 function Page4() {
   return (
     <section id="page4">
+      {/* header */}
       <articel className="page4__header">
         <div className="page4__header__text">
           <p>가장 많이 찾는</p>
@@ -14,7 +15,8 @@ function Page4() {
           <div className="page4__header__bg"></div>
         </div>
       </articel>
-      <>
+      {/* product */}
+      <articel>
         <Swiper
           modules={[Autoplay, Pagination, Navigation]}
           autoplay={{ delay: 3000, disableOnInteraction: false }}
@@ -121,7 +123,7 @@ function Page4() {
             </section>
           </SwiperSlide>
         </Swiper>
-      </>
+      </articel>
     </section>
   );
 }

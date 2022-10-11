@@ -34,6 +34,7 @@ function Page5() {
   console.log(noticeInfo.map((x) => x.image));
   return (
     <section id="page5">
+      {/* header */}
       <article className="page5__header">
         <div className="page5__header__text">
           <p>PURAXEL 새 소식</p>
@@ -59,6 +60,7 @@ function Page5() {
           </svg>
         </div>
       </article>
+      {/* notice */}
       {noticeInfo.map((txt) => (
         <Notice
           key={txt.title}

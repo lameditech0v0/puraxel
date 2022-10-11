@@ -4,6 +4,7 @@ import Hair from "public/main/page3/hair.png";
 function Page1() {
   return (
     <section id="page3">
+      {/* desc */}
       <article className="page3__desc">
         <span className="page3__desc__span1">
           레이저 기술을 이용한 두피 관리,
@@ -36,6 +37,7 @@ function Page1() {
           </svg>
         </div>
       </article>
+      {/* image */}
       <figure className="page3__img">
         <div className="page3__img__bg"></div>
       </figure>

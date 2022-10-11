@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 function Banner() {
   return (
     <section id="banner">
+      {/* swiper */}
       <Swiper
         className="swiper__banner"
         modules={[Autoplay, Pagination, Navigation]}
@@ -14,6 +15,7 @@ function Banner() {
         pagination={{ clickable: true }}
         navigation={true}
       >
+        {/* desc */}
         <div className="desc">
           <h1>홀로 빛나다</h1>
           <p>
@@ -59,6 +61,7 @@ function Banner() {
             </svg>
           </div>
         </div>
+        {/* swiperPage */}
         <div>
           <SwiperSlide className="s1"></SwiperSlide>
           <SwiperSlide className="s2"></SwiperSlide>
