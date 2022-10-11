@@ -1,5 +1,31 @@
+import { CheckCircle, CheckCircleOutline } from "@mui/icons-material";
+import { Checkbox, createTheme, FormControlLabel } from "@mui/material";
+
 import { useState } from "react";
 import { useForm } from "react-hook-form";
+
+const theme3 = createTheme({
+  components: {
+    MuiFormControlLabel: {
+      styleOverrides: {
+        root: {
+          color: "#1A1A1A",
+          fontFamily: "Pretendard",
+          fontSize: "1.04vw",
+        },
+      },
+    },
+    MuiTypography: {
+      styleOverrides: {
+        root: {
+          color: "#1A1A1A",
+          fontFamily: "Pretendard",
+          fontSize: "1.04vw",
+        },
+      },
+    },
+  },
+});
 
 function Page6() {
   const { register, handleSubmit } = useForm();
@@ -14,11 +40,11 @@ function Page6() {
         <form onSubmit={handleSubmit((data) => setData(JSON.stringify(data)))}>
           <div className="page6__inquiry__1">
             <div className="page6__inquiry__2">
-              <label for="name">이름</label>
+              <label htmlFor="name">이름</label>
               <input id="name" {...register("firstName")} placeholder="성명" />
             </div>
             <div className="page6__inquiry__2">
-              <label for="tradeName">상호명</label>
+              <label htmlFor="tradeName">상호명</label>
               <input
                 id="tradeName"
                 {...register("firstName")}
@@ -28,7 +54,7 @@ function Page6() {
           </div>
           <div className="page6__inquiry__1">
             <div className="page6__inquiry__2">
-              <label for="phone">연락처</label>
+              <label htmlFor="phone">연락처</label>
               <input
                 id="phone"
                 {...register("firstName")}
@@ -36,7 +62,7 @@ function Page6() {
               />
             </div>
             <div className="page6__inquiry__2">
-              <label for="email">이메일</label>
+              <label htmlFor="email">이메일</label>
               <input
                 id="email"
                 {...register("firstName")}
@@ -46,7 +72,7 @@ function Page6() {
           </div>
           <div className="page6__inquiry__1">
             <div className="page6__inquiry__2">
-              <label for="content">문의내용</label>
+              <label htmlFor="content">문의내용</label>
               <textarea
                 id="content"
                 {...register("aboutYou")}
@@ -54,11 +80,39 @@ function Page6() {
               />
             </div>
           </div>
-          <p>{data}</p>
-
-          <input type="submit" />
+          <FormControlLabel
+            theme={theme3}
+            control={
+              <Checkbox
+                sx={{
+                  width: "1.67vw",
+                  height: "1.67vw",
+                }}
+                icon={<CheckCircleOutline />}
+                checkedIcon={<CheckCircle />}
+              />
+            }
+            label="개인정보 수집 및 활용에 동의합니다."
+          />
+          <button className="page6__btn" type="submit">
+            <p className="page6__desc__btn"> 문의 신청하기</p>
+            <svg
+              width="1.98vw"
+              height="1.25vw"
+              viewBox="0 0 38 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.486486 12.2444H36M36 12.2444L24.8108 1M36 12.2444H0M36 12.2444L24.6575 23"
+                stroke="white"
+                strokeWidth="2"
+              />
+            </svg>
+          </button>
         </form>
       </article>
+
       <article className="page6__newsLetter">
         <div className="page6__header__text">
           <h1>뉴스레터</h1>
@@ -77,7 +131,7 @@ function Page6() {
           >
             <div className="page6__inquiry__1">
               <div className="page6__inquiry__2">
-                <label for="name">이름</label>
+                <label htmlFor="name">이름</label>
                 <input
                   id="name"
                   {...register("firstName")}
@@ -85,14 +139,53 @@ function Page6() {
                 />
               </div>
               <div className="page6__inquiry__2">
-                <label for="tradeName">이메일</label>
+                <label htmlFor="tradeName">이메일</label>
                 <input
                   id="tradeName"
                   {...register("firstName")}
-                  placeholder="라메디텍"
+                  placeholder="example@example.com"
                 />
               </div>
             </div>
+            <FormControlLabel
+              sx={{
+                ml: "4.17vw",
+                color: "white",
+              }}
+              control={
+                <Checkbox
+                  sx={{
+                    width: "1.67vw",
+                    height: "1.67vw",
+                    color: "white",
+                  }}
+                  icon={<CheckCircleOutline />}
+                  checkedIcon={<CheckCircle />}
+                />
+              }
+              label="개인정보 수집 및 활용에 동의합니다."
+            />
+            <button className="page6__btn" type="submit">
+              <p className="page6__desc__btn"> 뉴스레터 구독하기</p>
+              <svg
+                width="1.67vw"
+                height="1.67vw"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16 0.432432L16 32L16 0M16 0.432509L16 32.0001"
+                  stroke="#1D1F36"
+                  stroke-width="2"
+                />
+                <path
+                  d="M0.432432 16L32 16L0 16M0.432509 16L32.0001 16"
+                  stroke="#1D1F36"
+                  strokeWidth="2"
+                />
+              </svg>
+            </button>
           </form>
         </div>
       </article>
