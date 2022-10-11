@@ -2,6 +2,7 @@ import logo from "public/header/logo.png";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect } from "react";
+import Modal from "components/modal/Modal";
 
 export default function Header() {
   useEffect(() => {
@@ -63,6 +64,7 @@ export default function Header() {
       <div className="header__right">
         <nav className="nav__right">
           <ul className="nav__right__left">
+            {/* <li>{<Modal />}</li> */}
             <li>
               <Link href="https://lmdt.cafe24.com/">
                 <a target="_blank" rel="noopener noreferrer">

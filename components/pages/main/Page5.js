@@ -31,7 +31,7 @@ const Notice = ({ title, desc, image, date }) => {
 };
 
 function Page5() {
-  console.log(noticeInfo.map((x) => x.image));
+  // console.log(noticeInfo.map((x) => x.image));
   return (
     <section id="page5">
       {/* header */}
