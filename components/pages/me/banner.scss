@@ -1,0 +1,48 @@
+#me__banner {
+  margin-bottom: 10.42vw;
+  .me__banner__header {
+    margin-top: 1.67vw;
+    margin-left: 8.54vw;
+    margin-bottom: 2.08vw;
+    .me__banner__header__p1 {
+      font-weight: 700;
+      font-size: 2.5vw;
+      line-height: 128%;
+      letter-spacing: -0.02vw;
+      color: #636467;
+      margin-bottom: 0.42vw;
+    }
+    h1 {
+      font-weight: 700;
+      font-size: 5vw;
+      line-height: 120%;
+      letter-spacing: -0.02vw;
+      color: #1a1a1a;
+    }
+    .me__banner__header__p2 {
+      font-weight: 400;
+      font-size: 1.67vw;
+      line-height: 150%;
+      letter-spacing: -0.02em;
+      color: #1a1a1acc;
+    }
+  }
+  .me__banner__img {
+    width: 100%;
+    padding-bottom: 56.26%;
+    background: #000;
+    position: relative;
+    overflow: hidden;
+    .me__banner__img__bg {
+      background: url(../../../public/me/banner/me_intro_01.png);
+      position: absolute;
+      left: -5%;
+      top: -5%;
+      width: 110%;
+      height: 110%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+}

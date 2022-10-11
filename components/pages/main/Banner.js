@@ -62,13 +62,11 @@ function Banner() {
           </div>
         </div>
         {/* swiperPage */}
-        <div>
-          <SwiperSlide className="s1"></SwiperSlide>
-          <SwiperSlide className="s2"></SwiperSlide>
-          <SwiperSlide className="s3"></SwiperSlide>
-          <SwiperSlide className="s4"></SwiperSlide>
-          <SwiperSlide className="s5"></SwiperSlide>
-        </div>
+        <SwiperSlide className="s1"></SwiperSlide>
+        <SwiperSlide className="s2"></SwiperSlide>
+        <SwiperSlide className="s3"></SwiperSlide>
+        <SwiperSlide className="s4"></SwiperSlide>
+        <SwiperSlide className="s5"></SwiperSlide>
       </Swiper>
     </section>
   );

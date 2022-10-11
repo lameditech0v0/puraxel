@@ -1,0 +1,40 @@
+#me__page4 {
+  position: relative;
+  .me__page4__desc {
+    position: absolute;
+    z-index: 1;
+    margin-left: 8.13vw;
+    margin-top: 6.25vw;
+    .me__page4__desc__p {
+      p:nth-child(1) {
+        font-weight: 500;
+        font-size: 2.5vw;
+        line-height: 150%;
+        color: #ffffffb2;
+      }
+      p:nth-child(2) {
+        font-weight: 700;
+        font-size: 4.58vw;
+        line-height: 128%;
+        color: #ffffff;
+      }
+    }
+  }
+  .me__page4__cont {
+    width: 100%;
+    padding-bottom: 59%;
+    position: relative;
+    overflow: hidden;
+    .me__page4__cont__bg {
+      background: url(../../../public/me/page4/cradle_bg.png);
+      position: absolute;
+      left: -5%;
+      top: -5%;
+      width: 110%;
+      height: 110%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+  }
+}
