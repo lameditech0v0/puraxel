@@ -1,7 +1,6 @@
 :root {
   --example: #000000;
 }
-
 html,
 body {
   font-size: 10px;
@@ -12,6 +11,7 @@ body {
   opacity: 1;
   transition: opacity 500ms ease-in;
 }
+
 ::-webkit-scrollbar {
   display: none;
 }
@@ -86,7 +86,6 @@ input,
 select,
 table,
 textarea {
-  font-size: 10px;
   line-height: 1.4;
   color: #202020;
   -webkit-font-smoothing: antialiased;
@@ -166,8 +165,5 @@ li {
 @media screen and (max-width: 1250px) {
   html {
     font-size: 8px;
-  }
-  #page1 {
-    flex-wrap: wrap;
   }
 }

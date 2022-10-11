@@ -36,7 +36,7 @@ function Page1() {
             <path
               d="M0.486486 12.2444H36M36 12.2444L24.8108 1M36 12.2444H0M36 12.2444L24.6575 23"
               stroke="white"
-              stroke-width="2"
+              strokeWidth="2"
             />
           </svg>
         </div>
