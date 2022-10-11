@@ -198,3 +198,13 @@ li {
   height: 4px !important;
   background: #343c67 !important;
 }
+
+.swiper-scrollbar {
+  width: 83.33vw !important;
+  left: 8% !important;
+  border-radius: 0px !important;
+}
+.swiper-scrollbar-drag {
+  border-radius: 0px !important;
+  background-color: #94a0b8 !important;
+}
