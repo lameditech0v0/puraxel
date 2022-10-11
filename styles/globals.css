@@ -182,3 +182,19 @@ li {
   background: #ffffff66;
   color: #55576f;
 }
+
+.swiper-pagination {
+  z-index: 4 !important;
+  top: 22.2rem;
+  left: 0 !important;
+  width: 100% !important;
+  height: 0 !important;
+  text-align: left !important;
+  margin-left: 20vw;
+}
+.swiper-pagination-bullet {
+  margin-right: 1.6rem !important;
+  width: 4px !important;
+  height: 4px !important;
+  background: #343c67 !important;
+}

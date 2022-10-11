@@ -4,7 +4,7 @@
   .page6__inquiry {
     width: 84%;
     margin-left: 8.33vw;
-    margin-top: 4.17vw;
+    padding-top: 4.17vw;
     .page6__header__text {
       position: relative;
       h1 {
@@ -61,7 +61,7 @@
       }
       textarea {
         width: 35.42vw;
-        height: 10.1vw;
+        height: 11.2vw;
         border: none;
         border-bottom: 1px solid #e7eaef;
         resize: none;
@@ -101,8 +101,9 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
     .page6__header__text {
-      margin-top: 2.6vw;
+      margin-top: 4.17vw;
       margin-left: 4.17vw;
       position: relative;
       h1 {

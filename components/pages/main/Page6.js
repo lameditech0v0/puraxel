@@ -4,21 +4,25 @@ import { Checkbox, createTheme, FormControlLabel } from "@mui/material";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 
-const theme3 = createTheme({
+const theme = createTheme({
   components: {
     MuiFormControlLabel: {
       styleOverrides: {
-        root: {
+        label: {
           color: "#1A1A1A",
           fontFamily: "Pretendard",
           fontSize: "1.04vw",
         },
       },
     },
-    MuiTypography: {
+  },
+});
+const theme2 = createTheme({
+  components: {
+    MuiFormControlLabel: {
       styleOverrides: {
-        root: {
-          color: "red",
+        label: {
+          color: "#FFFFFF",
           fontFamily: "Pretendard",
           fontSize: "1.04vw",
         },
@@ -81,7 +85,7 @@ function Page6() {
             </div>
           </div>
           <FormControlLabel
-            theme={theme3}
+            theme={theme}
             control={
               <Checkbox
                 sx={{
@@ -148,16 +152,17 @@ function Page6() {
               </div>
             </div>
             <FormControlLabel
+              theme={theme2}
               sx={{
-                ml: "4.17vw",
-                color: "white",
+                marginLeft: "4.17vw",
+                color: "#FFFFFF",
               }}
               control={
                 <Checkbox
                   sx={{
                     width: "1.67vw",
                     height: "1.67vw",
-                    color: "white",
+                    color: "#FFFFFF",
                   }}
                   icon={<CheckCircleOutline />}
                   checkedIcon={<CheckCircle />}
