@@ -5,11 +5,9 @@
   align-items: center;
   position: relative;
   .page3__desc {
-    margin-top: 4.69vw;
     position: absolute;
     z-index: 1;
-    right: 0;
-    margin-right: 13vw;
+    margin-left: 8.33vw;
     .page3__desc__span1 {
       font-weight: 500;
       font-size: 1.67vw;
@@ -35,11 +33,11 @@
   }
   .page3__img {
     width: 100%;
-    padding-bottom: 56.25%;
+    padding-bottom: 50%;
     background: #000;
     position: relative;
     overflow: hidden;
-    margin-right: 29.69vw;
+    margin-left: 29.69vw;
     .page3__img__bg {
       background: url(../../../public/main/page3/hair.png);
       position: absolute;

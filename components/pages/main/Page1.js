@@ -4,6 +4,7 @@ import Me from "public/main/page1/home_main_me.png";
 function Page1() {
   return (
     <section id="page1">
+      {/* desc */}
       <article className="page1__desc">
         <span className="page1__desc__span1">홈 에스테틱 레이저의 시작</span>
         <h1>PURAXEL-Me</h1>
@@ -36,11 +37,12 @@ function Page1() {
             <path
               d="M0.486486 12.2444H36M36 12.2444L24.8108 1M36 12.2444H0M36 12.2444L24.6575 23"
               stroke="white"
-              stroke-width="2"
+              strokeWidth="2"
             />
           </svg>
         </div>
       </article>
+      {/* image */}
       <figure className="page1__img">
         <div className="page1__img__bg"></div>
       </figure>

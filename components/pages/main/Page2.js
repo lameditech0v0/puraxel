@@ -4,9 +4,11 @@ import FX5000 from "public/main/page2/fx-5000.png";
 function Page1() {
   return (
     <section id="page2">
+      {/* image */}
       <figure className="page2__img">
         <div className="page2__img__bg"></div>
       </figure>
+      {/* desc */}
       <article className="page2__desc">
         <span className="page2__desc__span1">에스테틱 레이저의 시작</span>
         <h1>FX-5000</h1>
@@ -32,7 +34,7 @@ function Page1() {
             <path
               d="M0.486486 12.2444H36M36 12.2444L24.8108 1M36 12.2444H0M36 12.2444L24.6575 23"
               stroke="white"
-              stroke-width="2"
+              strokeWidth="2"
             />
           </svg>
         </div>

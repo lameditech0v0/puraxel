@@ -1,7 +1,6 @@
 :root {
   --example: #000000;
 }
-
 html,
 body {
   font-size: 10px;
@@ -12,6 +11,7 @@ body {
   opacity: 1;
   transition: opacity 500ms ease-in;
 }
+
 ::-webkit-scrollbar {
   display: none;
 }
@@ -86,7 +86,6 @@ input,
 select,
 table,
 textarea {
-  font-size: 10px;
   line-height: 1.4;
   color: #202020;
   -webkit-font-smoothing: antialiased;
@@ -167,7 +166,35 @@ li {
   html {
     font-size: 8px;
   }
-  #page1 {
-    flex-wrap: wrap;
-  }
+}
+
+.swiper-button-next::after {
+  margin-right: 6.67vw;
+  padding: 20px 30px 20px 30px;
+  border-radius: 50%;
+  background: #ffffff66;
+  color: #55576f;
+}
+.swiper-button-prev::after {
+  margin-left: 6.67vw;
+  padding: 20px 30px 20px 30px;
+  border-radius: 50%;
+  background: #ffffff66;
+  color: #55576f;
+}
+
+.swiper-pagination {
+  z-index: 4 !important;
+  top: 22.2rem;
+  left: 0 !important;
+  width: 100% !important;
+  height: 0 !important;
+  text-align: left !important;
+  margin-left: 20vw;
+}
+.swiper-pagination-bullet {
+  margin-right: 1.6rem !important;
+  width: 4px !important;
+  height: 4px !important;
+  background: #343c67 !important;
 }
