@@ -167,3 +167,9 @@ li {
     font-size: 8px;
   }
 }
+
+.swiper-button-next::after {
+  color: #000;
+}
+.swiper-button-prev {
+}
