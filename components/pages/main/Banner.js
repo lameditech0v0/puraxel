@@ -46,9 +46,9 @@ function Banner() {
           </div>
           <div className="btn__bottom">
             <div className="black"></div>
-            <a href="#" className="inquery">
-              문의 신청 하기
-            </a>
+            <Link href="#page6">
+              <a className="inquery">문의 신청 하기</a>
+            </Link>
             <svg
               width="3.8rem"
               height="2.4rem"
