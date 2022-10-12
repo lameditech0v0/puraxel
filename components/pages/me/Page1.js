@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Me from "public/main/page1/home_main_me.png";
+import Me from "public/main/page1/home_main_me.webp";
 
 function Page1() {
   return (

@@ -4,13 +4,13 @@ const noticeInfo = [
   {
     title: "라메디텍, 'KIMES 2022'서 레이저 '채혈기·미용기기' 공개",
     desc: "3월 16일 라메디텍은 지난 10일부터 13일까지 진행 된 'KIMES 2022(국제의료기기·병원설비전시회)'에서 레이저 소형화 기술이 적용된 레이저 채혈기 '핸디레이 라이트·프로'와 미용기기 '퓨라셀'을 선보였다고 밝혔다. '핸디레이 라이트·프로'는 말초혈액 채혈과 피부 미용제품들에 적용된 독창적 레이저 기술이 적용된 제품이며, '퓨라셀'은 에스테틱에서 사용할 수 있는 최 ...",
-    image: "main/page5/notice1.png",
+    image: "main/page5/notice1.webp",
     date: "2022. 07. 29",
   },
   {
     title: "라메디텍, 'KIMES 2022'서 핸디레이 시리즈·퓨라셀 전시",
     desc: "레이저 전문 헬스케어기업 라메디텍은 지난 10~13일 삼성동 코엑스에서 열린 'KIMES 2022(Korea International Medical Hospital Equipment Show)'에 참가했다고 16일 밝혔다. KIMES 2022는 올해 38번째 개최되는 국내 최대 의료기기 및 병원설비 전시회로 국내외 1200여개 업체가 참가했다. 첨단 의료기기, 병원 설비, 의료정보시스템, 헬스케어 용품 ...",
-    image: "main/page5/notice2.png",
+    image: "main/page5/notice2.webp",
     date: "2022. 03. 18",
   },
 ];

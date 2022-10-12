@@ -1,5 +1,5 @@
 import Image from "next/image";
-import FX5000 from "public/main/page2/fx-5000.png";
+import FX5000 from "public/main/page2/fx-5000.webp";
 
 function Page1() {
   return (

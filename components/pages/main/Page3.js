@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Hair from "public/main/page3/hair.png";
+import Hair from "public/main/page3/hair.webp";
 
 function Page1() {
   return (
