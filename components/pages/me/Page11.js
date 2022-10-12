@@ -29,13 +29,7 @@ function Page11() {
           </div>
         </div>
         <Link href="https://lmdt.cafe24.com/">
-          <button
-            className="me__page11__btn"
-            onClick={() => {
-              handleSubmit(onSubmit);
-            }}
-            type="submit"
-          >
+          <button className="me__page11__btn" type="submit">
             <p className="me__page11__desc__btn"> 쇼핑몰 바로가기</p>
             <svg
               width="1.98vw"
