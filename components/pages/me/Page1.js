@@ -1,6 +1,3 @@
-import Image from "next/image";
-import Me from "public/main/page1/home_main_me.webp";
-
 function Page1() {
   return (
     <section id="me__page1">

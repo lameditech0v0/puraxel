@@ -1,8 +1,7 @@
-import React from "react";
-
 function page4() {
   return (
     <section id="me__page4">
+      {/* desc */}
       <article className="me__page4__desc">
         <div className="me__page4__desc__p">
           <p>편의를 위한</p>
@@ -13,6 +12,7 @@ function page4() {
           <p>안전하게 살균 소독</p>
         </div>
       </article>
+      {/* bg */}
       <article className="me__page4__cont">
         <div className="me__page4__cont__bg"></div>
       </article>

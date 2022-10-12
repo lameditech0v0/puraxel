@@ -1,5 +1,3 @@
-import React from "react";
-
 function Page3() {
   return (
     <section id="me__page3">
