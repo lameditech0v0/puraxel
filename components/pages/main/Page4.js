@@ -1,7 +1,7 @@
 import Image from "next/image";
-import p1 from "public/main/page4/product1.png";
-import p2 from "public/main/page4/product2.png";
-import p3 from "public/main/page4/product3.png";
+import p1 from "public/main/page4/product1.webp";
+import p2 from "public/main/page4/product2.webp";
+import p3 from "public/main/page4/product3.webp";
 import { Autoplay, Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 function Page4() {
