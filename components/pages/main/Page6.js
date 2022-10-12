@@ -39,6 +39,8 @@ function Page6() {
   const [data, setData] = useState(undefined);
   const [newsletter, setNewletter] = useState(undefined);
 
+  const [aggre, setAggre] = useState(false);
+
   const form = useRef();
   const newsletterForm = useRef();
 
@@ -58,7 +60,7 @@ function Page6() {
           to_customerTel: "",
           to_customerMail: "",
           to_customerContent: "",
-          to_customerAgree: false,
+          to_customerAgree: "off",
         })
       );
   };
@@ -66,6 +68,14 @@ function Page6() {
   const onSubmit = (data) => {
     alert(JSON.stringify(data));
     // sendMail();
+    reset({
+      to_customerName: "",
+      to_customerCompanyName: "",
+      to_customerTel: "",
+      to_customerMail: "",
+      to_customerContent: "",
+      to_customerAgree: false,
+    });
   };
 
   return (
@@ -135,6 +145,7 @@ function Page6() {
 
           <FormControlLabel
             {...register("to_customerAgree", { required: true })}
+            name="to_customerAgree"
             theme={theme}
             control={
               <Checkbox
@@ -144,6 +155,7 @@ function Page6() {
                 }}
                 icon={<CheckCircleOutline />}
                 checkedIcon={<CheckCircle />}
+                onChange={(e) => console.log(e.target.value)}
               />
             }
             label="개인정보 수집 및 활용에 동의합니다."
