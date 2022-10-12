@@ -7,6 +7,7 @@ import Page5 from "components/pages/me/Page5";
 import Page6 from "components/pages/me/Page6";
 import Page7 from "components/pages/me/Page7";
 import Page8 from "components/pages/me/Page8";
+import Page9 from "components/pages/me/Page9";
 import Head from "next/head";
 import Image from "next/image";
 
@@ -22,6 +23,7 @@ export default function me() {
       <Page6 />
       <Page7 />
       <Page8 />
+      <Page9 />
     </div>
   );
 }
