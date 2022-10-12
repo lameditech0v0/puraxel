@@ -8,15 +8,15 @@ function Page4() {
   return (
     <section id="page4">
       {/* header */}
-      <articel className="page4__header">
+      <article className="page4__header">
         <div className="page4__header__text">
           <p>가장 많이 찾는</p>
           <h1>퓨라셀 인기 제품</h1>
           <div className="page4__header__bg"></div>
         </div>
-      </articel>
+      </article>
       {/* product */}
-      <articel>
+      <article>
         <Swiper
           modules={[Autoplay, Pagination, Navigation]}
           autoplay={{ delay: 3000, disableOnInteraction: false }}
@@ -123,7 +123,7 @@ function Page4() {
             </section>
           </SwiperSlide>
         </Swiper>
-      </articel>
+      </article>
     </section>
   );
 }
