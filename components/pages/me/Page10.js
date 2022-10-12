@@ -37,8 +37,8 @@ function Page10() {
       <article className="me__page10__iframe">
         <iframe
           src="https://www.youtube.com/embed/X6oDTHJnxq4"
-          frameborder="0"
-          allowfullscreen=""
+          frameBorder="0"
+          allowFullScreen=""
         ></iframe>
       </article>
     </section>
