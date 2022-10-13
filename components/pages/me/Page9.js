@@ -1,12 +1,33 @@
+import { useState } from "react";
 import Image from "next/image";
 
 import Product from "public/me/page9/img_me_01.png";
+import Product2 from "public/me/page9/img_me_02.png";
+import Product3 from "public/me/page9/img_me_03.png";
+import Product4 from "public/me/page9/img_me_04.png";
+
 import Select1 from "public/me/page9/me_01_active.png";
 import Select2 from "public/me/page9/me_02_active.png";
 import Select3 from "public/me/page9/me_03_active.png";
 import Select4 from "public/me/page9/me_04_active.png";
 
 function Page9() {
+  const [buttonSelector, setButtonSelector] = useState("first");
+
+  const selector = {
+    onFirst: () => {
+      setButtonSelector("first");
+    },
+    onSecond: () => {
+      setButtonSelector("second");
+    },
+    onThird: () => {
+      setButtonSelector("third");
+    },
+    onForth: () => {
+      setButtonSelector("forth");
+    },
+  };
   return (
     <section id="me__page9">
       <article className="me__page9__header">
