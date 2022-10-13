@@ -32,6 +32,13 @@
   color: #fff;
 }
 
+.temp {
+  background-color: pink;
+}
+.not {
+  background-color: blue;
+}
+
 .modeselctor__text__container {
   width: 100%;
 

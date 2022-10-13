@@ -4,10 +4,6 @@ import _ from "./modeSelector.module.css";
 export default function ModeSelector(props) {
   const [currentSelect, setCurrentSelect] = useState(undefined);
 
-  // const temp = () => {
-  //   currentSelect==="1"?_
-  // }
-
   return (
     <article
       className={_.modeselctor__wrap}
@@ -15,10 +11,13 @@ export default function ModeSelector(props) {
       onClick={() => {
         setCurrentSelect(props.numbering);
         console.log(currentSelect);
+        console.log(props);
       }}
     >
       <div
-        className={`${_.modeselctor__background} ${props.backgroundClass}`}
+        className={`${_.modeselctor__background} ${props.backgroundClass} ${
+          currentSelect === props.numbering ? _.temp : _.modeselctor__background
+        }`}
         style={{
           backgroundImage: props.image,
           backgroundColor: props.backgroundColor,
