@@ -1,7 +1,7 @@
 import logo from "public/header/logo.webp";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import Modal from "components/modal/Modal";
 
 export default function Header() {
@@ -73,9 +73,9 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <Link href="#page5">
-                <a>공지사항</a>
-              </Link>
+              {/* <Link> */}
+              <a>공지사항</a>
+              {/* </Link> */}
             </li>
           </ul>
           <ul className="nav__right__right">
