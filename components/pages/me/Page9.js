@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Image from "next/image";
 
-import Product from "public/me/page9/img_me_01.png";
+import Product1 from "public/me/page9/img_me_01.png";
 import Product2 from "public/me/page9/img_me_02.png";
 import Product3 from "public/me/page9/img_me_03.png";
 import Product4 from "public/me/page9/img_me_04.png";
@@ -28,6 +28,19 @@ function Page9() {
       setButtonSelector("forth");
     },
   };
+
+  function Product() {
+    if (buttonSelector === "first") {
+      return <Image src={Product1} />;
+    } else if (buttonSelector === "second") {
+      return <Image src={Product2} />;
+    } else if (buttonSelector === "third") {
+      return <Image src={Product3} />;
+    } else {
+      return <Image src={Product4} />;
+    }
+  }
+
   return (
     <section id="me__page9">
       <article className="me__page9__header">
@@ -115,21 +128,39 @@ function Page9() {
             </div>
           </div>
 
-          <div className="me__page9__cont__images">
-            <Image src={Product} />
-          </div>
+          <div className="me__page9__cont__images">{Product()}</div>
 
           <div className="me__page9__cont__select">
-            <div className="me__page9__cont__select__btn">
+            <div
+              className={`me__page9__cont__select__btn ${
+                buttonSelector === "first" ? "active" : ""
+              }`}
+              onClick={selector.onFirst}
+            >
               <Image src={Select1} />
             </div>
-            <div className="me__page9__cont__select__btn">
+            <div
+              className={`me__page9__cont__select__btn ${
+                buttonSelector === "second" ? "active" : ""
+              }`}
+              onClick={selector.onSecond}
+            >
               <Image src={Select2} />
             </div>
-            <div className="me__page9__cont__select__btn">
+            <div
+              className={`me__page9__cont__select__btn ${
+                buttonSelector === "third" ? "active" : ""
+              }`}
+              onClick={selector.onThird}
+            >
               <Image src={Select3} />
             </div>
-            <div className="me__page9__cont__select__btn">
+            <div
+              className={`me__page9__cont__select__btn ${
+                buttonSelector === "forth" ? "active" : ""
+              }`}
+              onClick={selector.onForth}
+            >
               <Image src={Select4} />
             </div>
           </div>
