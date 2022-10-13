@@ -1,14 +1,10 @@
 import { useState } from "react";
 
 function Page3() {
-  let [btnActive, setBtnActive] = useState("laser");
+  let [btnActive, setBtnActive] = useState(false);
 
-  const laserActive = (e) => {
-    setBtnActive("laser");
-  };
-
-  const galvanicActive = (e) => {
-    setBtnActive("galvanic");
+  const laserActive = () => {
+    setBtnActive(!btnActive);
   };
 
   return (
@@ -20,7 +16,7 @@ function Page3() {
       <article className="me__page3__btn">
         <div
           className={`me__page3__btn__left ${
-            btnActive === "laser" ? "active" : ""
+            btnActive === false ? "active" : ""
           }`}
           onClick={laserActive}
         >
@@ -108,15 +104,15 @@ function Page3() {
         </div>
         <div
           className={`me__page3__btn__right ${
-            btnActive === "galvanic" ? "active" : ""
+            btnActive === true ? "active" : ""
           }`}
-          onClick={galvanicActive}
+          onClick={laserActive}
         >
           <p>GALVANIC MODE</p>
           <p>갈바닉 모드</p>
         </div>
       </article>
-      {btnActive === "laser" ? (
+      {btnActive === false ? (
         <>
           <article className="me__page3__cont">
             <div className="me__page3__cont__1"></div>
