@@ -2,27 +2,27 @@ const contInfo = [
   {
     title: "정수리 탈모",
     desc: "퓨라셀 + 미스터케어 발모개선 앰플 3개월 적용 후",
-    image: "hair/page5/hair_testResult_card_01.png",
-    image2: "hair/page5/hair_testResult_card_02.png",
+    image: "hair/page5/hair_testResult_card_01.webp",
+    image2: "hair/page5/hair_testResult_card_02.webp",
   },
   {
     title: "M자 탈모",
     desc: "피부치밀도를 나타내는 Density 값이 퓨라셀 사용 전과 비교하여 4주 사용후 30% 증가",
-    image: "hair/page5/hair_testResult_card_03.png",
-    image2: "hair/page5/hair_testResult_card_04.png",
+    image: "hair/page5/hair_testResult_card_03.webp",
+    image2: "hair/page5/hair_testResult_card_04.webp",
   },
 ];
 
 const contInfo2 = [
   {
     title: "모량 테스트",
-    image3: "hair/page5/Group1.png",
-    image4: "hair/page5/Group2.png",
+    image3: "hair/page5/Group1.webp",
+    image4: "hair/page5/Group2.webp",
   },
   {
     title: "모발 테스트",
-    image3: "hair/page5/Group3.png",
-    image4: "hair/page5/Group4.png",
+    image3: "hair/page5/Group3.webp",
+    image4: "hair/page5/Group4.webp",
   },
 ];
 

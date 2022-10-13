@@ -2,26 +2,26 @@ const contInfo = [
   {
     title: "피부 보습력 3배 증가",
     desc: "피부 수분 변화에 대한 통계분석 결과,화장품+퓨라셀 1회 사용 직후 300%이상 증가",
-    image: "me/page5/testResult_card.png",
+    image: "me/page5/testResult_card.webp",
   },
   {
     title: "피부치밀도 30% 증가",
     desc: "피부치밀도를 나타내는 Density 값이 퓨라셀 사용 전과 비교하여 4주 사용후 30% 증가",
-    image: "me/page5/testResult_card2.png",
+    image: "me/page5/testResult_card2.webp",
   },
   {
     title: "피부톤(맑기) 2배 증가",
     desc: `피부톤을 나타내는 L*value가 \n
     퓨라셀 사용전과 비교하여 2주 사용후 2배 증가`,
-    image: "me/page5/testResult_card3.png",
+    image: "me/page5/testResult_card3.webp",
   },
   {
     title: "미백효과",
-    image: "me/page5/testResult_card4.png",
+    image: "me/page5/testResult_card4.webp",
   },
   {
     title: "주름개선",
-    image: "me/page5/testResult_card5.png",
+    image: "me/page5/testResult_card5.webp",
   },
 ];
 

@@ -1,9 +1,9 @@
 import Image from "next/image";
 
-import tech1 from "public/me/page7/tech_img_01+txt.png";
-import tech2 from "public/me/page7/tech_img_02+txt.png";
-import tech3 from "public/me/page7/tech_img_03+txt.png";
-import tech4 from "public/me/page7/tech_img_04+txt.png";
+import tech1 from "public/me/page7/tech_img_01+txt.webp";
+import tech2 from "public/me/page7/tech_img_02+txt.webp";
+import tech3 from "public/me/page7/tech_img_03+txt.webp";
+import tech4 from "public/me/page7/tech_img_04+txt.webp";
 
 function Page7() {
   return (

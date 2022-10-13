@@ -1,15 +1,15 @@
 import { useState } from "react";
 import Image from "next/image";
 
-import Product1 from "public/fx5000/page9/img_fx-5000_01.png";
-import Product2 from "public/fx5000/page9/img_fx-5000_02.png";
-import Product3 from "public/fx5000/page9/img_fx-5000_03.png";
-import Product4 from "public/fx5000/page9/img_fx-5000_04.png";
+import Product1 from "public/fx5000/page9/img_fx-5000_01.webp";
+import Product2 from "public/fx5000/page9/img_fx-5000_02.webp";
+import Product3 from "public/fx5000/page9/img_fx-5000_03.webp";
+import Product4 from "public/fx5000/page9/img_fx-5000_04.webp";
 
-import Select1 from "public/fx5000/page9/hair_01_active.png";
-import Select2 from "public/fx5000/page9/hair_02_active.png";
-import Select3 from "public/fx5000/page9/hair_03_active.png";
-import Select4 from "public/fx5000/page9/hair_04_active.png";
+import Select1 from "public/fx5000/page9/hair_01_active.webp";
+import Select2 from "public/fx5000/page9/hair_02_active.webp";
+import Select3 from "public/fx5000/page9/hair_03_active.webp";
+import Select4 from "public/fx5000/page9/hair_04_active.webp";
 
 function Page9() {
   const [buttonSelector, setButtonSelector] = useState("first");

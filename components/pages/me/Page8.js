@@ -1,11 +1,11 @@
-import Certifi1 from "public/me/page8/certifi_pura_01.png";
-import Certifi2 from "public/me/page8/certifi_pura_02.png";
-import Certifi3 from "public/me/page8/certifi_pura_03.png";
-import Certifi4 from "public/me/page8/certifi_lmdt_01.png";
-import Certifi5 from "public/me/page8/certifi_lmdt_02.png";
-import Certifi6 from "public/me/page8/certifi_lmdt_03.png";
-import Certifi7 from "public/me/page8/certifi_lmdt_04.png";
-import Certifi8 from "public/me/page8/certifi_lmdt_05.png";
+import Certifi1 from "public/me/page8/certifi_pura_01.webp";
+import Certifi2 from "public/me/page8/certifi_pura_02.webp";
+import Certifi3 from "public/me/page8/certifi_pura_03.webp";
+import Certifi4 from "public/me/page8/certifi_lmdt_01.webp";
+import Certifi5 from "public/me/page8/certifi_lmdt_02.webp";
+import Certifi6 from "public/me/page8/certifi_lmdt_03.webp";
+import Certifi7 from "public/me/page8/certifi_lmdt_04.webp";
+import Certifi8 from "public/me/page8/certifi_lmdt_05.webp";
 
 import Image from "next/image";
 

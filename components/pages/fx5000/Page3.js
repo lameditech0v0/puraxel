@@ -2,6 +2,71 @@ import ModeSelector from "components/modeSelector/ModeSelector";
 import { useEffect, useState } from "react";
 import { fx5000Element } from "lib/mode";
 
+const Laser = () => {
+  return (
+    <>
+      <article className="fx5000__page3__cont">
+        <div className="fx5000__page3__cont__1"></div>
+      </article>
+      <article className="fx5000__page3__cont2">
+        <div className="fx5000__page3__cont__img"></div>
+      </article>
+    </>
+  );
+};
+
+const GALVANIC = () => {
+  return (
+    <>
+      <article className="fx5000__page3__cont__gal">
+        <div className="fx5000__page3__cont__1__gal"></div>
+      </article>
+      <article className="fx5000__page3__cont2__gal">
+        <div className="fx5000__page3__cont__img__gal"></div>
+      </article>
+    </>
+  );
+};
+
+const SONIC = () => {
+  return (
+    <>
+      <article className="fx5000__page3__cont__sonic">
+        <div className="fx5000__page3__cont__1__sonic"></div>
+      </article>
+      <article className="fx5000__page3__cont2__sonic">
+        <div className="fx5000__page3__cont__img__sonic"></div>
+      </article>
+    </>
+  );
+};
+
+const COOLING = () => {
+  return (
+    <>
+      <article className="fx5000__page3__cont__cooling">
+        <div className="fx5000__page3__cont__1__cooling"></div>
+      </article>
+      <article className="fx5000__page3__cont2__cooling">
+        <div className="fx5000__page3__cont__img__cooling"></div>
+      </article>
+    </>
+  );
+};
+
+const LED = () => {
+  return (
+    <>
+      <article className="fx5000__page3__cont__led">
+        <div className="fx5000__page3__cont__1__led"></div>
+      </article>
+      <article className="fx5000__page3__cont2__led">
+        <div className="fx5000__page3__cont__img__led"></div>
+      </article>
+    </>
+  );
+};
+
 function Page3() {
   let [btnActive, setBtnActive] = useState("laser");
   const [currentSelect, setCurrentSelect] = useState("1");
@@ -14,9 +79,16 @@ function Page3() {
     setBtnActive("galvanic");
   };
 
-  useEffect(() => {
-    console.log(currentSelect);
-  });
+  const Temp = () => {
+    if (currentSelect === "1") return <Laser />;
+    if (currentSelect === "2") return <SONIC />;
+    if (currentSelect === "3") return <GALVANIC />;
+    if (currentSelect === "4") return <COOLING />;
+    if (currentSelect === "5") return <LED />;
+  };
+  // useEffect(() => {
+  //   console.log(currentSelect);
+  // });
 
   return (
     <section id="fx5000__page3">
@@ -28,7 +100,6 @@ function Page3() {
           효과를 높일 수 있습니다.
         </p>
       </article>
-
       <article className="fx5000__page3__btn">
         {fx5000Element.map((x, y) => (
           <ModeSelector
@@ -47,26 +118,7 @@ function Page3() {
           />
         ))}
       </article>
-
-      {btnActive === "laser" ? (
-        <>
-          <article className="fx5000__page3__cont">
-            <div className="fx5000__page3__cont__1"></div>
-          </article>
-          <article className="fx5000__page3__cont2">
-            <div className="fx5000__page3__cont__img"></div>
-          </article>
-        </>
-      ) : (
-        <>
-          <article className="fx5000__page3__cont__gal">
-            <div className="fx5000__page3__cont__1__gal"></div>
-          </article>
-          <article className="fx5000__page3__cont2__gal">
-            <div className="fx5000__page3__cont__img__gal"></div>
-          </article>
-        </>
-      )}
+      <Temp />
     </section>
   );
 }

@@ -1,15 +1,15 @@
 import { useState } from "react";
 import Image from "next/image";
 
-import Product1 from "public/me/page9/img_me_01.png";
-import Product2 from "public/me/page9/img_me_02.png";
-import Product3 from "public/me/page9/img_me_03.png";
-import Product4 from "public/me/page9/img_me_04.png";
+import Product1 from "public/me/page9/img_me_01.webp";
+import Product2 from "public/me/page9/img_me_02.webp";
+import Product3 from "public/me/page9/img_me_03.webp";
+import Product4 from "public/me/page9/img_me_04.webp";
 
-import Select1 from "public/me/page9/me_01_active.png";
-import Select2 from "public/me/page9/me_02_active.png";
-import Select3 from "public/me/page9/me_03_active.png";
-import Select4 from "public/me/page9/me_04_active.png";
+import Select1 from "public/me/page9/me_01_active.webp";
+import Select2 from "public/me/page9/me_02_active.webp";
+import Select3 from "public/me/page9/me_03_active.webp";
+import Select4 from "public/me/page9/me_04_active.webp";
 
 function Page9() {
   const [buttonSelector, setButtonSelector] = useState("first");

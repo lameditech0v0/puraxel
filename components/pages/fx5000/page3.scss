@@ -34,13 +34,14 @@
     //   }
     // }
   }
+  // 레이저
   .fx5000__page3__cont {
     width: 100vw;
     height: 54.17vw;
     position: relative;
     overflow: hidden;
     .fx5000__page3__cont__1 {
-      background: url(../../../public/fx5000/page3/laser_mode.png);
+      background: url(../../../public/fx5000/page3/laser_mode.webp);
       position: absolute;
       width: 100%;
       height: 100%;
@@ -49,13 +50,14 @@
       background-size: cover;
     }
   }
+
   .fx5000__page3__cont2 {
     width: 100vw;
     height: 47.92vw;
     position: relative;
     overflow: hidden;
     .fx5000__page3__cont__img {
-      background: url(../../../public/fx5000/page3/puraxel_fx-5000_laser_detailed.png);
+      background: url(../../../public/fx5000/page3/puraxel_fx-5000_laser_detailed.webp);
       position: absolute;
       left: -5%;
       top: -5%;
@@ -67,13 +69,88 @@
     }
   }
 
+  // 초음파
+
+  .fx5000__page3__cont__sonic {
+    width: 100%;
+    padding-bottom: 30%;
+    position: relative;
+    overflow: hidden;
+    .fx5000__page3__cont__1__sonic {
+      background: url(../../../public/fx5000/page3/puraxel_fx-5000_ultrasonic.webp);
+      position: absolute;
+      left: -5%;
+      top: -5%;
+      width: 110%;
+      height: 110%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+  .fx5000__page3__cont2__sonic {
+    width: 100%;
+    padding-bottom: 56%;
+    position: relative;
+    overflow: hidden;
+    .fx5000__page3__cont__img__sonic {
+      background: url(../../../public/fx5000/page3/puraxel_fx-5000_ultrasonic_detailed.webp);
+      position: absolute;
+      left: -5%;
+      top: -5%;
+      width: 110%;
+      height: 110%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+  }
+
+  //
+  .fx5000__page3__cont__cooling {
+    width: 100%;
+    padding-bottom: 30%;
+    position: relative;
+    overflow: hidden;
+    .fx5000__page3__cont__1__cooling {
+      background: url(../../../public/fx5000/page3/puraxel_fx-5000_cooling.webp);
+      position: absolute;
+      left: -5%;
+      top: -5%;
+      width: 110%;
+      height: 110%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+  .fx5000__page3__cont2__cooling {
+    width: 100%;
+    padding-bottom: 56%;
+    position: relative;
+    overflow: hidden;
+    .fx5000__page3__cont__img__cooling {
+      background: url(../../../public/fx5000/page3/puraxel_fx-5000_cooling_detailed.webp);
+      position: absolute;
+      left: -5%;
+      top: -5%;
+      width: 110%;
+      height: 110%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+  }
+
+  // 갈바닉
+
   .fx5000__page3__cont__gal {
     width: 100%;
     padding-bottom: 30%;
     position: relative;
     overflow: hidden;
     .fx5000__page3__cont__1__gal {
-      background: url(../../../public/me/page3/galvanic_mode.png);
+      background: url(../../../public/fx5000/page3/puraxel_fx-5000_galvanic.webp);
       position: absolute;
       left: -5%;
       top: -5%;
@@ -90,7 +167,44 @@
     position: relative;
     overflow: hidden;
     .fx5000__page3__cont__img__gal {
-      background: url(../../../public/me/page3/galvanic-img.webp);
+      background: url(../../../public/fx5000/page3/puraxel_fx-5000_galvanic_detailed.webp);
+      position: absolute;
+      left: -5%;
+      top: -5%;
+      width: 110%;
+      height: 110%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+  }
+
+  // LED
+
+  .fx5000__page3__cont__led {
+    width: 100%;
+    padding-bottom: 30%;
+    position: relative;
+    overflow: hidden;
+    .fx5000__page3__cont__1__led {
+      background: url(../../../public/fx5000/page3/puraxel_fx-5000_led.webp);
+      position: absolute;
+      left: -5%;
+      top: -5%;
+      width: 110%;
+      height: 110%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+  .fx5000__page3__cont2__led {
+    width: 100%;
+    padding-bottom: 56%;
+    position: relative;
+    overflow: hidden;
+    .fx5000__page3__cont__img__led {
+      background: url(../../../public/fx5000/page3/puraxel_fx-5000_led_detailed.webp);
       position: absolute;
       left: -5%;
       top: -5%;
