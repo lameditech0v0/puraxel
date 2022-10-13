@@ -4,16 +4,17 @@
   margin-right: 0.8333vw;
   border-radius: 8px;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .modeselctor__background {
   width: 100%;
   height: 100%;
-
   border-radius: 8px;
   background-color: #cccdce;
+  background-position: center center;
   background-size: cover;
-
+  opacity: 0.95;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -41,9 +42,7 @@
 
 .modeselctor__text__container {
   width: 100%;
-
   display: flex;
-
   background-image: linear-gradient(#fff0 0%, #ffff 100%);
   backdrop-filter: blur(0.7px);
 }

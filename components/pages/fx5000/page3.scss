@@ -2,8 +2,7 @@
   position: relative;
   .fx5000__page3__header {
     text-align: center;
-    margin-bottom: 6.51vw;
-    position: relative;
+    margin-bottom: 17.08vw;
     .fx5000__page3__header__p {
       font-weight: 500;
       font-size: 2.5vw;
@@ -15,92 +14,48 @@
       font-size: 4.58vw;
       line-height: 128%;
     }
+    p {
+      margin-top: 2.5vw;
+      font-weight: 500;
+      font-size: 1.25vw;
+      line-height: 150%;
+    }
   }
   .fx5000__page3__btn {
     display: flex;
-    align-items: center;
     z-index: 1;
-    margin: 0 auto;
-    text-align: center;
-    position: relative;
-    .fx5000__page3__btn__left {
-      cursor: pointer;
-      position: absolute;
-      left: 23%;
-      padding: 0.63vw 5.26vw 1.09vw 5.26vw;
-      color: #848a94;
-      background-color: #d7d8da;
-      border-radius: 4px;
-      border: none;
-      &.active {
-        color: #1d1f36;
-        background-color: #fff;
-        box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.06);
-      }
-
-      p {
-        font-weight: 700;
-        font-size: 2.5vw;
-
-        &:nth-child(2) {
-          font-size: 1.46vw;
-        }
-      }
-    }
-    .fx5000__page3__btn__circle {
-      position: absolute;
-      left: 47.8%;
-    }
-    .fx5000__page3__btn__right {
-      cursor: pointer;
-      z-index: -1;
-      color: #848a94;
-      background-color: #d7d8da;
-      position: absolute;
-      left: 51%;
-      padding: 0.63vw 3.02vw 1.09vw 3.02vw;
-      box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.06);
-      border-radius: 4px;
-      border: none;
-      &.active {
-        color: #1d1f36;
-        background-color: #fff;
-        box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.06);
-      }
-      p {
-        font-weight: 700;
-        font-size: 2.5vw;
-
-        &:nth-child(2) {
-          font-size: 1.46vw;
-        }
-      }
-    }
+    top: 13%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, 0);
+    // .modeselctor__wrap {
+    //   &:nth-child(1) {
+    //     margin-left: 10px;
+    //   }
+    // }
   }
   .fx5000__page3__cont {
-    width: 100%;
-    padding-bottom: 30%;
+    width: 100vw;
+    height: 54.17vw;
     position: relative;
     overflow: hidden;
     .fx5000__page3__cont__1 {
-      background: url(../../../public/me/page3/laser_mode.webp);
+      background: url(../../../public/fx5000/page3/laser_mode.png);
       position: absolute;
-      left: -5%;
-      top: -5%;
-      width: 110%;
-      height: 110%;
+      width: 100%;
+      height: 100%;
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
     }
   }
   .fx5000__page3__cont2 {
-    width: 100%;
-    padding-bottom: 56%;
+    width: 100vw;
+    height: 47.92vw;
     position: relative;
     overflow: hidden;
     .fx5000__page3__cont__img {
-      background: url(../../../public/me/page3/laser-img.webp);
+      background: url(../../../public/fx5000/page3/puraxel_fx-5000_laser_detailed.png);
       position: absolute;
       left: -5%;
       top: -5%;
