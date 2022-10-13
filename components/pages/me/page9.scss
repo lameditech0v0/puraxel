@@ -85,10 +85,16 @@
       position: absolute;
       .me__page9__cont__select__btn {
         margin-bottom: 0.63vw;
-        filter: drop-shadow(0px 0px 24px rgba(0, 0, 0, 0.1)) !important;
+
+        opacity: 0.8;
+        filter: none !important;
         img {
           width: 5vw !important;
           height: 5vw !important;
+        }
+        &.active {
+          opacity: 1;
+          filter: drop-shadow(0px 0px 24px rgba(0, 0, 0, 0.1)) !important;
         }
       }
     }
