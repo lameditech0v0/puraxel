@@ -2,11 +2,7 @@ import _ from "./modeSelector.module.css";
 
 export default function ModeSelector(props) {
   return (
-    <article
-      className={_.modeselctor__wrap}
-      dataName={props.dataname}
-      {...props}
-    >
+    <div className={_.modeselctor__wrap} dataName={props.dataname} {...props}>
       <div
         className={`${_.modeselctor__background}`}
         style={{
@@ -24,6 +20,6 @@ export default function ModeSelector(props) {
           <div className={_.modeselctor__title}>{props.title}</div>
         </div>
       </div>
-    </article>
+    </div>
   );
 }
