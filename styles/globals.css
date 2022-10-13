@@ -1,5 +1,6 @@
 :root {
   --example: #000000;
+  --trasition-time: 0.5s;
 }
 html,
 body {
