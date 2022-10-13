@@ -1,0 +1,73 @@
+#fx5000__page2 {
+  .fx5000__page2__header {
+    text-align: center;
+    .fx5000__page2__header__text {
+      margin-bottom: 6.93vw;
+      position: relative;
+      .fx5000__page2__header__text__p {
+        font-weight: 500;
+        font-size: 2.5vw;
+        line-height: 150%;
+        letter-spacing: -0.01vw;
+        color: #636467;
+      }
+      h1 {
+        font-weight: 700;
+        font-size: 4.58vw;
+        line-height: 120%;
+        text-align: center;
+        letter-spacing: -0.02vw;
+      }
+      .fx5000__page2__header__text__bg {
+        z-index: -1;
+        position: absolute;
+        top: 40%;
+        left: 13%;
+        width: 74.43vw;
+        height: 12.5vw;
+        background: url(../../../public/fx5000/page2/aesthetic_laser_puraxel.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+    }
+  }
+  .fx5000__page2__desc {
+    text-align: center;
+    margin-bottom: 2.08vw;
+    .fx5000__page2__desc__p1 {
+      font-weight: 700;
+      font-size: 1.88vw;
+      line-height: 160%;
+      letter-spacing: -0.02vw;
+      margin-bottom: 0.83vw;
+      color: #1a1a1acc;
+    }
+  }
+}
+.swiper {
+  height: 69.4rem;
+  padding-bottom: 2.02vw !important;
+  margin-bottom: 8.33vw !important;
+}
+
+.swiper-slide.s1 {
+  background: url(../../../public/main/banner/home_main_01.webp) no-repeat
+    center/ cover;
+}
+.swiper-slide.s2 {
+  background: url(../../../public/main/banner/home_main_02.webp) no-repeat
+    center/ cover;
+}
+.swiper-slide.s3 {
+  background: url(../../../public/main/banner/home_main_03.webp) no-repeat
+    center / cover;
+}
+.swiper-slide.s4 {
+  background: url(../../../public/main/banner/home_main_04.webp) no-repeat
+    center / cover;
+}
+.swiper-slide.s5 {
+  background: url(../../../public/main/banner/home_main_05.webp) no-repeat
+    center / cover;
+}

@@ -1,0 +1,64 @@
+#fx5000__page6 {
+  background-color: #f3f4f5;
+  padding-left: 8.33vw;
+  padding-right: 8.33vw;
+  padding-bottom: 6.25vw;
+  .fx5000__page6__header {
+    padding-top: 6.25vw;
+    margin-bottom: 2.92vw;
+    text-align: center;
+    p {
+      font-weight: 500;
+      font-size: 2.5vw;
+      line-height: 150%;
+      color: #636467;
+    }
+    h1 {
+      font-weight: 700;
+      font-size: 4.58vw;
+      line-height: 120%;
+      color: #1a1a1a;
+    }
+  }
+  .fx5000__page6__cont {
+    display: flex;
+    align-items: center;
+    padding-top: 1.82vw;
+    padding-bottom: 1.82vw;
+    padding-left: 2.08vw;
+    background-color: #fff;
+    border-radius: 12px;
+    margin-bottom: 1.67vw;
+    .number {
+      div {
+        text-align: center;
+        margin-top: 0.31vw;
+        font-weight: 700;
+        font-size: 1.67vw;
+        color: #ffffff;
+      }
+      width: 2.81vw;
+      height: 2.81vw;
+      background-color: #dd7a8c;
+      border-radius: 50%;
+    }
+    .title {
+      margin-left: 1.3vw;
+      margin-right: 2.08vw;
+      font-weight: 700;
+      font-size: 2.54vw;
+      line-height: 150%;
+    }
+    .line {
+      margin-right: 2.08vw;
+      width: 0.15vw;
+      height: 3.33vw;
+      background: #eceff4;
+    }
+    .desc {
+      font-weight: 700;
+      font-size: 2.54vw;
+      line-height: 150%;
+    }
+  }
+}

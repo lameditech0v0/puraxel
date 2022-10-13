@@ -1,10 +1,11 @@
-#me__banner {
+#hair__banner {
   margin-bottom: 10.42vw;
-  .me__banner__header {
+  .hair__banner__header {
     margin-top: 1.67vw;
     margin-left: 8.54vw;
+    margin-right: 8.54vw;
     margin-bottom: 2.08vw;
-    .me__banner__header__p1 {
+    .hair__banner__header__p1 {
       font-weight: 700;
       font-size: 2.5vw;
       line-height: 128%;
@@ -19,22 +20,30 @@
       letter-spacing: -0.02vw;
       color: #1a1a1a;
     }
-    .me__banner__header__p2 {
+    .hair__banner__header__p2 {
       font-weight: 400;
       font-size: 1.67vw;
       line-height: 150%;
       letter-spacing: -0.02em;
       color: #1a1a1acc;
     }
+    .hair__banner__header__p3 {
+      float: right;
+      font-weight: 400;
+      font-size: 1.25vw;
+      line-height: 150%;
+      letter-spacing: -0.02em;
+      color: #767676;
+    }
   }
-  .me__banner__img {
+  .hair__banner__img {
     width: 100vw;
     height: 37.5vw;
+    padding-bottom: 37%;
     background: #000;
     position: relative;
-    overflow: hidden;
-    .me__banner__img__bg {
-      background: url(../../../public/me/banner/me_intro_01.webp);
+    .hair__banner__img__bg {
+      background: url(../../../public/hair/banner/me_intro_01.png);
       position: absolute;
       width: 100%;
       height: 100%;

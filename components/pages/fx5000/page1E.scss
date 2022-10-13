@@ -1,0 +1,63 @@
+#fx5000__page10 {
+  margin-bottom: 8.33vw;
+  .fx5000__page10__header {
+    padding: 8.33vw 8.33vw 2.08vw 8.33vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .fx5000__page10__header__text {
+      p {
+        font-weight: 500;
+        font-size: 1.67vw;
+        line-height: 128%;
+      }
+      h1 {
+        font-weight: 700;
+        font-size: 4.58vw;
+        line-height: 128%;
+      }
+      .fx5000__page10__header__bg {
+        z-index: -1;
+        position: absolute;
+        top: 43%;
+        left: 15%;
+        width: 53.59vw;
+        height: 15.63vw;
+        background: url(../../../public/me/page10/watch_the_video.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+    }
+    .fx5000__page10__header__btn {
+      display: flex;
+      align-items: center;
+      background: #1d1f36;
+      width: 19.27vw;
+      height: 5vw;
+      box-shadow: 0px 12px 28px rgba(29, 31, 54, 0.12);
+      .fx5000__page10__header__btn1 {
+        margin-right: 7.97vw;
+        margin-left: 1.25vw;
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 1.46vw;
+        line-height: 128%;
+      }
+    }
+  }
+  .fx5000__page10__iframe {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-top: 50%;
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

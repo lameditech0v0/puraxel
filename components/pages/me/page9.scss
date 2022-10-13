@@ -42,7 +42,7 @@
     position: relative;
     .me__page9__cont__desc {
       .me__page9__cont__desc__li {
-        width: 15.6vw;
+        width: 16.6vw;
         margin-bottom: 2.08vw;
         .black {
           margin-bottom: 0.42vw;
@@ -69,7 +69,7 @@
       }
     }
     .me__page9__cont__images {
-      top: -4%;
+      top: 0;
       left: 50%;
       position: absolute;
       img {
@@ -85,8 +85,8 @@
       position: absolute;
       .me__page9__cont__select__btn {
         margin-bottom: 0.63vw;
-
         opacity: 0.8;
+
         filter: none !important;
         img {
           width: 5vw !important;
