@@ -1,5 +1,5 @@
 import ModeSelector from "components/modeSelector/ModeSelector";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { fx5000Element } from "lib/mode";
 
 const Laser = () => {
@@ -96,9 +96,7 @@ function Page3() {
             title={x.title}
             image={x.img}
             onClick={() => {
-              // console.log(x.num);
               setCurrentSelect(x.num);
-              // console.log(currentSelect);
             }}
             backgroundColor={currentSelect !== x.num ? "" : "#fff"}
             numberingBackgroundColor={currentSelect !== x.num ? "" : "#55576f"}
