@@ -70,8 +70,12 @@ export default function Header() {
               </Link>
             </li>
             <li>
+              <a href="#page6" rel="noopener noreferrer">
+                공지사항
+              </a>
+
               {/* <Link> */}
-              <a>공지사항</a>
+              <a></a>
               {/* </Link> */}
             </li>
           </ul>
