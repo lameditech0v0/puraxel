@@ -56,18 +56,16 @@
   margin-bottom: 1vw;
   margin-right: 0.8333vw;
   margin-left: 1.6667vw;
-  transition: var(--trasition-time);
+  padding-top: 0.2vw;
+  /* transition: var(--trasition-time); */
 }
 
 .modeselctor__numbering {
   border-radius: 50%;
   font-weight: 600;
   font-size: 2.0833vw;
-  line-height: 144%;
-  letter-spacing: -0.03em;
   color: #55576f;
-  transition: var(--trasition-time);
-  margin: 0;
+  /* transition: var(--trasition-time); */
 }
 
 .modeselctor__title {

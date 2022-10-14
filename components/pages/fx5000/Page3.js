@@ -68,27 +68,15 @@ const LED = () => {
 };
 
 function Page3() {
-  let [btnActive, setBtnActive] = useState("laser");
   const [currentSelect, setCurrentSelect] = useState("1");
 
-  const laserActive = (e) => {
-    setBtnActive("laser");
-  };
-
-  const galvanicActive = (e) => {
-    setBtnActive("galvanic");
-  };
-
-  const Temp = () => {
+  const Mode = () => {
     if (currentSelect === "1") return <Laser />;
     if (currentSelect === "2") return <SONIC />;
     if (currentSelect === "3") return <GALVANIC />;
     if (currentSelect === "4") return <COOLING />;
     if (currentSelect === "5") return <LED />;
   };
-  // useEffect(() => {
-  //   console.log(currentSelect);
-  // });
 
   return (
     <section id="fx5000__page3">
@@ -118,7 +106,7 @@ function Page3() {
           />
         ))}
       </article>
-      <Temp />
+      <Mode />
     </section>
   );
 }
