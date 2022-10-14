@@ -53,8 +53,8 @@ function Newsletter() {
       <div className="header__desc">
         <p>
           퓨라셀 뉴스레터를 구독하시면 퓨라셀의 새 소식, 이벤트, 행사 정보 등
-          다양한 정보와 혜택을 받을 수 있어요. 가장 먼저 퓨라셀의 새 소식을
-          만나보세요.
+          다양한 정보와 혜택을 받을 수 있어요.
+          <br /> 가장 먼저 퓨라셀의 새 소식을 만나보세요.
         </p>
       </div>
       <div className="newsLetter__form">
