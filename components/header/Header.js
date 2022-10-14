@@ -1,8 +1,5 @@
-import logo from "public/header/logo.webp";
-import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useRef } from "react";
-import Modal from "components/modal/Modal";
+import { useEffect } from "react";
 
 export default function Header() {
   useEffect(() => {
