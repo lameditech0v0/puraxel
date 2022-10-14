@@ -95,3 +95,103 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  #page6 {
+    display: flex;
+    margin-bottom: 10.42vw;
+    .page6__inquiry {
+      width: 84%;
+      margin-left: 8.33vw;
+      padding-top: 4.17vw;
+      .page6__header__text {
+        position: relative;
+        h1 {
+          font-weight: 700;
+          font-size: 5vw;
+          line-height: 120%;
+          margin-bottom: 3.7vw;
+        }
+        .page6__header__bg {
+          z-index: -1;
+          position: absolute;
+          top: 0;
+          left: 23%;
+          width: 29.27vw;
+          height: 15.63vw;
+          background: url(../../../public/main/page6/inquiry.webp);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+        }
+      }
+
+      .page6__inquiry__1 {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2.08vw;
+        &:nth-child(3) {
+          margin-bottom: 0.99vw;
+        }
+
+        .page6__inquiry__2 {
+          display: inherit;
+          flex-direction: column;
+        }
+        label {
+          font-weight: 700;
+          font-size: 1.25vw;
+          line-height: 150%;
+          margin-bottom: 8px;
+        }
+        input {
+          width: 16.67vw;
+          margin-right: 2.08vw;
+          border: none;
+          border-bottom: 1px solid #e7eaef;
+          font-weight: 400;
+          font-size: 1.25vw;
+          line-height: 150%;
+          &::placeholder {
+            font-family: "Pretendard" !important;
+            color: #1a1a1acc;
+            margin-bottom: 12px;
+          }
+        }
+        textarea {
+          width: 35.42vw;
+          height: 11.2vw;
+          border: none;
+          border-bottom: 1px solid #e7eaef;
+          resize: none;
+          font-size: 1.25vw;
+          font-weight: 700;
+          line-height: 150%;
+          &::placeholder {
+            font-family: "Pretendard" !important;
+            color: #1a1a1acc;
+          }
+        }
+      }
+
+      .page6__btn {
+        margin-top: 2.08vw;
+        font-family: "Pretendard" !important;
+        display: flex;
+        align-items: center;
+        background: #1d1f36;
+        width: 19.27vw;
+        height: 5vw;
+        box-shadow: 0px 12px 28px rgba(29, 31, 54, 0.12);
+        .page6__desc__btn {
+          margin-left: 1.25vw;
+          margin-right: 5.72vw;
+          color: #ffffff;
+          font-weight: 700;
+          font-size: 1.46vw;
+          line-height: 128%;
+        }
+      }
+    }
+  }
+}

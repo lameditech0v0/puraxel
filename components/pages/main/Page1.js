@@ -9,10 +9,8 @@ function Page1() {
 
   useEffect(() => {
     window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+    handleResize();
+  });
 
   return (
     <section id="page1">

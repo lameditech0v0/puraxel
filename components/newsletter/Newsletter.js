@@ -11,14 +11,25 @@ const theme = createTheme({
     MuiFormControlLabel: {
       styleOverrides: {
         label: {
-          color: "#1A1A1A",
+          color: "#FFFFFF",
           fontFamily: "Pretendard",
-          fontSize: "1.04vw",
+          fontSize: "2.60vw",
+          marginLeft: "0.78vw",
+        },
+      },
+    },
+    MuiCheckbox: {
+      styleOverrides: {
+        root: {
+          color: "#ffffff",
+          "&.Mui-checked": { color: "#000000" },
+          Svg: { fontSize: "4.17vw" },
         },
       },
     },
   },
 });
+
 const theme2 = createTheme({
   components: {
     MuiFormControlLabel: {
@@ -26,12 +37,64 @@ const theme2 = createTheme({
         label: {
           color: "#FFFFFF",
           fontFamily: "Pretendard",
-          fontSize: "1.04vw",
+          fontSize: "1.67vw",
+        },
+      },
+    },
+    MuiCheckbox: {
+      styleOverrides: {
+        root: {
+          color: "#ffffff",
+          "&.Mui-checked": { color: "#000000" },
+          Svg: { fontSize: "1.67vw" },
         },
       },
     },
   },
 });
+
+const CheckboxInfo = () => {
+  return (
+    <FormControlLabel
+      theme={theme2}
+      sx={{
+        marginLeft: "4.17vw",
+        color: "#FFFFFF",
+      }}
+      control={
+        <Checkbox
+          theme={theme2}
+          sx={{
+            color: "#FFFFFF",
+          }}
+          icon={<CheckCircleOutline />}
+          checkedIcon={<CheckCircle />}
+        />
+      }
+      label="개인정보 수집 및 활용에 동의합니다."
+    />
+  );
+};
+
+const CheckboxInfo2 = () => {
+  return (
+    <FormControlLabel
+      theme={theme}
+      sx={{
+        marginLeft: "4.17vw",
+        color: "#FFFFFF",
+      }}
+      control={
+        <Checkbox
+          theme={theme}
+          icon={<CheckCircleOutline />}
+          checkedIcon={<CheckCircle />}
+        />
+      }
+      label="개인정보 수집 및 활용에 동의합니다."
+    />
+  );
+};
 
 function Newsletter() {
   const { register, handleSubmit, reset } = useForm();
@@ -43,6 +106,17 @@ function Newsletter() {
 
   const form = useRef();
   const newsletterForm = useRef();
+
+  const [resize, setResize] = useState();
+
+  const handleResize = () => {
+    setResize(window.innerWidth);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    handleResize();
+  });
 
   return (
     <article className="newsLetter">
@@ -77,43 +151,49 @@ function Newsletter() {
               />
             </div>
           </div>
-          <FormControlLabel
-            theme={theme2}
-            sx={{
-              marginLeft: "4.17vw",
-              color: "#FFFFFF",
-            }}
-            control={
-              <Checkbox
-                sx={{
-                  color: "#FFFFFF",
-                }}
-                icon={<CheckCircleOutline />}
-                checkedIcon={<CheckCircle />}
-              />
-            }
-            label="개인정보 수집 및 활용에 동의합니다."
-          />
+          {resize <= 768 ? <CheckboxInfo2 /> : <CheckboxInfo />}
+
           <button className="btn" type="submit">
             <p className="desc__btn"> 뉴스레터 구독하기</p>
-            <svg
-              width="1.67vw"
-              height="1.67vw"
-              viewBox="0 0 32 32"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M16 0.432432L16 32L16 0M16 0.432509L16 32.0001"
-                stroke="#1D1F36"
-                strokeWidth="2"
-              />
-              <path
-                d="M0.432432 16L32 16L0 16M0.432509 16L32.0001 16"
-                stroke="#1D1F36"
-                strokeWidth="2"
-              />
-            </svg>
+            {resize <= 768 ? (
+              <svg
+                width="4.17vw"
+                height="4.17vw"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16 0.432432L16 32L16 0M16 0.432509L16 32.0001"
+                  stroke="#1D1F36"
+                  strokeWidth="2"
+                />
+                <path
+                  d="M0.432432 16L32 16L0 16M0.432509 16L32.0001 16"
+                  stroke="#1D1F36"
+                  strokeWidth="2"
+                />
+              </svg>
+            ) : (
+              <svg
+                width="1.67vw"
+                height="1.67vw"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16 0.432432L16 32L16 0M16 0.432509L16 32.0001"
+                  stroke="#1D1F36"
+                  strokeWidth="2"
+                />
+                <path
+                  d="M0.432432 16L32 16L0 16M0.432509 16L32.0001 16"
+                  stroke="#1D1F36"
+                  strokeWidth="2"
+                />
+              </svg>
+            )}
           </button>
         </form>
       </div>

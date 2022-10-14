@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { useEffect, useState } from "react";
 
 const noticeInfo = [
   {
@@ -13,13 +13,20 @@ const noticeInfo = [
     image: "main/page5/notice2.webp",
     date: "2022. 03. 18",
   },
+
+  {
+    title: "공지사항 제목 한 줄",
+    desc: "공지사항 내용 짧은 공지사항 공지사항 내용 짧은 공지사항 공지사항 내용 짧은 공지사항 공지사항 내용 짧은 공지사항 공지사항 내용 짧은 공지사항. KIMES 2022는 올해 38번째 개최되는 국내 최대 의료기기 및 병원설비 전시회로 국내외 1200여개 업체가 참가했다. 첨단 의료기기, 병원 설비, 의료정보시스템, 헬스케어 용품 ...",
+    image: "main/page5/thumb.png",
+    date: "2022. 03. 18",
+  },
 ];
 
 const Notice = ({ title, desc, image, date }) => {
   return (
     <article className="page5__desc">
       <div className="page5__desc__img">
-        <img src={image} />
+        <img src={image} alt="notice" />
       </div>
       <div className="page5__desc__text">
         <h1>{title}</h1>
@@ -30,8 +37,36 @@ const Notice = ({ title, desc, image, date }) => {
   );
 };
 
+const Notice2 = ({ title, desc, image, date }) => {
+  return (
+    <>
+      <article className="page5__desc">
+        <div className="page5__desc__img">
+          <img src={image} alt="notice" />
+        </div>
+        <div className="page5__desc__text">
+          <h1>{title}</h1>
+          <p className="page5__desc__text__date">{date}</p>
+        </div>
+      </article>
+      <div className="page5__desc__desc">
+        <p>{desc}</p>
+      </div>
+    </>
+  );
+};
+
 function Page5() {
-  // console.log(noticeInfo.map((x) => x.image));
+  const [resize, setResize] = useState();
+
+  const handleResize = () => {
+    setResize(window.innerWidth);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    handleResize();
+  });
   return (
     <section id="page5">
       {/* header */}
@@ -41,35 +76,87 @@ function Page5() {
           <h1>공지사항</h1>
           <div className="page5__header__bg"></div>
         </div>
+        {resize <= 768 ? (
+          ""
+        ) : (
+          <div className="page5__header__btn">
+            <a href="#" className="page5__header__btn1">
+              전체보기
+            </a>
+            <svg
+              width="1.98vw"
+              height="1.25vw"
+              viewBox="0 0 38 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.486486 12.2444H36M36 12.2444L24.8108 1M36 12.2444H0M36 12.2444L24.6575 23"
+                stroke="white"
+                strokeWidth="2"
+              />
+            </svg>
+          </div>
+        )}
+      </article>
+      {/* notice */}
+      {resize <= 768
+        ? noticeInfo.map((txt) => (
+            <Notice2
+              key={txt.title}
+              title={txt.title}
+              desc={txt.desc}
+              image={txt.image}
+              date={txt.date}
+            />
+          ))
+        : noticeInfo.map((txt) => (
+            <Notice
+              key={txt.title}
+              title={txt.title}
+              desc={txt.desc}
+              image={txt.image}
+              date={txt.date}
+            />
+          ))}
+      {resize <= 768 ? (
         <div className="page5__header__btn">
           <a href="#" className="page5__header__btn1">
             전체보기
           </a>
-          <svg
-            width="1.98vw"
-            height="1.25vw"
-            viewBox="0 0 38 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0.486486 12.2444H36M36 12.2444L24.8108 1M36 12.2444H0M36 12.2444L24.6575 23"
-              stroke="white"
-              strokeWidth="2"
-            />
-          </svg>
+          {resize <= 768 ? (
+            <svg
+              width="4.17vw"
+              height="3.13vw"
+              viewBox="0 0 38 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.486486 12.2444H36M36 12.2444L24.8108 1M36 12.2444H0M36 12.2444L24.6575 23"
+                stroke="white"
+                strokeWidth="2"
+              />
+            </svg>
+          ) : (
+            <svg
+              width="1.98vw"
+              height="1.25vw"
+              viewBox="0 0 38 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.486486 12.2444H36M36 12.2444L24.8108 1M36 12.2444H0M36 12.2444L24.6575 23"
+                stroke="white"
+                strokeWidth="2"
+              />
+            </svg>
+          )}
         </div>
-      </article>
-      {/* notice */}
-      {noticeInfo.map((txt) => (
-        <Notice
-          key={txt.title}
-          title={txt.title}
-          desc={txt.desc}
-          image={txt.image}
-          date={txt.date}
-        />
-      ))}
+      ) : (
+        ""
+      )}
     </section>
   );
 }
