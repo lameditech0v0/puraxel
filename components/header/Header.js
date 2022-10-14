@@ -73,7 +73,6 @@ export default function Header() {
               <a href="#page6" rel="noopener noreferrer">
                 공지사항
               </a>
-
               {/* <Link> */}
               <a></a>
               {/* </Link> */}
