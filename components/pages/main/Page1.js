@@ -1,7 +1,17 @@
-import Image from "next/image";
-import Me from "public/main/page1/home_main_me.webp";
+import { useEffect, useState } from "react";
 
 function Page1() {
+  const [resize, setResize] = useState();
+
+  const handleResize = () => {
+    setResize(window.innerWidth);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    handleResize();
+  });
+
   return (
     <section id="page1">
       {/* desc */}
@@ -27,19 +37,35 @@ function Page1() {
           <a href="#" className="page1__desc__btn">
             자세히 보기
           </a>
-          <svg
-            width="1.98vw"
-            height="1.25vw"
-            viewBox="0 0 38 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0.486486 12.2444H36M36 12.2444L24.8108 1M36 12.2444H0M36 12.2444L24.6575 23"
-              stroke="white"
-              strokeWidth="2"
-            />
-          </svg>
+          {resize <= 768 ? (
+            <svg
+              width="4.17vw"
+              height="3.13vw"
+              viewBox="0 0 38 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.486486 12.2444H36M36 12.2444L24.8108 1M36 12.2444H0M36 12.2444L24.6575 23"
+                stroke="white"
+                strokeWidth="2"
+              />
+            </svg>
+          ) : (
+            <svg
+              width="1.98vw"
+              height="1.25vw"
+              viewBox="0 0 38 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.486486 12.2444H36M36 12.2444L24.8108 1M36 12.2444H0M36 12.2444L24.6575 23"
+                stroke="white"
+                strokeWidth="2"
+              />
+            </svg>
+          )}
         </div>
       </article>
       {/* image */}

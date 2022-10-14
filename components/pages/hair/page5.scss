@@ -1,0 +1,126 @@
+#hair__page5 {
+  z-index: -1;
+  background-image: url(../../../public/hair/page5/hair_test_bg.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  .hair__page5__header {
+    z-index: 1;
+    padding-top: 7.24vw;
+    padding-left: 8.33vw;
+    position: relative;
+    .hair__page5__header__text {
+      p {
+        color: #ffffffb2;
+        font-weight: 500;
+        font-size: 2.5vw;
+        line-height: 150%;
+      }
+      h1 {
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 4.58vw;
+        line-height: 128%;
+      }
+      .hair__page5__header__bg {
+        z-index: -1;
+        position: absolute;
+        top: 31%;
+        left: 18%;
+        width: 49.48vw;
+        height: 15.63vw;
+        background: url(../../../public/me/page5/clinical_trial.webp);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+    }
+    .hair__page5__header__subText {
+      display: flex;
+      margin-top: 4.01vw;
+      .hair__page5__header__subText__text {
+        display: flex;
+        font-size: 0.83vw;
+        .hair__page5__header__subText__header {
+          p {
+            color: #ffffff;
+            opacity: 0.5;
+            margin-right: 1.72vw;
+          }
+        }
+        .hair__page5__header__subText__subHeader {
+          p {
+            color: #ffffff;
+            margin-right: 4.69vw;
+          }
+        }
+      }
+    }
+  }
+  .hair__page5__conts {
+    width: 100%;
+    margin-top: 4.17vw;
+    color: #ffffff;
+    top: 50%;
+    &:last-child {
+      padding-bottom: 8.33vw;
+    }
+    .hair__page5__cont1 {
+      margin-right: 8.33vw;
+      margin-left: 8.33vw;
+      .hair__page5__cont1__header {
+        width: 100%;
+        .hair__page5__cont1__header__title {
+          display: flex;
+          align-items: center;
+          .white {
+            width: 0.26vw;
+            height: 2.29vw;
+            background: white;
+          }
+          .hair__page5__cont1__header__title__text {
+            font-size: 2.5vw;
+            margin-left: 0.83vw;
+          }
+        }
+        .hair__page5__cont1____header__subTitle {
+          margin-top: 0.73vw;
+          margin-left: 1.09vw;
+          margin-bottom: 2.5vw;
+          font-size: 1.46vw;
+        }
+      }
+      .hair__page5__cont1__cont__img {
+        display: flex;
+        align-items: center;
+        img {
+          width: 40.42vw;
+          height: 14.79vw;
+          &:nth-child(1) {
+            margin-right: 1.25vw;
+          }
+          &:nth-child(2) {
+            margin-left: 1.25vw;
+          }
+        }
+      }
+      .hair__page5__cont1__cont__img2 {
+        display: flex;
+        justify-content: space-between;
+
+        .img {
+          img {
+            width: 36.33vw !important;
+            height: 22.22vw !important;
+          }
+        }
+        .img2 {
+          img {
+            width: 44.44vw !important;
+            height: 35.97vw !important;
+          }
+        }
+      }
+    }
+  }
+}

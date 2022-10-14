@@ -1,4 +1,12 @@
+import { useState } from "react";
+
 function Page3() {
+  let [btnActive, setBtnActive] = useState(false);
+
+  const laserActive = () => {
+    setBtnActive(!btnActive);
+  };
+
   return (
     <section id="me__page3">
       <article className="me__page3__header">
@@ -6,7 +14,12 @@ function Page3() {
         <h1>레이저와 갈바닉 케어를 한 번에</h1>
       </article>
       <article className="me__page3__btn">
-        <div className="me__page3__btn__left">
+        <div
+          className={`me__page3__btn__left ${
+            btnActive === false ? "active" : ""
+          }`}
+          onClick={laserActive}
+        >
           <p>LASER MODE</p>
           <p>레이저 모드</p>
         </div>
@@ -89,17 +102,35 @@ function Page3() {
             </defs>
           </svg>
         </div>
-        <div className="me__page3__btn__right">
+        <div
+          className={`me__page3__btn__right ${
+            btnActive === true ? "active" : ""
+          }`}
+          onClick={laserActive}
+        >
           <p>GALVANIC MODE</p>
           <p>갈바닉 모드</p>
         </div>
       </article>
-      <article className="me__page3__cont">
-        <div className="me__page3__cont__1"></div>
-      </article>
-      <article className="me__page3__cont2">
-        <div className="me__page3__cont__img"></div>
-      </article>
+      {btnActive === false ? (
+        <>
+          <article className="me__page3__cont">
+            <div className="me__page3__cont__1"></div>
+          </article>
+          <article className="me__page3__cont2">
+            <div className="me__page3__cont__img"></div>
+          </article>
+        </>
+      ) : (
+        <>
+          <article className="me__page3__cont__gal">
+            <div className="me__page3__cont__1__gal"></div>
+          </article>
+          <article className="me__page3__cont2__gal">
+            <div className="me__page3__cont__img__gal"></div>
+          </article>
+        </>
+      )}
     </section>
   );
 }

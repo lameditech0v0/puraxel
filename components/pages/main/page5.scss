@@ -1,16 +1,17 @@
 #page5 {
-  margin-bottom: 120px;
+  z-index: -2;
+  margin-bottom: 6.25vw;
+  position: relative;
+  background: linear-gradient(180deg, #f8f2f0 0%, rgba(248, 242, 240, 0) 100%),
+    #ffffff;
   .page5__header {
-    z-index: -1;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(180deg, #f8f2f0 0%, rgba(248, 242, 240, 0) 100%),
-      #ffffff;
     padding-right: 8.33vw;
     padding-left: 8.33vw;
     padding-top: 6.25vw;
-    position: relative;
+
     .page5__header__text {
       p {
         font-weight: 500;
@@ -28,11 +29,11 @@
       .page5__header__bg {
         z-index: -1;
         position: absolute;
-        top: 61%;
-        left: 20%;
+        top: 11.5%;
+        left: 17%;
         width: 15.68vw;
         height: 6.46vw;
-        background: url(../../../public/main/page5/notice.webp);
+        background-image: url(../../../public/main/page5/notice.webp);
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
@@ -57,7 +58,6 @@
   }
   .page5__desc {
     display: flex;
-    justify-content: space-between;
     padding-left: 8.33vw;
     padding-right: 8.33vw;
     margin-top: 3.7vw;
@@ -90,6 +90,104 @@
         font-size: 1.04vw;
         line-height: 150%;
         color: #1a1a1a80;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #page5 {
+    margin-bottom: 15.63vw;
+    position: relative;
+    .page5__header {
+      z-index: -1;
+      display: block;
+      text-align: center;
+      padding-top: 10.42vw;
+      .page5__header__text {
+        p {
+          font-weight: 500;
+          font-size: 3.65vw;
+          line-height: 128%;
+          color: #1a1a1ab2;
+        }
+        h1 {
+          font-weight: 700;
+          font-size: 10.42vw;
+          line-height: 120%;
+          color: #1a1a1a;
+        }
+        .page5__header__bg {
+          z-index: -1;
+          position: absolute;
+          top: 7%;
+          left: 31%;
+          width: 35.25vw;
+          height: 23.44vw;
+          background: url(../../../public/main/page5/notice.webp);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+        }
+      }
+    }
+    .page5__desc {
+      display: flex;
+      padding-left: 3.13vw;
+      padding-right: 3.13vw;
+      margin-top: 6.25vw;
+      margin-bottom: 3.13vw;
+      .page5__desc__img {
+        img {
+          width: 45.31vw;
+          height: 29.17vw;
+        }
+
+        margin-right: 2.08vw;
+      }
+      .page5__desc__text {
+        color: #1a1a1a;
+        h1 {
+          margin-bottom: 0.83vw;
+          font-weight: 700;
+          font-size: 4.69vw;
+          line-height: 140%;
+        }
+        .page5__desc__text__date {
+          font-weight: 400;
+          font-size: 2.6vw;
+          line-height: 150%;
+          color: #1a1a1a80;
+        }
+      }
+    }
+    .page5__desc__desc {
+      font-size: 3.13vw;
+      margin: 0 3.13vw;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3; /* 라인수 */
+      -webkit-box-orient: vertical;
+      word-wrap: break-word;
+      line-height: 1.2em;
+      height: 3.6em;
+    }
+    .page5__header__btn {
+      margin: 10.42vw auto 0 auto;
+      display: flex;
+      align-items: center;
+      background: #1d1f36;
+      width: 45.31vw;
+      height: 12.5vw;
+      box-shadow: 0px 12px 28px rgba(29, 31, 54, 0.12);
+      .page5__header__btn1 {
+        margin-right: 16.54vw;
+        margin-left: 3.65vw;
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 3.65vw;
+        line-height: 128%;
       }
     }
   }

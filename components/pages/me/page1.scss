@@ -31,8 +31,8 @@
     }
   }
   .me__page1__img {
-    width: 100%;
-    padding-bottom: 56.26%;
+    width: 77.08vw;
+    height: 44.79vw;
     background: #000;
     position: relative;
     overflow: hidden;
@@ -40,10 +40,8 @@
     .me__page1__img__bg {
       background: url(../../../public/main/page1/home_main_me.webp);
       position: absolute;
-      left: -5%;
-      top: -5%;
-      width: 110%;
-      height: 110%;
+      width: 100%;
+      height: 100%;
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;

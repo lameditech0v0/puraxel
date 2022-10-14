@@ -2,26 +2,22 @@
   margin-top: 10.05vw;
   margin-bottom: 9.69vw;
   display: flex;
-  align-items: center;
-  position: relative;
   .page2__desc {
-    position: absolute;
-    z-index: 1;
-    right: 0;
-    margin-right: 16vw;
+    width: 32%;
+    margin-left: 2.08vw;
     .page2__desc__span1 {
       font-weight: 500;
-      font-size: 1.67vw;
+      font-size: 1.46vw;
       line-height: 128%;
       letter-spacing: -0.02em;
       color: #1a1a1ab2;
     }
     h1 {
       font-weight: 700;
-      font-size: 5vw;
+      font-size: 4.17vw;
       line-height: 124%;
       color: #1a1a1a;
-      margin-bottom: 2.5vw;
+      margin-bottom: 2.08vw;
     }
 
     .page2__desc__p2 {
@@ -29,23 +25,36 @@
       font-size: 2.08vw;
       line-height: 140%;
       color: #1a1a1a;
-      margin-bottom: 3.85vw;
+      margin-bottom: 9.69vw;
+    }
+    .page2__btn {
+      display: flex;
+      align-items: center;
+      background: #1d1f36;
+      width: 19.27vw;
+      height: 5vw;
+      box-shadow: 0px 12px 28px rgba(29, 31, 54, 0.12);
+      .page2__desc__btn {
+        margin-right: 7.97vw;
+        margin-left: 1.25vw;
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 1.46vw;
+        line-height: 128%;
+      }
     }
   }
   .page2__img {
-    width: 100%;
-    padding-bottom: 50%;
+    width: 59.64vw;
+    height: 37.5vw;
     background: #000;
     position: relative;
     overflow: hidden;
-    margin-right: 29.69vw;
     .page2__img__bg {
       background: url(../../../public/main/page2/fx-5000.webp);
       position: absolute;
-      left: -5%;
-      top: -5%;
-      width: 110%;
-      height: 110%;
+      width: 100%;
+      height: 100%;
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -58,20 +67,87 @@
     line-height: 140%;
     margin-bottom: 1.25vw;
   }
-  .page2__btn {
+}
+
+@media screen and (max-width: 768px) {
+  #page2 {
+    margin-top: 10.05vw;
+    margin-bottom: 52.34vw;
     display: flex;
-    align-items: center;
-    background: #1d1f36;
-    width: 19.27vw;
-    height: 5vw;
-    box-shadow: 0px 12px 28px rgba(29, 31, 54, 0.12);
-    .page2__desc__btn {
-      margin-right: 7.97vw;
-      margin-left: 1.25vw;
-      color: #ffffff;
-      font-weight: 700;
-      font-size: 1.46vw;
-      line-height: 128%;
+    flex-direction: column-reverse;
+    position: relative;
+    .page2__desc {
+      width: 100%;
+      margin-left: 3.13vw;
+      .page2__desc__span1 {
+        font-weight: 500;
+        font-size: 4.17vw;
+        line-height: 128%;
+        letter-spacing: -0.02em;
+        color: #1a1a1ab2;
+      }
+      h1 {
+        font-weight: 700;
+        font-size: 11.46vw;
+        line-height: 124%;
+        color: #1a1a1a;
+        margin-bottom: 3.13vw;
+      }
+
+      .page2__desc__p2 {
+        font-weight: 700;
+        font-size: 5.21vw;
+        line-height: 140%;
+        color: #1a1a1a;
+        margin-bottom: 5.21vw;
+      }
+      .page2__desc__span2 {
+        bottom: -4%;
+        margin-left: 3.13vw;
+        left: 0;
+        position: absolute;
+        color: #1a1a1a80;
+        font-weight: 400;
+        font-size: 2.6vw;
+        line-height: 140%;
+      }
+      .page2__btn {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        background: #1d1f36;
+        width: 45.31vw;
+        height: 12.5vw;
+        box-shadow: 0px 12px 28px rgba(29, 31, 54, 0.12);
+        margin-bottom: 4.3vw;
+        margin-right: 3.13vw;
+        .page2__desc__btn {
+          margin-right: 16.54vw;
+          margin-left: 3.65vw;
+          color: #ffffff;
+          font-weight: 700;
+          font-size: 3.65vw;
+          line-height: 128%;
+        }
+      }
+    }
+    .page2__img {
+      width: 72.66vw;
+      height: 102.47vw;
+      background: #000;
+      position: relative;
+      overflow: hidden;
+      .page2__img__bg {
+        background: url(../../../public/main/page2/fx-5000_768.webp);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
     }
   }
 }

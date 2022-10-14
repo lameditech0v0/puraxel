@@ -1,5 +1,5 @@
-import Model from "public/me/page6/puraxel_model.png";
-import Model2 from "public/me/page6/puraxel_me_model2.png";
+import Model from "public/me/page6/puraxel_model.webp";
+import Model2 from "public/me/page6/puraxel_me_model2.webp";
 import Image from "next/image";
 function Page6() {
   return (

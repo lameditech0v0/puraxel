@@ -1,6 +1,15 @@
 // header
 @import "../components/header/header.scss";
 
+//newsletter
+@import "../components/newsletter/newsletter.scss";
+
+//common
+@import "../components/pages/me/page4.scss";
+@import "../components/pages/me/page7.scss";
+@import "../components/pages/me/page8.scss";
+@import "../components/pages/me/page9.scss";
+
 //main
 @import "../components/pages/main/banner.scss";
 @import "../components/pages/main/page1.scss";
@@ -15,8 +24,27 @@
 @import "../components/pages/me/page1.scss";
 @import "../components/pages/me/page2.scss";
 @import "../components/pages/me/page3.scss";
-@import "../components/pages/me/page4.scss";
 @import "../components/pages/me/page5.scss";
 @import "../components/pages/me/page6.scss";
-@import "../components/pages/me/page7.scss";
-@import "../components/pages/me/page8.scss";
+
+@import "../components/pages/me/page1E.scss";
+@import "../components/pages/me/page11.scss";
+
+//fx5000
+@import "../components/pages/fx5000/banner.scss";
+@import "../components/pages/fx5000/page1.scss";
+@import "../components/pages/fx5000/page2.scss";
+@import "../components/pages/fx5000/page3.scss";
+@import "../components/pages/fx5000/page5.scss";
+@import "../components/pages/fx5000/page6.scss";
+@import "../components/pages/fx5000/page1E.scss";
+@import "../components/pages/fx5000/page11.scss";
+
+//hair
+@import "../components/pages/hair/banner.scss";
+@import "../components/pages/hair/page1.scss";
+@import "../components/pages/hair/page2.scss";
+@import "../components/pages/hair/page5.scss";
+@import "../components/pages/hair/page6.scss";
+@import "../components/pages/hair/page1E.scss";
+@import "../components/pages/hair/page11.scss";

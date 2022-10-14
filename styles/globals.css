@@ -1,5 +1,6 @@
 :root {
   --example: #000000;
+  --trasition-time: 0.5s;
 }
 html,
 body {
@@ -154,7 +155,7 @@ select {
 }
 
 #wrap {
-  width: 100vw;
+  margin: 0 auto;
   height: 100vh;
 }
 

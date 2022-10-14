@@ -7,13 +7,7 @@ export default function Footer() {
   return (
     <footer id="footer" className={_.footer__container}>
       <section className={_.footer__company__info__container}>
-        <Image
-          src={logoLameditech}
-          alt="lameditech logo"
-          width={140}
-          height={140}
-          layout={"fixed"}
-        />
+        <Image src={logoLameditech} alt="lameditech logo" />
 
         <div className={_.footer__company__text__info__container}>
           <h1 className={_.footer__company__title}>주식회사 라메디텍</h1>

@@ -2,27 +2,27 @@ const contInfo = [
   {
     title: "실험 결과 타이틀 01",
     desc: "실험 결과 설명 01",
-    image: "me/page5/testResult_card.png",
+    image: "me/page5/testResult_card.webp",
   },
   {
     title: "실험 결과 타이틀 02",
     desc: "실험 결과 설명 02",
-    image: "me/page5/testResult_card2.png",
+    image: "me/page5/testResult_card2.webp",
   },
   {
     title: "실험 결과 타이틀 03",
     desc: "실험 결과 설명 03",
-    image: "me/page5/testResult_card3.png",
+    image: "me/page5/testResult_card3.webp",
   },
   {
     title: "실험 결과 타이틀 04",
     desc: "실험 결과 설명 04",
-    image: "me/page5/testResult_card4.png",
+    image: "me/page5/testResult_card4.webp",
   },
   {
     title: "실험 결과 타이틀 05",
     desc: "실험 결과 설명 05",
-    image: "me/page5/testResult_card5.png",
+    image: "me/page5/testResult_card5.webp",
   },
 ];
 

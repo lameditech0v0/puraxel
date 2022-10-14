@@ -28,18 +28,16 @@
     }
   }
   .me__banner__img {
-    width: 100%;
-    padding-bottom: 56.26%;
+    width: 100vw;
+    height: 37.5vw;
     background: #000;
     position: relative;
     overflow: hidden;
     .me__banner__img__bg {
       background: url(../../../public/me/banner/me_intro_01.webp);
       position: absolute;
-      left: -5%;
-      top: -5%;
-      width: 110%;
-      height: 110%;
+      width: 100%;
+      height: 100%;
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;

@@ -1,162 +1,128 @@
 #me__page7 {
   z-index: -1;
-  background-image: url(../../../public/me/page7/CertBg.png);
+  background-image: url(../../../public/me/page7/tech_bg.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-top: 11.77vw;
+  padding-top: 8.02vw;
   padding-left: 8.33vw;
-  padding-bottom: 12.92vw;
+  padding-right: 8.33vw;
+  padding-bottom: 7.86vw;
   .me__page7__header {
+    text-align: center;
+    z-index: 1;
     position: relative;
-
     .me__page7__header__text {
       p {
+        color: #ffffffb2;
         font-weight: 500;
         font-size: 2.5vw;
         line-height: 150%;
-        color: #1a1a1ab2;
       }
       h1 {
+        color: #ffffff;
         font-weight: 700;
         font-size: 4.58vw;
         line-height: 128%;
       }
       .me__page7__header__bg {
+        z-index: -1;
         position: absolute;
-        top: 0;
-        left: 10%;
-        width: 43.33vw;
+        top: 30%;
+        left: 18%;
+        width: 49.48vw;
         height: 15.63vw;
-        background: url(../../../public/me/page7/certificates.png);
+        background: url(../../../public/me/page7/tech_of_puraxel.webp);
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
       }
     }
   }
-  .me__page7__conts {
-    margin-top: 3.13vw;
-    .me__page7__cont1 {
-      margin-bottom: 6.46vw;
-
+  .me__page7__image {
+    .me__page7__header__img {
+      margin: 0 auto;
+      width: 75vw;
+      height: 75vw;
+      background: url(../../../public/me/page7/tech_main_pic.webp);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+  .me__page7__cont {
+    .me__page7__cont__header {
+      margin-bottom: 4.11vw;
       h1 {
         font-weight: 700;
-        font-size: 2.5vw;
-        line-height: 150%;
-        color: #1a1a1a;
-      }
-      p {
-        font-weight: 300;
-        font-size: 1.46vw;
-        line-height: 150%;
-        color: #1a1a1a;
-      }
-      .black {
-        margin-top: 1.25vw;
-        margin-bottom: 2.08vw;
-        width: 1.67vw;
-        height: 0.26vw;
-        background: #1a1a1a;
-      }
-      .me__page7__cont1__cont {
-        display: flex;
-        .me__page7__cont1__cont__img {
-          &:nth-child(1) {
-            margin-right: 2.08vw;
-            img {
-              width: 19.27vw !important;
-              height: 7.29vw !important;
-            }
-          }
-          &:nth-child(2) {
-            margin-right: 2.08vw;
-            img {
-              width: 19.27vw !important;
-              height: 7.29vw !important;
-            }
-          }
-          &:nth-child(3) {
-            img {
-              width: 26.2vw !important;
-              height: 7.29vw !important;
-            }
-            p {
-              text-align: right;
-              margin-top: 0.83vw;
-              font-weight: 700;
-              font-size: 1.04vw;
-              line-height: 144%;
-            }
-          }
-        }
+        font-size: 2.92vw;
+        line-height: 120%;
+        color: #ffffff;
       }
     }
-    .me__page7__cont2 {
-      margin-bottom: 6.46vw;
-
-      h1 {
-        font-weight: 700;
-        font-size: 2.5vw;
-        line-height: 150%;
-        color: #1a1a1a;
-      }
-      p {
-        font-weight: 300;
-        font-size: 1.46vw;
-        line-height: 150%;
-        color: #1a1a1a;
-      }
-      .black {
-        margin-top: 1.25vw;
-        margin-bottom: 2.08vw;
-        width: 1.67vw;
-        height: 0.26vw;
-        background: #1a1a1a;
-      }
-      .me__page7__cont2__cont {
+    .me__page7__cont__desc {
+      color: #ffffff;
+      .me__page7__cont__desc__header {
+        margin-bottom: 0.83vw;
         display: flex;
-        .me__page7__cont2__cont__img {
-          &:nth-child(1) {
-            margin-right: 2.08vw;
-            margin-bottom: 2.08vw;
-            img {
-              width: 19.27vw !important;
-              height: 7.29vw !important;
+        align-items: center;
+        .number {
+          width: 4.38vw;
+          padding: 0.22vw 0;
+          border-radius: 0.42vw;
+          background-color: #0808344d;
+          margin-right: 0.83vw;
+          p {
+            text-align: center;
+            &:nth-child(1) {
+              font-weight: 600;
+              font-size: 1.04vw;
+            }
+            &:nth-child(2) {
+              font-weight: 800;
+              font-size: 1.67vw;
             }
           }
-          &:nth-child(2) {
-            margin-right: 2.08vw;
-            margin-bottom: 2.08vw;
-            img {
-              width: 19.27vw !important;
-              height: 7.29vw !important;
-            }
-          }
-          &:nth-child(3) {
-            img {
-              width: 19.27vw !important;
-              height: 7.29vw !important;
+        }
+        .title {
+          width: 24.74vw;
+          padding: 0.78vw 0;
+          background: rgba(246, 246, 250, 0.1);
+          border-radius: 0.42vw;
+          p {
+            font-size: 1.82vw;
+            padding-left: 1.25vw;
+
+            em {
+              margin-left: 0.83vw;
+              font-size: 1.41vw;
+              color: #ffffff80;
+              vertical-align: bottom;
             }
           }
         }
       }
-      .me__page7__cont3__cont {
+      .me__page7__cont__desc__text {
+        margin-bottom: 4.17vw;
         display: flex;
-        .me__page7__cont3__cont__img {
-          &:nth-child(1) {
-            margin-right: 2.08vw;
-            img {
-              width: 19.27vw !important;
-              height: 7.29vw !important;
-            }
+        .image {
+          margin-right: 2.08vw;
+          img {
+            width: 40.73vw !important;
+            height: 14.64vw !important;
           }
-          &:nth-child(2) {
-            margin-right: 2.08vw;
-            img {
-              width: 19.27vw !important;
-              height: 7.29vw !important;
-            }
+        }
+        .desc {
+          h2 {
+            font-weight: 600;
+            font-size: 2.08vw;
+            line-height: 150%;
+          }
+          p {
+            margin-top: 1.25vw;
+            font-weight: 500;
+            font-size: 1.46vw;
+            line-height: 150%;
           }
         }
       }
