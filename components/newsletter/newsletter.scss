@@ -34,8 +34,6 @@
     margin-left: 4.17vw;
     margin-bottom: 7.19vw;
     p {
-      width: 22.92vw;
-      height: 8.75vw;
       font-weight: 300;
       font-size: 1.46vw;
       line-height: 150%;
@@ -44,6 +42,7 @@
   }
 
   .inquiry__1 {
+    display: flex;
     margin-left: 4.17vw;
     .inquiry__2 {
       display: flex;

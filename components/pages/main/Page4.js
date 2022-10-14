@@ -29,7 +29,7 @@ function Page4() {
           <SwiperSlide className="swiper__product">
             <section>
               <figure className="swiper__product__img">
-                <Image src={p1} />
+                <Image src={p1} alt="" />
               </figure>
               <article className="swiper__product__text">
                 <h1>퓨라셀 me</h1>
@@ -45,7 +45,7 @@ function Page4() {
           <SwiperSlide className="swiper__product">
             <section>
               <figure className="swiper__product__img">
-                <Image src={p2} />
+                <Image src={p2} alt="" />
               </figure>
               <article className="swiper__product__text">
                 <h1>퓨라셀 me</h1>
@@ -61,7 +61,7 @@ function Page4() {
           <SwiperSlide className="swiper__product">
             <section>
               <figure className="swiper__product__img">
-                <Image src={p3} />
+                <Image src={p3} alt="" />
               </figure>
               <article className="swiper__product__text">
                 <h1>퓨라셀 me</h1>
@@ -77,7 +77,7 @@ function Page4() {
           <SwiperSlide className="swiper__product">
             <section>
               <figure className="swiper__product__img">
-                <Image src={p1} />
+                <Image src={p1} alt="" />
               </figure>
               <article className="swiper__product__text">
                 <h1>퓨라셀 me</h1>
@@ -93,7 +93,7 @@ function Page4() {
           <SwiperSlide className="swiper__product">
             <section>
               <figure className="swiper__product__img">
-                <Image src={p2} />
+                <Image src={p2} alt="" />
               </figure>
               <article className="swiper__product__text">
                 <h1>퓨라셀 me</h1>
@@ -109,7 +109,7 @@ function Page4() {
           <SwiperSlide className="swiper__product">
             <section>
               <figure className="swiper__product__img">
-                <Image src={p3} />
+                <Image src={p3} alt="" />
               </figure>
               <article className="swiper__product__text">
                 <h1>퓨라셀 me</h1>

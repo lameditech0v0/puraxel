@@ -68,27 +68,27 @@ function Banner() {
         {/* swiperPage */}
         <SwiperSlide className="s1">
           <div>
-            <Image src={p1} layout={"responsive"} />
+            <Image src={p1} alt="" layout={"responsive"} />
           </div>
         </SwiperSlide>
         <SwiperSlide className="s2">
           <div>
-            <Image src={p2} layout={"responsive"} />
+            <Image src={p2} alt="" layout={"responsive"} />
           </div>
         </SwiperSlide>
         <SwiperSlide className="s3">
           <div>
-            <Image src={p3} layout={"responsive"} />
+            <Image src={p3} alt="" layout={"responsive"} />
           </div>
         </SwiperSlide>
         <SwiperSlide className="s4">
           <div>
-            <Image src={p4} layout={"responsive"} />
+            <Image src={p4} alt="" layout={"responsive"} />
           </div>
         </SwiperSlide>
         <SwiperSlide className="s5">
           <div>
-            <Image src={p5} layout={"responsive"} />
+            <Image src={p5} alt="" layout={"responsive"} />
           </div>
         </SwiperSlide>
       </Swiper>

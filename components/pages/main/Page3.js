@@ -10,7 +10,10 @@ function Page1() {
           레이저 기술을 이용한 두피 관리,
           <br /> 자신있는 삶의 회복
         </span>
-        <h1>HAIR</h1>
+        <h1>
+          PURAXEL <br />
+          HAIR
+        </h1>
         <p className="page3__desc__p2">
           프락셔널 레이저는
           <br />
