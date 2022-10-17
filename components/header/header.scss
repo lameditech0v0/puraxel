@@ -73,18 +73,11 @@
     z-index: 1;
     position: sticky;
     top: 0;
-
-    .header__left {
-      font-size: 1.25vw;
-      display: flex;
-      align-items: center;
-
-      .logo {
-        padding-right: 3.33vw;
-        display: flex;
-        align-items: center;
-        cursor: pointer;
-      }
-    }
+  }
+  .header__logo2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.34vw 2.08vw 7.29vw 2.08vw;
   }
 }
