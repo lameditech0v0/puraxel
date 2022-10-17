@@ -17,10 +17,10 @@ function Page6() {
       {/* cont */}
       <article className="me__page6__cont">
         <div className="me__page6__cont__img1">
-          <Image src={Model} width={778} height={1080} />
+          <Image src={Model} alt="" />
         </div>
         <div className="me__page6__cont__img2">
-          <Image src={Model2} />
+          <Image src={Model2} alt="" />
         </div>
       </article>
       {/* oval */}
@@ -154,6 +154,13 @@ function Page6() {
             </linearGradient>
           </defs>
         </svg>
+      </div>
+      <div className="mainBlurText">
+        <p>50샷 기준</p>
+        <p>
+          5~10분만에
+          <br /> 완성
+        </p>
       </div>
     </section>
   );

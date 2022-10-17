@@ -58,4 +58,27 @@
     top: 5%;
     right: 5%;
   }
+  .mainBlurText {
+    p {
+      &:first-child {
+        font-weight: 500;
+        font-size: 4.17px;
+        line-height: 150%;
+        text-align: center;
+        letter-spacing: -0.02em;
+        color: #636467;
+      }
+      &:last-child {
+        font-weight: 700;
+        font-size: 8.85vw;
+        line-height: 120%;
+        /* or 82px */
+
+        text-align: center;
+        letter-spacing: -0.02em;
+
+        color: #44589d;
+      }
+    }
+  }
 }
