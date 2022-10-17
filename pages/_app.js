@@ -55,7 +55,6 @@ function MyApp({ Component, pageProps }) {
           `,
         }}
       />
-
       {/* <Script
         strategy="afterInteractive"
         src="http://wcs.naver.net/wcslog.js"
@@ -76,7 +75,9 @@ function MyApp({ Component, pageProps }) {
         }}
         id="naver"
       />
-
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Head>
       <CssBaseline />
       <Component {...pageProps} />
     </Layout>
