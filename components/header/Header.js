@@ -41,19 +41,13 @@ export default function Header() {
         <nav className="nav__left">
           <ul>
             <li>
-              <Link href="/me">
-                <a>PURAXEL-Me</a>
-              </Link>
+              <Link href="/me">PURAXEL-Me</Link>
             </li>
             <li>
-              <Link href="/fx5000">
-                <a>PURAXEL</a>
-              </Link>
+              <Link href="/fx5000">PURAXEL</Link>
             </li>
             <li>
-              <Link href="/hair">
-                <a>PURAXEL-Hair</a>
-              </Link>
+              <Link href="/hair">PURAXEL-Hair</Link>
             </li>
           </ul>
         </nav>
@@ -63,10 +57,12 @@ export default function Header() {
           <ul className="nav__right__left">
             {/* <li>{<Modal />}</li> */}
             <li>
-              <Link href="https://lmdt.cafe24.com/">
-                <a target="_blank" rel="noopener noreferrer">
-                  쇼핑몰
-                </a>
+              <Link
+                href="https://lmdt.cafe24.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                쇼핑몰
               </Link>
             </li>
             <li>

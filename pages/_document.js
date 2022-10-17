@@ -1,17 +1,18 @@
+import React from "react";
 import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
     <Html lang="kr">
-      <Head>
-        <link
-          rel="stylesheet"
-          as="style"
-          crossOrigin="true"
-          href="https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.5/static/pretendard.css"
-        />
-      </Head>
       <body>
+        <Head>
+          <link
+            rel="stylesheet"
+            as="style"
+            crossOrigin="true"
+            href="https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.5/static/pretendard.css"
+          />
+        </Head>
         <Main />
         <NextScript />
       </body>
