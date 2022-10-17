@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useEffect, useState } from "react";
 function Page1() {
   const [resize, setResize] = useState();
@@ -38,9 +39,9 @@ function Page1() {
           ※ FX-5000은 에스테틱 샵 전문가용 제품입니다.
         </p>
         <div className="page2__btn">
-          <a href="#" className="page2__desc__btn">
-            자세히 보기
-          </a>
+          <Link href="/fx5000">
+            <a className="page2__desc__btn">자세히 보기</a>
+          </Link>
           {resize <= 768 ? (
             <svg
               width="4.17vw"

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 function Page3() {
@@ -32,9 +33,9 @@ function Page3() {
           <br /> 효과적입니다.
         </p>
         <div className="page3__btn">
-          <a href="#" className="page3__desc__btn">
-            자세히 보기
-          </a>
+          <Link href="/hair">
+            <a className="page3__desc__btn">자세히 보기</a>
+          </Link>
           {resize <= 768 ? (
             <svg
               width="4.17vw"

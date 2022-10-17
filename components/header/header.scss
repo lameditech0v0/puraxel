@@ -8,7 +8,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 2rem 10%;
-  z-index: 2;
+  z-index: 100;
   position: sticky;
   top: 0;
 
@@ -70,11 +70,17 @@
     align-items: center;
     justify-content: space-between;
     padding: 2.34vw 2.08vw;
-    z-index: 1;
+    z-index: 100;
     position: sticky;
     top: 0;
+    .logo {
+      cursor: pointer;
+    }
   }
   .header__logo2 {
+    .logo {
+      cursor: pointer;
+    }
     display: flex;
     align-items: center;
     justify-content: space-between;

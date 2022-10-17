@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 function Page1() {
@@ -34,9 +35,9 @@ function Page1() {
           ※ 본 기기는 피부미용관리기기 입니다.
         </p>
         <div className="page1__btn">
-          <a href="#" className="page1__desc__btn">
-            자세히 보기
-          </a>
+          <Link href="/me">
+            <a className="page1__desc__btn">자세히 보기</a>
+          </Link>
           {resize <= 768 ? (
             <svg
               width="4.17vw"

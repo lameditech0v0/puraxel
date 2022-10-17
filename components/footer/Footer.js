@@ -7,11 +7,12 @@ import _ from "./footer.module.css";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
+// 768px 푸터
 const Footer2 = () => {
   return (
     <footer id="footer" className={_.footer__container}>
       <section className={_.footer__company__sns__container}>
-        <h1>sns 바로가기</h1>
+        <h1>SNS 바로가기</h1>
         <ul className={_.footer__company__sns}>
           <li>
             <div>
