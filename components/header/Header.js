@@ -10,6 +10,7 @@ import {
   ThemeProvider,
   Typography,
 } from "@mui/material";
+import { width } from "@mui/system";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -50,7 +51,7 @@ const theme = createTheme({
           marginRight: "1.04vw",
           color: "#1A1A1A",
           fontFamily: "Pretendard",
-          fontSize: "3.13vw",
+          fontSize: "4.17vw",
           fontWeight: 700,
         },
       },
@@ -72,7 +73,7 @@ const theme2 = createTheme({
         root: {
           color: "#1A1A1A",
           fontFamily: "Pretendard",
-          fontSize: "1.82vw",
+          fontSize: "14px",
           fontWeight: 700,
           opacity: 0.5,
         },
@@ -95,7 +96,7 @@ const menuHeader = createTheme({
         root: {
           color: "#B6BCC7",
           fontFamily: "Pretendard",
-          fontSize: "1.56vw",
+          fontSize: "12px",
           fontWeight: 400,
         },
       },
@@ -277,7 +278,11 @@ function Header() {
                     <img
                       src={text[1]}
                       alt=""
-                      style={{ marginRight: "1.04vw" }}
+                      style={{
+                        marginRight: "1.04vw",
+                        width: "4.69vw",
+                        height: "4.69vw",
+                      }}
                     />
                     <ListItemText primary={text[0]} />
                   </ThemeProvider>
