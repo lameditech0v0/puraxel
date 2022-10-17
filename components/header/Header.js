@@ -30,6 +30,21 @@ const theme = createTheme({
   },
 });
 
+const theme2 = createTheme({
+  components: {
+    MuiTypography: {
+      styleOverrides: {
+        root: {
+          color: "#1A1A1A",
+          fontFamily: "Pretendard",
+          fontSize: "1.82vw",
+          fontWeight: 700,
+          opacity: 0.5,
+        },
+      },
+    },
+  },
+});
 function Header() {
   // 햄버거 메뉴
   const [state, setState] = useState({
@@ -84,11 +99,18 @@ function Header() {
     >
       <p>제품</p>
       <List>
-        {["PURAXEL-Me", "PURAXEL", "PURAXEL-Hair"].map((text) => (
+        {[
+          ["PURAXEL-Me", "퓨라셀 미"],
+          ["PURAXEL", "퓨라셀"],
+          ["PURAXEL-Hair", "퓨라셀 헤어"],
+        ].map((text) => (
           <ListItem key={text} disablePadding>
             <ListItemButton>
               <ThemeProvider theme={theme}>
-                <ListItemText primary={text} />
+                <ListItemText primary={text[0]} />
+              </ThemeProvider>
+              <ThemeProvider theme={theme2}>
+                <ListItemText primary={text[1]} />
               </ThemeProvider>
             </ListItemButton>
           </ListItem>
