@@ -3,6 +3,7 @@ import {
   Box,
   Button,
   createTheme,
+  Divider,
   Drawer,
   Fab,
   List,
@@ -19,9 +20,10 @@ const theme = createTheme({
     MuiTypography: {
       styleOverrides: {
         root: {
-          color: "#4D5058",
+          color: "#1A1A1A",
           fontFamily: "Pretendard",
           fontSize: "3.13vw",
+          fontWeight: 700,
         },
       },
     },
@@ -80,8 +82,33 @@ function Header() {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
+      <p>제품</p>
       <List>
         {["PURAXEL-Me", "PURAXEL", "PURAXEL-Hair"].map((text) => (
+          <ListItem key={text} disablePadding>
+            <ListItemButton>
+              <ThemeProvider theme={theme}>
+                <ListItemText primary={text} />
+              </ThemeProvider>
+            </ListItemButton>
+          </ListItem>
+        ))}
+      </List>
+      <p>제품 구매</p>
+      <List>
+        {["Shop"].map((text) => (
+          <ListItem key={text} disablePadding>
+            <ListItemButton>
+              <ThemeProvider theme={theme}>
+                <ListItemText primary={text} />
+              </ThemeProvider>
+            </ListItemButton>
+          </ListItem>
+        ))}
+      </List>
+      <p>고객서비스</p>
+      <List>
+        {["inquery", "newsletter"].map((text) => (
           <ListItem key={text} disablePadding>
             <ListItemButton>
               <ThemeProvider theme={theme}>
