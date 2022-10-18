@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 
 import Product1 from "public/fx5000/page9/img_fx-5000_01.webp";
@@ -28,6 +28,17 @@ function Page9() {
       setButtonSelector("forth");
     },
   };
+
+  const [resize, setResize] = useState();
+
+  const handleResize = () => {
+    setResize(window.innerWidth);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    handleResize();
+  });
 
   function Product() {
     if (buttonSelector === "first") {
@@ -115,57 +126,111 @@ function Page9() {
                 <br />
               </p>
             </div>
-            <div className="me__page9__cont__desc__li">
-              <div className="black"></div>
-              <h1>구성품</h1>
-              <p>
-                제품 본체, 충전 크래들, 어댑터,
-                <br />
-                보안경(시술자용, 고객용),
-                <br />
-                레이저 헤드팁(원형, 일자, 네모), 초음파 헤드, 배터리(충전용) *2,
-                사용 설명서, 퀵 가이드
-              </p>
-            </div>
+            {resize <= 768 ? (
+              ""
+            ) : (
+              <>
+                {" "}
+                <div className="me__page9__cont__desc__li">
+                  <div className="black"></div>
+                  <h1>구성품</h1>
+                  <p>
+                    제품 본체, 충전 크래들, 어댑터,
+                    <br />
+                    보안경(시술자용, 고객용),
+                    <br />
+                    레이저 헤드팁(원형, 일자, 네모), 초음파 헤드, 배터리(충전용)
+                    *2, 사용 설명서, 퀵 가이드
+                  </p>
+                </div>
+              </>
+            )}
           </div>
 
-          <div className="me__page9__cont__images">{Product()}</div>
-
-          <div className="me__page9__cont__select">
-            <div
-              className={`me__page9__cont__select__btn ${
-                buttonSelector === "first" ? "active" : ""
-              }`}
-              onClick={selector.onFirst}
-            >
-              <Image src={Select1} />
-            </div>
-            <div
-              className={`me__page9__cont__select__btn ${
-                buttonSelector === "second" ? "active" : ""
-              }`}
-              onClick={selector.onSecond}
-            >
-              <Image src={Select2} />
-            </div>
-            <div
-              className={`me__page9__cont__select__btn ${
-                buttonSelector === "third" ? "active" : ""
-              }`}
-              onClick={selector.onThird}
-            >
-              <Image src={Select3} />
-            </div>
-            <div
-              className={`me__page9__cont__select__btn ${
-                buttonSelector === "forth" ? "active" : ""
-              }`}
-              onClick={selector.onForth}
-            >
-              <Image src={Select4} />
-            </div>
-          </div>
+          {resize <= 768 ? (
+            ""
+          ) : (
+            <>
+              <div className="me__page9__cont__images">{Product()}</div>
+              <div className="me__page9__cont__select">
+                <div
+                  className={`me__page9__cont__select__btn ${
+                    buttonSelector === "first" ? "active" : ""
+                  }`}
+                  onClick={selector.onFirst}
+                >
+                  <Image src={Select1} />
+                </div>
+                <div
+                  className={`me__page9__cont__select__btn ${
+                    buttonSelector === "second" ? "active" : ""
+                  }`}
+                  onClick={selector.onSecond}
+                >
+                  <Image src={Select2} />
+                </div>
+                <div
+                  className={`me__page9__cont__select__btn ${
+                    buttonSelector === "third" ? "active" : ""
+                  }`}
+                  onClick={selector.onThird}
+                >
+                  <Image src={Select3} />
+                </div>
+                <div
+                  className={`me__page9__cont__select__btn ${
+                    buttonSelector === "forth" ? "active" : ""
+                  }`}
+                  onClick={selector.onForth}
+                >
+                  <Image src={Select4} />
+                </div>
+              </div>
+            </>
+          )}
         </article>
+        {resize <= 768 ? (
+          <article className="me__page9__cont2">
+            <div className="me__page9__cont__images">{Product()}</div>
+
+            <div className="me__page9__cont__select">
+              <div
+                className={`me__page9__cont__select__btn ${
+                  buttonSelector === "first" ? "active" : ""
+                }`}
+                onClick={selector.onFirst}
+              >
+                <Image src={Select1} />
+              </div>
+              <div
+                className={`me__page9__cont__select__btn ${
+                  buttonSelector === "second" ? "active" : ""
+                }`}
+                onClick={selector.onSecond}
+              >
+                <Image src={Select2} />
+              </div>
+              <div
+                className={`me__page9__cont__select__btn ${
+                  buttonSelector === "third" ? "active" : ""
+                }`}
+                onClick={selector.onThird}
+              >
+                <Image src={Select3} />
+              </div>
+              <div
+                className={`me__page9__cont__select__btn ${
+                  buttonSelector === "forth" ? "active" : ""
+                }`}
+                onClick={selector.onForth}
+              >
+                <Image src={Select4} />
+              </div>
+            </div>
+          </article>
+        ) : (
+          ""
+        )}
       </article>
     </section>
   );

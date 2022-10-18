@@ -1,20 +1,21 @@
 #me__page10 {
   margin-bottom: 8.33vw;
   .me__page10__header {
-    padding: 8.33vw 8.33vw 2.08vw 8.33vw;
+    padding: 8.33vw 8.33vw 4.17vw 8.33vw;
     position: relative;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
     .me__page10__header__text {
       p {
         font-weight: 500;
-        font-size: 2.5vw;
+        font-size: 1.67vw;
         line-height: 150%;
+        color: #636467;
       }
       h1 {
         font-weight: 700;
-        font-size: 4.58vw;
+        font-size: 4.17vw;
         line-height: 128%;
       }
       .me__page10__header__bg {
