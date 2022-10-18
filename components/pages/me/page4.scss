@@ -8,13 +8,13 @@
     .me__page4__desc__p {
       p:nth-child(1) {
         font-weight: 500;
-        font-size: 2.5vw;
+        font-size: 1.67vw;
         line-height: 150%;
         color: #ffffffb2;
       }
       p:nth-child(2) {
         font-weight: 700;
-        font-size: 4.58vw;
+        font-size: 3.33vw;
         line-height: 128%;
         color: #ffffff;
         margin-bottom: 2.92vw;
@@ -22,20 +22,62 @@
     }
   }
   .me__page4__cont {
-    width: 100%;
-    padding-bottom: 59%;
+    width: 100vw;
+    height: 39.58vw;
     position: relative;
     overflow: hidden;
     .me__page4__cont__bg {
-      background: url(../../../public/me/page4/cradle_bg.webp);
+      background: url(../../../public/me/page4/cradle_bg.png);
       position: absolute;
-      left: -5%;
-      top: -5%;
-      width: 110%;
-      height: 110%;
+      width: 100%;
+      height: 100%;
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #me__page4 {
+    position: relative;
+    .me__page4__desc {
+      text-align: center;
+      position: absolute;
+      left: 30%;
+      z-index: 1;
+      margin-left: 0;
+      margin-top: 6.25vw;
+      .me__page4__desc__p {
+        p:nth-child(1) {
+          font-weight: 500;
+          font-size: 2.5vw;
+          line-height: 150%;
+          color: #ffffffb2;
+        }
+        p:nth-child(2) {
+          font-weight: 700;
+          font-size: 4.58vw;
+          line-height: 128%;
+          color: #ffffff;
+          margin-bottom: 2.92vw;
+        }
+      }
+    }
+    .me__page4__cont {
+      width: 100vw;
+      height: 78.13vw;
+      position: relative;
+      overflow: hidden;
+      .me__page4__cont__bg {
+        background: url(../../../public/me/page4/cradle_768.png);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
     }
   }
 }

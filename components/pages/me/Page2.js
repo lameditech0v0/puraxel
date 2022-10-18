@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Autoplay, Scrollbar } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { useEffect, useState } from "react";
 import p1 from "public/main/banner/home_main_01.webp";
 import p2 from "public/main/banner/home_main_02.webp";
 import p3 from "public/main/banner/home_main_03.webp";
@@ -8,6 +9,16 @@ import p4 from "public/main/banner/home_main_04.webp";
 import p5 from "public/main/banner/home_main_05.webp";
 
 function Page2() {
+  const [resize, setResize] = useState();
+
+  const handleResize = () => {
+    setResize(window.innerWidth);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    handleResize();
+  });
   return (
     <section id="me__page2">
       {/* header */}
@@ -25,18 +36,36 @@ function Page2() {
       </article>
       {/* desc */}
       <article className="me__page2__desc">
-        <p className="me__page2__desc__p1">
-          전문적으로만 사용되던 레이저를
-          <br />
-          이제부터 집에서도 안전하게 <br /> 직접 관리할 수 있습니다.
-        </p>
-        <p className="me__page2__desc__p2">
-          퓨라셀에 사용된 미용 레이저(Er:Yag, 2940nm)의 경우
-          <br /> 수분에 대한 에너지 흡수도가 높아
-          <br /> 레이저 조사 시 피부의 물분자 결합을 깨면서
-          <br /> 나오는 높은 에너지로 피부표면을 순간적으로 증발시켜 미세한 홀을
-          만드는 원리입니다.
-        </p>
+        {resize <= 768 ? (
+          <>
+            <p className="me__page2__desc__p1">
+              전문적으로만 사용되던 레이저를
+              <br />
+              이제부터 집에서도 안전하게 <br /> 직접 관리할 수 있습니다.
+            </p>
+            <p className="me__page2__desc__p2">
+              퓨라셀에 사용된 미용 레이저(Er:Yag, 2940nm)의 경우
+              <br /> 수분에 대한 에너지 흡수도가 높아
+              <br /> 레이저 조사 시 피부의 물분자 결합을 깨면서
+              <br /> 나오는 높은 에너지로 피부표면을 순간적으로 증발시켜 미세한
+              홀을 만드는 원리입니다.
+            </p>
+          </>
+        ) : (
+          <>
+            <p className="me__page2__desc__p1">
+              전문적으로만 사용되던 레이저를
+              <br /> 이제부터 집에서도 안전하게 직접 관리할 수 있습니다.
+            </p>
+            <p className="me__page2__desc__p2">
+              퓨라셀에 사용된 미용 레이저(Er:Yag, 2940nm)의 경우 수분에 대한
+              에너지 흡수도가 높아 레이저 조사 시 피부의 물분자 결합을 깨면서
+              <br />
+              나오는 높은 에너지로 피부표면을 순간적으로 증발시켜 미세한 홀을
+              만드는 원리입니다.
+            </p>
+          </>
+        )}
       </article>
       {/* image */}
       <Swiper
