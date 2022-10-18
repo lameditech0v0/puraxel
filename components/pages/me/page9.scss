@@ -114,9 +114,10 @@
     padding-bottom: 8.02vw;
     .me__page9__header {
       z-index: 1;
-      position: relative;
+
       .me__page9__header__text {
         text-align: center;
+        position: relative;
         h1 {
           font-weight: 700;
           font-size: 9.38vw;
@@ -125,10 +126,9 @@
         .me__page9__header__bg {
           z-index: -1;
           position: absolute;
-          top: -3%;
-          left: 3%;
-          width: 49.48vw;
-          height: 15.63vw;
+          top: 30%;
+          left: 15%;
+          width: 70%;
           background: url(../../../public/me/page9/product.webp);
           background-repeat: no-repeat;
           background-position: center;
