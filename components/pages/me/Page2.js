@@ -27,10 +27,15 @@ function Page2() {
           <p className="me__page2__header__text__p">
             PURAXEL-ME는 이렇게 다릅니다.
           </p>
-          <h1>
-            나만의
-            <br /> 퓨라셀-미(美)를 만납니다.
-          </h1>
+          {resize <= 768 ? (
+            <h1>
+              나만의
+              <br /> 퓨라셀-미(美)를 만납니다.
+            </h1>
+          ) : (
+            <h1>나만의 퓨라셀-미(美)를 만납니다.</h1>
+          )}
+
           <div className="me__page2__header__text__bg"></div>
         </div>
       </article>

@@ -19,12 +19,6 @@ function Page6() {
       <article className="me__page6__header">
         <p className="me__page6__header__p1">프락셔널 레이저 모듈로 생성되는</p>
         <h1>5천개의 마이크로홀!</h1>
-        {resize <= 768 ? (
-          ""
-        ) : (
-          <p className="me__page6__header__p2">50샷 기준 5~10분만에 완성</p>
-        )}
-
         <p className="me__page6__header__p3">
           이제 언제 어디서나 프락셔널 레이저를 경험해 보세요.
           <br /> 에스테틱 프리미엄 가치를 높여보세요.
