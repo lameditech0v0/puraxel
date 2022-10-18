@@ -4,6 +4,7 @@
   margin-bottom: 10.42vw;
   position: relative;
   .me__page6__header {
+    text-align: center;
     .me__page6__header__p1 {
       font-weight: 500;
       font-size: 2.5vw;
@@ -65,7 +66,7 @@
     p {
       &:first-child {
         font-weight: 500;
-        font-size: 4.17px;
+        font-size: 1.67vw;
         line-height: 150%;
         text-align: center;
         letter-spacing: -0.02em;
@@ -92,29 +93,24 @@
     .me__page6__header {
       .me__page6__header__p1 {
         font-weight: 500;
-        font-size: 2.5vw;
+        font-size: 3.13vw;
         line-height: 150%;
         color: #1a1a1ab2;
       }
       h1 {
+        margin-top: 2.08vw;
         font-weight: 700;
-        font-size: 4.58vw;
+        font-size: 9.38vw;
         line-height: 128%;
         color: #1a1a1a;
       }
-      .me__page6__header__p2 {
-        font-weight: 300;
-        font-size: 1.46vw;
-        line-height: 128%;
-        color: #636467;
-      }
       .me__page6__header__p3 {
         font-weight: 400;
-        font-size: 1.88vw;
+        font-size: 3.13vw;
         line-height: 138%;
         color: #1a1a1acc;
-        margin-top: 2.08vw;
-        margin-bottom: 4.17vw;
+        margin-top: 1.04vw;
+        margin-bottom: 8.33vw;
       }
     }
     .me__page6__cont {
@@ -127,6 +123,7 @@
         }
       }
       .me__page6__cont__img2 {
+        margin-top: 19.53vw;
         margin-left: 1.04vw;
         img {
           width: 40.52vw !important;
@@ -136,30 +133,31 @@
     }
     .subBlur {
       position: absolute;
-      top: 0;
-      right: 20%;
+      top: 26%;
+      right: 25%;
     }
     .mainBlur {
       position: absolute;
-      top: 5%;
-      right: 5%;
+      top: 30%;
+      right: 3%;
     }
     .mainBlurText {
       position: absolute;
-      top: 15%;
-      right: 11%;
+      top: 38%;
+      right: 10%;
       p {
         &:first-child {
           font-weight: 500;
-          font-size: 4.17px;
+          font-size: 3.13vw;
           line-height: 150%;
           text-align: center;
           letter-spacing: -0.02em;
           color: #636467;
+          margin-bottom: 2.08vw;
         }
         &:last-child {
           font-weight: 700;
-          font-size: 3.54vw;
+          font-size: 5.21vw;
           line-height: 120%;
           text-align: center;
           letter-spacing: -0.02em;

@@ -7,6 +7,8 @@ import Certifi6 from "public/me/page8/certifi_lmdt_03.webp";
 import Certifi7 from "public/me/page8/certifi_lmdt_04.webp";
 import Certifi8 from "public/me/page8/certifi_lmdt_05.webp";
 
+import { useEffect, useState } from "react";
+
 import Image from "next/image";
 
 function Page7() {
@@ -30,13 +32,6 @@ function Page7() {
             <div className="me__page8__cont1__cont__img">
               <Image src={Certifi1} />
             </div>
-            <div className="me__page8__cont1__cont__img">
-              <Image src={Certifi2} />
-            </div>
-            <div className="me__page8__cont1__cont__img">
-              <Image src={Certifi3} />
-              <p>IEC60825인증(Class 1)</p>
-            </div>
           </div>
         </div>
         <div className="me__page8__cont2">
@@ -50,14 +45,16 @@ function Page7() {
             <div className="me__page8__cont2__cont__img">
               <Image src={Certifi5} />
             </div>
+          </div>
+          <div className="me__page8__cont2__cont">
             <div className="me__page8__cont2__cont__img">
               <Image src={Certifi6} />
             </div>
-          </div>
-          <div className="me__page8__cont3__cont">
             <div className="me__page8__cont3__cont__img">
-              <Image src={Certifi8} />
+              <Image src={Certifi7} />
             </div>
+          </div>
+          <div className="me__page8__cont2__cont">
             <div className="me__page8__cont3__cont__img">
               <Image src={Certifi8} />
             </div>

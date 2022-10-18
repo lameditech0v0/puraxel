@@ -87,7 +87,11 @@
         .title {
           width: 24.74vw;
           padding: 0.78vw 0;
-          background: rgba(246, 246, 250, 0.1);
+          background: linear-gradient(
+            90deg,
+            rgba(246, 246, 250, 0.2) 0%,
+            rgba(246, 246, 250, 0) 90.21%
+          );
           border-radius: 0.42vw;
           p {
             font-size: 1.82vw;
@@ -123,6 +127,143 @@
             font-weight: 500;
             font-size: 1.46vw;
             line-height: 150%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #me__page7 {
+    z-index: -1;
+    background-image: url(../../../public/me/page7/tech_bg.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 8.02vw;
+    padding-left: 3.13vw;
+    padding-right: 3.13vw;
+    padding-bottom: 7.86vw;
+    .me__page7__header {
+      text-align: center;
+      z-index: 1;
+      position: relative;
+      margin-bottom: 10.42vw;
+      .me__page7__header__text {
+        p {
+          color: #ffffffb2;
+          font-weight: 500;
+          font-size: 3.13vw;
+          line-height: 150%;
+        }
+        h1 {
+          color: #ffffff;
+          font-weight: 700;
+          font-size: 9.38vw;
+          line-height: 128%;
+        }
+        .me__page7__header__bg {
+          z-index: -1;
+          position: absolute;
+          top: 30%;
+          left: 5%;
+          width: 83.46vw;
+          height: 23.44vw;
+          background: url(../../../public/me/page7/tech_of_puraxel.webp);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+        }
+      }
+    }
+    .me__page7__image {
+      .me__page7__header__img {
+        margin: 0 auto;
+        width: 83.33vw;
+        height: 83.33vw;
+        background: url(../../../public/me/page7/tech_main_pic.webp);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+    }
+    .me__page7__cont {
+      .me__page7__cont__header {
+        margin-bottom: 4.11vw;
+        h1 {
+          font-weight: 700;
+          font-size: 5.21vw;
+          line-height: 120%;
+          color: #ffffff;
+        }
+      }
+      .me__page7__cont__desc {
+        color: #ffffff;
+        .me__page7__cont__desc__header {
+          margin-bottom: 2.08vw;
+          display: flex;
+          align-items: center;
+          .number {
+            width: 6.25vw;
+            padding: 0.52vw 1.04vw;
+            border-radius: 0.42vw;
+            background-color: #0808344d;
+            margin-right: 0.83vw;
+            p {
+              text-align: center;
+              &:nth-child(1) {
+                font-weight: 600;
+                font-size: 1.56vw;
+              }
+              &:nth-child(2) {
+                font-weight: 800;
+                font-size: 2.6vw;
+              }
+            }
+          }
+          .title {
+            width: 38.02vw;
+            padding: 1.56vw 1.56vw;
+            background: linear-gradient(
+              90deg,
+              rgba(246, 246, 250, 0.2) 0%,
+              rgba(246, 246, 250, 0) 90.21%
+            );
+            border-radius: 0.42vw;
+            p {
+              font-size: 2.6vw;
+              em {
+                margin-left: 1.56vw;
+                font-size: 1.82vw;
+                color: #ffffff80;
+                vertical-align: middle;
+              }
+            }
+          }
+        }
+        .me__page7__cont__desc__text {
+          margin-bottom: 4.17vw;
+          display: flex;
+          .image {
+            margin-right: 3.13vw;
+            img {
+              width: 45.31vw !important;
+              height: 19.53vw !important;
+            }
+          }
+          .desc {
+            h2 {
+              font-weight: 600;
+              font-size: 2.6vw;
+              line-height: 150%;
+            }
+            p {
+              margin-top: 1.25vw;
+              font-weight: 500;
+              font-size: 1.82vw;
+              line-height: 150%;
+            }
           }
         }
       }
