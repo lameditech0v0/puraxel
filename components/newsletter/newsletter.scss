@@ -6,14 +6,14 @@
   background-size: cover;
 
   .header__text {
-    margin-top: 4.17vw;
-    margin-left: 4.17vw;
+    margin-top: 2.08vw;
+    margin-left: 13.54vw;
     position: relative;
     h1 {
       font-weight: 700;
-      font-size: 5vw;
+      font-size: 3.33vw;
       line-height: 120%;
-      margin-bottom: 3.7vw;
+      margin-bottom: 3.33vw;
       color: #ffffff;
     }
     .header__bg {
@@ -30,11 +30,11 @@
     }
   }
   .header__desc {
-    margin-left: 4.17vw;
-    margin-bottom: 7.19vw;
+    margin-left: 13.54vw;
+    margin-bottom: 2.5vw;
     p {
       font-weight: 300;
-      font-size: 1.46vw;
+      font-size: 1.25vw;
       line-height: 150%;
       color: #ffffff;
     }
@@ -42,7 +42,7 @@
 
   .inquiry__1 {
     display: flex;
-    margin-left: 4.17vw;
+    margin-left: 13.54vw;
     .inquiry__2 {
       display: flex;
       flex-direction: column;
@@ -79,7 +79,7 @@
   .btn {
     font-family: "Pretendard" !important;
     margin-top: 2.08vw;
-    margin-left: 4.17vw;
+    margin-left: 13.54vw;
     margin-bottom: 3.28vw;
     display: flex;
     align-items: center;
@@ -94,6 +94,108 @@
       font-weight: 700;
       font-size: 1.46vw;
       line-height: 128%;
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .newsLetter {
+    width: 100%;
+    background-image: url(../../public/main/page6/newslatter_bg.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .header__text {
+      margin-top: 40px;
+      margin-left: 260px;
+      position: relative;
+      h1 {
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 120%;
+        margin-bottom: 64px;
+        color: #ffffff;
+      }
+      .header__bg {
+        z-index: 1;
+        position: absolute;
+        top: -60%;
+        left: 12%;
+        width: 768px;
+        height: 300px;
+        background: url(../../public/main/page6/newsletter.webp);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+    }
+    .header__desc {
+      margin-left: 260px;
+      margin-bottom: 48px;
+      p {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 150%;
+        color: #ffffff;
+      }
+    }
+
+    .inquiry__1 {
+      display: flex;
+      margin-left: 260px;
+      .inquiry__2 {
+        display: flex;
+        flex-direction: column;
+        &:nth-child(1) {
+          margin-bottom: 40px;
+        }
+        &:nth-child(2) {
+          margin-bottom: 19px;
+        }
+      }
+
+      label {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 150%;
+        margin-bottom: 8px;
+        color: #fff;
+      }
+      input {
+        width: 320px;
+        margin-right: 40px;
+        border: none;
+        background: inherit;
+        border-bottom: 1px solid #dedede80;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 150%;
+        color: #ffffffcc;
+        &::placeholder {
+          color: #ffffffcc;
+        }
+      }
+    }
+    .btn {
+      font-family: "Pretendard" !important;
+      margin-top: 40px;
+      margin-left: 260px;
+      margin-bottom: 63px;
+      display: flex;
+      align-items: center;
+      background: #ffffff;
+      width: 370px;
+      height: 96px;
+      box-shadow: 0px 12px 28px rgba(29, 31, 54, 0.12);
+      .desc__btn {
+        margin-left: 24px;
+        margin-right: 86px;
+        color: #1d1f36;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 128%;
+      }
     }
   }
 }
