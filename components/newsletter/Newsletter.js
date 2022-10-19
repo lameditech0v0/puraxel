@@ -37,7 +37,7 @@ const theme2 = createTheme({
         label: {
           color: "#FFFFFF",
           fontFamily: "Pretendard",
-          fontSize: "1.67vw",
+          fontSize: "1.04vw",
         },
       },
     },
@@ -58,7 +58,7 @@ const CheckboxInfo = () => {
     <FormControlLabel
       theme={theme2}
       sx={{
-        marginLeft: "4.17vw",
+        marginLeft: "13.54vw",
         color: "#FFFFFF",
       }}
       control={
@@ -159,6 +159,25 @@ function Newsletter() {
               <svg
                 width="4.17vw"
                 height="4.17vw"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16 0.432432L16 32L16 0M16 0.432509L16 32.0001"
+                  stroke="#1D1F36"
+                  strokeWidth="2"
+                />
+                <path
+                  d="M0.432432 16L32 16L0 16M0.432509 16L32.0001 16"
+                  stroke="#1D1F36"
+                  strokeWidth="2"
+                />
+              </svg>
+            ) : resize >= 1920 ? (
+              <svg
+                width="32px"
+                height="32px"
                 viewBox="0 0 32 32"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"

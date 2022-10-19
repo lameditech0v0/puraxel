@@ -7,8 +7,19 @@ import p2 from "public/main/banner/home_main_02.webp";
 import p3 from "public/main/banner/home_main_03.webp";
 import p4 from "public/main/banner/home_main_04.webp";
 import p5 from "public/main/banner/home_main_05.webp";
+import { useEffect, useState } from "react";
 
 function Banner() {
+  const [resize, setResize] = useState();
+
+  const handleResize = () => {
+    setResize(window.innerWidth);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    handleResize();
+  });
   return (
     <section id="banner">
       {/* swiper */}
@@ -32,38 +43,98 @@ function Banner() {
               쇼핑몰 바로가기
             </a>
           </Link>
-          <svg
-            width="1.9792vw"
-            height="1.2500vw"
-            viewBox="0 0 38 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0.486486 12.2444H36M36 12.2444L24.8108 1M36 12.2444H0M36 12.2444L24.6575 23"
-              stroke="#1A1A1A"
-              strokeWidth="2"
-            />
-          </svg>
+          {resize <= 768 ? (
+            <svg
+              width="4.17vw"
+              height="3.13vw"
+              viewBox="0 0 38 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.486486 12.2444H36M36 12.2444L24.8108 1M36 12.2444H0M36 12.2444L24.6575 23"
+                stroke="black"
+                strokeWidth="2"
+              />
+            </svg>
+          ) : resize >= 1920 ? (
+            <svg
+              width="38px"
+              height="24px"
+              viewBox="0 0 38 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.486486 12.2444H36M36 12.2444L24.8108 1M36 12.2444H0M36 12.2444L24.6575 23"
+                stroke="black"
+                strokeWidth="2"
+              />
+            </svg>
+          ) : (
+            <svg
+              width="1.98vw"
+              height="1.25vw"
+              viewBox="0 0 38 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.486486 12.2444H36M36 12.2444L24.8108 1M36 12.2444H0M36 12.2444L24.6575 23"
+                stroke="black"
+                strokeWidth="2"
+              />
+            </svg>
+          )}
         </div>
         <div className="btn__bottom">
           <div className="black"></div>
           <Link href="#page6">
             <a className="inquery">문의 신청 하기</a>
           </Link>
-          <svg
-            width="1.9792vw"
-            height="1.2500vw"
-            viewBox="0 0 38 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0.486486 12.2444H36M36 12.2444L24.8108 1M36 12.2444H0M36 12.2444L24.6575 23"
-              stroke="#1A1A1A"
-              strokeWidth="2"
-            />
-          </svg>
+          {resize <= 768 ? (
+            <svg
+              width="4.17vw"
+              height="3.13vw"
+              viewBox="0 0 38 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.486486 12.2444H36M36 12.2444L24.8108 1M36 12.2444H0M36 12.2444L24.6575 23"
+                stroke="black"
+                strokeWidth="2"
+              />
+            </svg>
+          ) : resize >= 1920 ? (
+            <svg
+              width="38px"
+              height="24px"
+              viewBox="0 0 38 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.486486 12.2444H36M36 12.2444L24.8108 1M36 12.2444H0M36 12.2444L24.6575 23"
+                stroke="black"
+                strokeWidth="2"
+              />
+            </svg>
+          ) : (
+            <svg
+              width="1.98vw"
+              height="1.25vw"
+              viewBox="0 0 38 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.486486 12.2444H36M36 12.2444L24.8108 1M36 12.2444H0M36 12.2444L24.6575 23"
+                stroke="black"
+                strokeWidth="2"
+              />
+            </svg>
+          )}
         </div>
         {/* swiperPage */}
         <SwiperSlide className="s1">
