@@ -8,7 +8,7 @@ body {
   -ms-overflow-style: none;
   padding: 0;
   margin: 0;
-  font-family: "Pretendard" !important;
+
   opacity: 1;
   transition: opacity 500ms ease-in;
 }
@@ -155,7 +155,10 @@ select {
 }
 
 #wrap {
+  font-family: "Pretendard" !important;
   margin: 0 auto;
+  max-width: 1920px;
+  /* width: 100vw; */
   height: 100vh;
 }
 
@@ -163,25 +166,23 @@ li {
   cursor: pointer;
 }
 
-@media screen and (max-width: 1250px) {
-  html {
-    font-size: 8px;
-  }
-}
-
 .swiper-button-next::after {
-  margin-right: 6.67vw;
-  padding: 20px 30px 20px 30px;
+  position: absolute;
+  right: 0;
+  padding: 17px 30px 17px 30px;
   border-radius: 50%;
-  background: #ffffff66;
-  color: #55576f;
+  background: rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.25);
 }
 .swiper-button-prev::after {
-  margin-left: 6.67vw;
-  padding: 20px 30px 20px 30px;
+  position: absolute;
+  left: 0;
+  padding: 17px 30px 17px 30px;
   border-radius: 50%;
-  background: #ffffff66;
-  color: #55576f;
+  background: rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.25);
 }
 
 .swiper-pagination {

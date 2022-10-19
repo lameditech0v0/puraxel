@@ -27,21 +27,19 @@ const contInfo = [
 
 const Cont = ({ title, desc, image }) => {
   return (
-    <article className="fx5000__page5__conts">
-      <div className="fx5000__page5__cont1">
-        <div className="fx5000__page5__cont1__header">
-          <div className="fx5000__page5__cont1__header__title">
+    <article className="me__page5__conts">
+      <div className="me__page5__cont1">
+        <div className="me__page5__cont1__header">
+          <div className="me__page5__cont1__header__title">
             <div className="white"></div>
-            <div className="fx5000__page5__cont1__header__title__text">
-              {title}
-            </div>
+            <div className="me__page5__cont1__header__title__text">{title}</div>
           </div>
-          <div className="fx5000__page5__cont1____header__subTitle">
+          <div className="me__page5__cont1____header__subTitle">
             <p>{desc}</p>
           </div>
         </div>
 
-        <div className="fx5000__page5__cont1__cont__img">
+        <div className="me__page5__cont1__cont__img">
           <img src={image} />
         </div>
       </div>
@@ -53,29 +51,29 @@ function Page5() {
   return (
     <section id="fx5000__page5">
       {/* header */}
-      <article className="fx5000__page5__header">
-        <div className="fx5000__page5__header__text">
+      <article className="me__page5__header">
+        <div className="me__page5__header__text">
           <p>퓨라셀과 각 효능에 특화된 앰플 사용후 결과</p>
           <h1>FX-5000 임상실험</h1>
-          <div className="fx5000__page5__header__bg"></div>
+          <div className="me__page5__header__bg"></div>
         </div>
-        <div className="fx5000__page5__header__subText">
-          <div className="fx5000__page5__header__subText__text">
-            <div className="fx5000__page5__header__subText__header">
+        <div className="me__page5__header__subText">
+          <div className="me__page5__header__subText__text">
+            <div className="me__page5__header__subText__header">
               <p>시험기간</p>
               <p>시험기관</p>
             </div>
-            <div className="fx5000__page5__header__subText__subHeader">
+            <div className="me__page5__header__subText__subHeader">
               <p>2020 . 5 . 21 ~ 7 . 13</p>
               <p>한국피부과학연구원</p>
             </div>
           </div>
-          <div className="fx5000__page5__header__subText__text">
-            <div className="fx5000__page5__header__subText__header">
+          <div className="me__page5__header__subText__text">
+            <div className="me__page5__header__subText__header">
               <p>피시험자</p>
               <p>부위</p>
             </div>
-            <div className="fx5000__page5__header__subText__subHeader">
+            <div className="me__page5__header__subText__subHeader">
               <p>여성 21명</p>
               <p>안면부위와 전완부위 2주 사용후 2배 증가</p>
             </div>

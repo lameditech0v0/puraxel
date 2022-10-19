@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 function Page1() {
@@ -16,27 +17,36 @@ function Page1() {
     <section id="page1">
       {/* desc */}
       <article className="page1__desc">
-        <span className="page1__desc__span1">홈 에스테틱 레이저의 시작</span>
-        <h1>PURAXEL-Me</h1>
-        <p className="page1__desc__p1">
-          하루 10분, <br />
-          이제 집에서 관리하세요.
-        </p>
-        <p className="page1__desc__p2">
-          전문적으로 사용하던
-          <br />
-          프락셔널 레이저의 효능을
-          <br />
-          직접 확인하실 수 있습니다.
-          <br />
-        </p>
+        <div>
+          <div className="black"></div>
+          <p className="page1__desc__span1">홈 에스테틱 레이저의 시작</p>
+        </div>
+        {resize <= 768 ? (
+          <h1>
+            PURAXEL <br />
+            <em>ME</em>
+          </h1>
+        ) : (
+          <h1>
+            PURAXEL <em>ME</em>
+          </h1>
+        )}
+        {resize <= 768 ? (
+          <p className="page1__desc__p1">
+            하루 10분,
+            <br /> 이제 집에서 관리하세요.
+          </p>
+        ) : (
+          <p className="page1__desc__p1">하루 10분, 이제 집에서 관리하세요.</p>
+        )}
+
         <p className="page1__desc__span2">
           ※ 본 기기는 피부미용관리기기 입니다.
         </p>
         <div className="page1__btn">
-          <a href="#" className="page1__desc__btn">
-            자세히 보기
-          </a>
+          <Link href="/me">
+            <a className="page1__desc__btn">자세히 보기</a>
+          </Link>
           {resize <= 768 ? (
             <svg
               width="4.17vw"

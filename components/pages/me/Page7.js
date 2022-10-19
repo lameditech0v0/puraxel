@@ -5,7 +5,19 @@ import tech2 from "public/me/page7/tech_img_02+txt.webp";
 import tech3 from "public/me/page7/tech_img_03+txt.webp";
 import tech4 from "public/me/page7/tech_img_04+txt.webp";
 
+import { useEffect, useState } from "react";
+
 function Page7() {
+  const [resize, setResize] = useState();
+
+  const handleResize = () => {
+    setResize(window.innerWidth);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    handleResize();
+  });
   return (
     <section id="me__page7">
       <article className="me__page7__header">
@@ -62,10 +74,18 @@ function Page7() {
               <Image src={tech2} />
             </div>
             <div className="desc">
-              <h2>
-                피부에 약 100개의 미세한 구멍(마이크로 홀)을
-                <br /> 생성합니다.
-              </h2>
+              {resize <= 768 ? (
+                <h2>
+                  피부에 약 100개의 미세한
+                  <br /> 구멍(마이크로 홀)을 생성합니다.
+                </h2>
+              ) : (
+                <h2>
+                  피부에 약 100개의 미세한 구멍(마이크로 홀)을
+                  <br /> 생성합니다.
+                </h2>
+              )}
+
               <p>
                 이 때 생성되는 마이크로 홀은 피부의 약 0.2mm
                 <br /> 이하의 표피 조직에 위치하게 됩니다.
@@ -110,13 +130,21 @@ function Page7() {
               <Image src={tech4} />
             </div>
             <div className="desc">
-              <h2>
-                Er:Yag는 표피의 수분에 대부분 흡수되는 성질을
-                <br />
-                갖고 있으며, 열손상이 적어 천공 깊이의 조절이
-                <br />
-                가능한 장점이 있습니다.
-              </h2>
+              {resize <= 768 ? (
+                <h2>
+                  Er:Yag는 표피의 수분에 대부분 흡수되는 <br /> 성질을 갖고
+                  있으며, 열손상이 적어 <br /> 천공 깊이의 조절이 가능한 장점이
+                  있습니다.
+                </h2>
+              ) : (
+                <h2>
+                  Er:Yag는 표피의 수분에 대부분 흡수되는 성질을
+                  <br />
+                  갖고 있으며, 열손상이 적어 천공 깊이의 조절이
+                  <br />
+                  가능한 장점이 있습니다.
+                </h2>
+              )}
             </div>
           </div>
         </div>

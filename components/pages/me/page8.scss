@@ -6,6 +6,7 @@
   background-size: cover;
   padding-top: 11.77vw;
   padding-left: 8.33vw;
+  padding-right: 8.33vw;
   padding-bottom: 12.92vw;
   .me__page8__header {
     position: relative;
@@ -37,10 +38,11 @@
     }
   }
   .me__page8__conts {
+    display: flex;
     margin-top: 3.13vw;
+    justify-content: space-between;
     .me__page8__cont1 {
       margin-bottom: 6.46vw;
-
       h1 {
         font-weight: 700;
         font-size: 2.5vw;
@@ -70,32 +72,11 @@
               height: 7.29vw !important;
             }
           }
-          &:nth-child(2) {
-            margin-right: 2.08vw;
-            img {
-              width: 19.27vw !important;
-              height: 7.29vw !important;
-            }
-          }
-          &:nth-child(3) {
-            img {
-              width: 26.2vw !important;
-              height: 7.29vw !important;
-            }
-            p {
-              text-align: right;
-              margin-top: 0.83vw;
-              font-weight: 700;
-              font-size: 1.04vw;
-              line-height: 144%;
-            }
-          }
         }
       }
     }
     .me__page8__cont2 {
       margin-bottom: 6.46vw;
-
       h1 {
         font-weight: 700;
         font-size: 2.5vw;
@@ -134,15 +115,9 @@
               height: 7.29vw !important;
             }
           }
-          &:nth-child(3) {
-            img {
-              width: 19.27vw !important;
-              height: 7.29vw !important;
-            }
-          }
         }
       }
-      .me__page8__cont3__cont {
+      .me__page8__cont2__cont {
         display: flex;
         .me__page8__cont3__cont__img {
           &:nth-child(1) {
@@ -157,6 +132,150 @@
             img {
               width: 19.27vw !important;
               height: 7.29vw !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #me__page8 {
+    z-index: -1;
+    background-image: url(../../../public/me/page8/CertBg.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 4.17vw;
+    padding-left: 3.13vw;
+    padding-right: 3.13vw;
+    padding-bottom: 3.13vw;
+    .me__page8__header {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      .me__page8__header__text {
+        p {
+          font-weight: 500;
+          font-size: 3.13vw;
+          line-height: 150%;
+          color: #1a1a1ab2;
+        }
+        h1 {
+          font-weight: 700;
+          font-size: 9.38vw;
+          line-height: 128%;
+        }
+        .me__page8__header__bg {
+          z-index: -1;
+          position: absolute;
+          top: 45%;
+          left: 15%;
+          width: 70%;
+          background: url(../../../public/me/page8/certificates.webp);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+        }
+      }
+    }
+    .me__page8__conts {
+      display: flex;
+      margin-top: 6.25vw;
+      justify-content: space-between;
+      .me__page8__cont1 {
+        margin-bottom: 6.46vw;
+        h1 {
+          font-weight: 700;
+          font-size: 3.13vw;
+          line-height: 150%;
+          color: #1a1a1a;
+        }
+        p {
+          font-weight: 300;
+          font-size: 2.6vw;
+          line-height: 150%;
+          color: #1a1a1a;
+        }
+        .black {
+          margin-top: 1.25vw;
+          margin-bottom: 2.08vw;
+          width: 3.13vw;
+          height: 0.65vw;
+          background: #1a1a1a;
+        }
+        .me__page8__cont1__cont {
+          display: flex;
+          .me__page8__cont1__cont__img {
+            &:nth-child(1) {
+              margin-right: 2.08vw;
+              img {
+                width: 21.09vw !important;
+                height: 9.38vw !important;
+              }
+            }
+          }
+        }
+      }
+      .me__page8__cont2 {
+        margin-bottom: 3.13vw;
+        h1 {
+          font-weight: 700;
+          font-size: 3.13vw;
+          line-height: 150%;
+          color: #1a1a1a;
+        }
+        p {
+          font-weight: 300;
+          font-size: 2.6vw;
+          line-height: 150%;
+          color: #1a1a1a;
+        }
+        .black {
+          margin-top: 1.25vw;
+          margin-bottom: 2.08vw;
+          width: 3.13vw;
+          height: 0.65vw;
+          background: #1a1a1a;
+        }
+        .me__page8__cont2__cont {
+          display: flex;
+          .me__page8__cont2__cont__img {
+            &:nth-child(1) {
+              margin-right: 2.08vw;
+              margin-bottom: 2.08vw;
+              img {
+                width: 21.09vw !important;
+                height: 9.38vw !important;
+              }
+            }
+            &:nth-child(2) {
+              margin-right: 2.08vw;
+              margin-bottom: 2.08vw;
+              img {
+                width: 21.09vw !important;
+                height: 9.38vw !important;
+              }
+            }
+          }
+        }
+        .me__page8__cont2__cont {
+          display: flex;
+          .me__page8__cont3__cont__img {
+            &:nth-child(1) {
+              margin-right: 2.08vw;
+              img {
+                width: 21.09vw !important;
+                height: 9.38vw !important;
+              }
+            }
+            &:nth-child(2) {
+              margin-right: 2.08vw;
+              img {
+                width: 21.09vw !important;
+                height: 9.38vw !important;
+              }
             }
           }
         }

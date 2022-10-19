@@ -1,3 +1,4 @@
+import * as React from "react";
 import Head from "next/head";
 import Script from "next/script";
 import Layout from "components/layout/layout";
@@ -9,6 +10,7 @@ import "swiper/scss";
 import "swiper/scss/pagination";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
+import CssBaseline from "@mui/material/CssBaseline";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -54,7 +56,6 @@ function MyApp({ Component, pageProps }) {
           `,
         }}
       />
-
       {/* <Script
         strategy="afterInteractive"
         src="http://wcs.naver.net/wcslog.js"
@@ -75,10 +76,10 @@ function MyApp({ Component, pageProps }) {
         }}
         id="naver"
       />
-
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
+      <CssBaseline />
       <Component {...pageProps} />
     </Layout>
   );

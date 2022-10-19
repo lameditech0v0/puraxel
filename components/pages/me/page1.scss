@@ -1,5 +1,4 @@
 #me__page1 {
-  margin-top: 10.05vw;
   margin-bottom: 8.33vw;
   display: flex;
   align-items: center;
@@ -29,6 +28,13 @@
       letter-spacing: -0.02vw;
       color: #1a1a1acc;
     }
+    .me__page1__desc__p3 {
+      margin-top: 2.08vw;
+      font-weight: 700;
+      font-size: 1.25vw;
+      line-height: 160%;
+      color: #c54331;
+    }
   }
   .me__page1__img {
     width: 77.08vw;
@@ -45,6 +51,85 @@
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
+    }
+  }
+  .fx5000__page1__img {
+    width: 77.08vw;
+    height: 44.79vw;
+    background: #000;
+    position: relative;
+    overflow: hidden;
+    margin-left: 22.92vw;
+    .fx5000__page1__img__bg {
+      background: url(../../../public/fx5000/page1/fx-5000_intro_02.png);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #me__page1 {
+    margin-bottom: 15.63vw;
+    display: block;
+    align-items: center;
+    position: relative;
+    .me__page1__desc {
+      position: static;
+      z-index: 1;
+      margin-left: 3.13vw;
+      margin-right: 3.13vw;
+      .me__page1__desc__span1 {
+        font-weight: 500;
+        font-size: 3.13vw;
+        line-height: 128%;
+        letter-spacing: -0.02em;
+        color: #1a1a1ab2;
+        margin-bottom: 3.13vw;
+      }
+      .me__page1__desc__p1 {
+        font-weight: 700;
+        font-size: 9.38vw;
+        line-height: 120%;
+        color: #1a1a1a;
+        margin-bottom: 2.08vw;
+      }
+      .me__page1__desc__p2 {
+        font-weight: 400;
+        font-size: 2.6vw;
+        line-height: 160%;
+        letter-spacing: -0.02vw;
+        color: #1a1a1acc;
+        margin-bottom: 0.83vw;
+      }
+      .me__page1__desc__p3 {
+        font-weight: 700;
+        font-size: 3.13vw;
+        line-height: 160%;
+        color: #c54331;
+      }
+    }
+    .fx5000__page1__img {
+      width: 93.75vw;
+      height: 67.71vw;
+      background: #000;
+      position: relative;
+      overflow: hidden;
+      margin: 0 auto;
+
+      .fx5000__page1__img__bg {
+        background: url(../../../public/me/page1/me_intro_02_768.png);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
     }
   }
 }

@@ -86,3 +86,98 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  #me__page11 {
+    display: block;
+    margin-bottom: 4.17vw;
+    .me__page11__header {
+      width: 100%;
+      margin-left: 0;
+      padding-top: 4.17vw;
+
+      .me__page11__header__text {
+        position: relative;
+        h1 {
+          text-align: center;
+          font-weight: 700;
+          font-size: 9.38vw;
+          line-height: 120%;
+          margin-bottom: 5.86vw;
+        }
+        .me__page11__header__bg {
+          z-index: -1;
+          position: absolute;
+          top: -22%;
+          left: 9%;
+          width: 29.27vw;
+          height: 15.63vw;
+          background: url(../../../public/me/page11/purchase.webp);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+        }
+      }
+      .me__page11__header__cont {
+        margin-bottom: 4.84vw;
+        .me__page11__header__cont__img {
+          margin-bottom: 2.08vw;
+          width: 100vw;
+          height: 54.69vw;
+          .me__page11__header__cont__img__bg {
+            width: 100%;
+            height: 100%;
+            background: url(../../../public/me/page11/me_purchase_768.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+          }
+        }
+        .me__page11__header__cont__desc {
+          margin-left: 3.13vw;
+          margin-right: 3.13vw;
+          .me__page11__header__cont__desc__price {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 3.13vw;
+            p {
+              font-weight: 700;
+              font-size: 5.21vw;
+              line-height: 124%;
+              &:nth-child(1) {
+                color: #1a1a1a;
+              }
+              &:nth-child(2) {
+                color: #447bce;
+              }
+            }
+          }
+          .me__page11__header__cont__desc__text {
+            p {
+              font-weight: 400;
+              font-size: 3.13vw;
+              line-height: 150%;
+            }
+          }
+        }
+      }
+      .me__page11__btn {
+        margin: 5.21vw auto 10.42vw auto;
+        display: flex;
+        align-items: center;
+        background: #1d1f36;
+        width: 45.31vw;
+        height: 12.5vw;
+        box-shadow: 0px 12px 28px rgba(29, 31, 54, 0.12);
+        .me__page11__desc__btn {
+          margin-right: 10.54vw;
+          margin-left: 3.65vw;
+          color: #ffffff;
+          font-weight: 700;
+          font-size: 3.65vw;
+          line-height: 128%;
+        }
+      }
+    }
+  }
+}

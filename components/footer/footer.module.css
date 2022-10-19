@@ -78,7 +78,111 @@
 
 .footer__company__sns > li {
   padding-left: 4.9479vw;
+  display: flex;
+  text-align: center;
+}
+.footer__company__sns li div {
+  width: 4.69vw !important;
+  height: 4.69vw !important;
+  margin-right: 1.04vw;
 }
 .footer__company__sns > li:nth-child(1) {
   padding-left: 0;
+}
+
+/* 미디어 쿼리 */
+@media screen and (max-width: 768px) {
+  .footer__container {
+    display: block;
+    width: 100%;
+    margin-bottom: 4.3229vw;
+    background-color: #fbfbfc;
+    padding: 2.9167vw 0;
+  }
+
+  /* 회사 정보 컨테이너 */
+
+  .footer__company__info__container {
+    margin-left: 3.13vw;
+    display: block;
+  }
+  .footer__company__info__container__header {
+    display: flex;
+    align-items: center;
+  }
+  .footer__company__info__container img {
+    width: 11.85vw !important;
+    height: 11.85vw !important;
+  }
+
+  .footer__company__text__info__container {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer__company__title {
+    font-weight: 700;
+    font-size: 3.13vw;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    color: #1a1a1a;
+    margin-left: 1.56vw;
+  }
+  .footer__company__content {
+    font-weight: 400;
+    font-size: 2.6vw;
+    line-height: 150%;
+    margin-bottom: 1.25vw;
+    letter-spacing: -0.01em;
+    color: #1a1a1a;
+    opacity: 0.8;
+  }
+
+  .footer__company__copyright {
+    font-weight: 400;
+    font-size: 2.6vw;
+    line-height: 150%;
+
+    letter-spacing: -0.01em;
+
+    color: #1a1a1a;
+
+    opacity: 0.5;
+    /* margin-bottom: 100px; */
+  }
+
+  /* sns 컨테이너 */
+
+  .footer__company__sns__container {
+    margin-top: 2.86vw;
+    margin-left: 3.13vw;
+    margin-bottom: 9.38vw;
+  }
+  .footer__company__sns__container h1 {
+    font-weight: 700;
+    font-size: 2.86vw;
+    line-height: 150%;
+    color: #1a1a1a;
+    opacity: 0.5;
+    margin-bottom: 1.95vw;
+  }
+  .footer__company__sns {
+    display: flex;
+    font-weight: 700;
+    font-size: 3.91vw;
+    line-height: 150%;
+
+    letter-spacing: -0.01em;
+
+    color: #1a1a1a;
+  }
+
+  .footer__company__sns > li {
+    padding-left: 4.9479vw;
+  }
+  .footer__company__sns > li:nth-child(1) {
+    padding-left: 0;
+  }
 }

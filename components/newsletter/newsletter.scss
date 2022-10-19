@@ -1,6 +1,6 @@
 .newsLetter {
   width: 100%;
-  background-image: url(../../public/main/page6/newslatter_bg.png);
+  background-image: url(../../public/main/page6/newslatter_bg.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -23,7 +23,7 @@
       left: 12%;
       width: 40vw;
       height: 15.63vw;
-      background: url(../../public/main/page6/newsletter.png);
+      background: url(../../public/main/page6/newsletter.webp);
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;
@@ -70,6 +70,7 @@
       font-weight: 400;
       font-size: 1.25vw;
       line-height: 150%;
+      color: #ffffffcc;
       &::placeholder {
         color: #ffffffcc;
       }
@@ -101,31 +102,30 @@
   .newsLetter {
     width: 100%;
     height: 109.9vw;
-    background-image: url(../../public/main/page6/newslatter_bg_768.png);
+    background-image: url(../../public/main/page6/newslatter_bg_768.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
     .header__text {
       text-align: center;
-      margin-top: 4.17vw;
-      margin-left: 4.17vw;
+      padding-top: 10.54vw;
+      margin-left: 0;
       position: relative;
       h1 {
         font-weight: 700;
         font-size: 10.42vw;
         line-height: 120%;
-        margin-bottom: 3.7vw;
+        margin-bottom: 5.86vw;
         color: #ffffff;
       }
       .header__bg {
         z-index: 1;
         position: absolute;
-        top: -10%;
+        top: 45%;
         left: 20%;
         width: 58.33vw;
         height: 23.44vw;
-        background: url(../../public/main/page6/newsletter.png);
+        background: url(../../public/main/page6/newsletter.webp);
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
@@ -150,10 +150,10 @@
         display: flex;
         flex-direction: column;
         &:nth-child(1) {
-          margin-bottom: 2.08vw;
+          margin-bottom: 0;
         }
         &:nth-child(2) {
-          margin-bottom: 0.99vw;
+          margin-bottom: 0;
         }
       }
 
@@ -174,7 +174,7 @@
         font-weight: 400;
         font-size: 3.13vw;
         line-height: 150%;
-        margin-bottom: 10.42vw;
+        margin-bottom: 5.42vw;
 
         &::placeholder {
           color: #ffffffcc;
@@ -182,7 +182,7 @@
       }
     }
     .btn {
-      margin: 8.85vw auto 0 auto;
+      margin: 4.56vw auto 0 auto;
       font-family: "Pretendard" !important;
       display: flex;
       align-items: center;

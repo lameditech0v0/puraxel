@@ -100,3 +100,111 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  #me__page9 {
+    z-index: -1;
+    background-image: url(../../../public/me/page9/page8_bg.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 5.68vw;
+    padding-left: 3.13vw;
+    padding-right: 3.13vw;
+    padding-bottom: 8.02vw;
+    .me__page9__header {
+      z-index: 1;
+
+      .me__page9__header__text {
+        text-align: center;
+        position: relative;
+        h1 {
+          font-weight: 700;
+          font-size: 9.38vw;
+          line-height: 128%;
+        }
+        .me__page9__header__bg {
+          z-index: -1;
+          position: absolute;
+          top: 30%;
+          left: 15%;
+          width: 70%;
+          background: url(../../../public/me/page9/product.webp);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+        }
+      }
+    }
+    .me__page9__cont {
+      z-index: 2;
+      background: #fff;
+      margin-top: 6.77vw;
+      padding-top: 6.25vw;
+      padding-bottom: 6.25vw;
+      padding-left: 12.11vw;
+      padding-right: 12.11vw;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      .me__page9__cont__desc {
+        .me__page9__cont__desc__li {
+          width: 100%;
+          margin-bottom: 5.21vw;
+          .black {
+            margin-bottom: 0.42vw;
+            width: 1.67vw;
+            height: 0.26vw;
+            background: #1a1a1acc;
+          }
+          h1 {
+            font-weight: 700;
+            font-size: 2.6vw;
+            line-height: 150%;
+            color: #1a1a1a;
+            margin-bottom: 0.42vw;
+          }
+          p {
+            font-weight: 400;
+            font-size: 2.6vw;
+            line-height: 150%;
+            color: #1a1a1a;
+            em {
+              color: #acafb6;
+            }
+          }
+        }
+      }
+    }
+    .me__page9__cont2 {
+      position: relative;
+      .me__page9__cont__images {
+        margin-top: 10.03vw;
+        img {
+        }
+      }
+      .me__page9__cont__select {
+        top: 0;
+        right: 0;
+        margin-right: 2.92vw;
+        margin-top: 2.92vw;
+        position: absolute;
+        .me__page9__cont__select__btn {
+          margin-bottom: 0.63vw;
+          opacity: 0.8;
+          cursor: pointer;
+          filter: none !important;
+          img {
+            width: 12.5vw !important;
+            height: 12.5vw !important;
+          }
+          &.active {
+            opacity: 1;
+            filter: drop-shadow(0px 0px 24px rgba(0, 0, 0, 0.1)) !important;
+          }
+        }
+      }
+    }
+  }
+}

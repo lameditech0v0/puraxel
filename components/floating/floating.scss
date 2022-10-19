@@ -1,0 +1,64 @@
+#floating {
+  position: absolute;
+  position: fixed;
+  z-index: 2;
+  right: 0;
+  bottom: 0;
+  margin-right: 3.13vw;
+  margin-bottom: 5.21vw;
+  .floating__shop {
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 2.08vw;
+    &:hover {
+      &::before {
+        right: 10%;
+        top: 0;
+        position: absolute;
+        content: "쇼핑몰 바로가기";
+        border-radius: 26.04vw;
+        width: 26.04vw;
+        background: #fff;
+        padding: 2.86vw 3.13vw;
+        z-index: -1;
+        font-weight: 700;
+        font-size: 2.08vw;
+        line-height: 128%;
+        animation: reveal 0.5s;
+      }
+    }
+  }
+  .floating__inquery {
+    cursor: pointer;
+    position: relative;
+
+    &:hover {
+      &::before {
+        right: 10%;
+        top: 0;
+        position: absolute;
+        content: "문의 신청하기";
+        border-radius: 26.04vw;
+        width: 26.04vw;
+        background: #fff;
+        padding: 2.86vw 3.13vw;
+        z-index: -1;
+        font-weight: 700;
+        font-size: 2.08vw;
+        line-height: 128%;
+        animation: reveal 0.5s;
+      }
+    }
+  }
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 0, -30px);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}

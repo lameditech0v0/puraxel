@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 function Page3() {
@@ -15,26 +16,45 @@ function Page3() {
     <section id="page3">
       {/* desc */}
       <article className="page3__desc">
-        <span className="page3__desc__span1">
-          레이저 기술을 이용한 두피 관리,
-          <br /> 자신있는 삶의 회복
-        </span>
+        <div>
+          <div className="black"></div>
+          {resize <= 768 ? (
+            <p className="page3__desc__span1">자신있는 삶의 회복</p>
+          ) : (
+            <p className="page3__desc__span1">
+              레이저 기술로 두피 관리, 자신있는 삶의 회복
+            </p>
+          )}
+        </div>
         {resize <= 768 ? (
-          <h1>HAIR</h1>
+          <h1>
+            PURAXEL
+            <br />
+            <em> HAIR</em>
+          </h1>
         ) : (
           <h1>
-            PURAXEL <br />
-            HAIR
+            PURAXEL<em> HAIR</em>
           </h1>
         )}
-        <p className="page3__desc__p2">
-          프락셔널 레이저는 기능성 앰플의 <br /> 두피 흡수를 도와 탈모관리에{" "}
-          <br /> 효과적입니다.
-        </p>
+        {resize <= 768 ? (
+          <p className="page3__desc__p2">
+            프락셔널 레이저는 <br />
+            기능성 앰플의 두피 흡수를 도와
+            <br /> 탈모관리에 효과적입니다.
+          </p>
+        ) : (
+          <p className="page3__desc__p2">
+            프락셔널 레이저는 기능성 앰플의 두피
+            <br /> 흡수를 도와 탈모관리에 효과적입니다.
+          </p>
+        )}
+
+        <p className="page3__desc__span2">※ 본 기기는 두피관리기기 입니다.</p>
         <div className="page3__btn">
-          <a href="#" className="page3__desc__btn">
-            자세히 보기
-          </a>
+          <Link href="/hair">
+            <a className="page3__desc__btn">자세히 보기</a>
+          </Link>
           {resize <= 768 ? (
             <svg
               width="4.17vw"
