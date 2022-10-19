@@ -4,12 +4,14 @@ import Header from "components/header/Header";
 
 export default function Layout({ children }) {
   return (
-    <div className="wrap" id="wrap">
-      <PageTransision>
-        <Header />
-        <main id="main">{children}</main>
-        <Footer />
-      </PageTransision>
-    </div>
+    <>
+      <Header />
+      <div className="wrap" id="wrap">
+        <PageTransision>
+          <main id="main">{children}</main>
+        </PageTransision>
+      </div>
+      <Footer />
+    </>
   );
 }

@@ -115,6 +115,9 @@ export default function Footer() {
           <section className={_.footer__company__sns__container}>
             <ul className={_.footer__company__sns}>
               <li>
+                <div>
+                  <Image src={insta} alt="instagram" />
+                </div>
                 <Link href="https://www.instagram.com/puraxel/">
                   <a target="_blank" rel="noopener noreferrer">
                     Instagram
@@ -122,6 +125,9 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <div>
+                  <Image src={facebook} alt="facebook" />
+                </div>
                 <Link href="https://www.facebook.com/Puraxel.official/">
                   <a target="_blank" rel="noopener noreferrer">
                     Facebook
@@ -129,6 +135,9 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <div>
+                  <Image src={youtube} alt="youtube" />
+                </div>
                 <Link href="https://www.youtube.com/channel/UC7X6D4v-G-b7NmNeU2j-jwQ">
                   <a target="_blank" rel="noopener noreferrer">
                     Youtube

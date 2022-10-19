@@ -60,6 +60,20 @@ function Page1() {
                 strokeWidth="2"
               />
             </svg>
+          ) : resize >= 1920 ? (
+            <svg
+              width="38px"
+              height="24px"
+              viewBox="0 0 38 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.486486 12.2444H36M36 12.2444L24.8108 1M36 12.2444H0M36 12.2444L24.6575 23"
+                stroke="white"
+                strokeWidth="2"
+              />
+            </svg>
           ) : (
             <svg
               width="1.98vw"

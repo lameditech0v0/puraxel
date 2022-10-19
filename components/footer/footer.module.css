@@ -3,7 +3,6 @@
   justify-content: center;
   align-items: flex-start;
   width: 100%;
-  margin-bottom: 4.3229vw;
   background-color: #fbfbfc;
   padding: 2.9167vw 0;
 }
@@ -82,15 +81,108 @@
   text-align: center;
 }
 .footer__company__sns li div {
-  width: 4.69vw !important;
-  height: 4.69vw !important;
-  margin-right: 1.04vw;
+  width: 1.88vw !important;
+  height: 1.88vw !important;
+  margin-right: 0.42vw;
 }
 .footer__company__sns > li:nth-child(1) {
   padding-left: 0;
 }
 
 /* 미디어 쿼리 */
+@media screen and (min-width: 1920px) {
+  .footer__container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    background-color: #fbfbfc;
+    padding: 2.9167vw 0;
+  }
+
+  /* 회사 정보 컨테이너 */
+
+  .footer__company__info__container {
+    display: flex;
+  }
+  .footer__company__info__container img {
+    width: 7.2917vw !important;
+    height: 7.2917vw !important;
+  }
+
+  .footer__company__text__info__container {
+    padding-left: 2.1354vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer__company__title {
+    font-weight: 700;
+    font-size: 0.9375vw;
+    line-height: 150%;
+
+    letter-spacing: -0.01em;
+
+    color: #1a1a1a;
+  }
+  .footer__company__content {
+    font-weight: 400;
+    font-size: 0.8333vw;
+    line-height: 150%;
+    margin-bottom: 1.25vw;
+    letter-spacing: -0.01em;
+
+    color: #1a1a1a;
+
+    opacity: 0.8;
+  }
+
+  .footer__company__copyright {
+    font-weight: 400;
+    font-size: 0.8333vw;
+    line-height: 150%;
+
+    letter-spacing: -0.01em;
+
+    color: #1a1a1a;
+
+    opacity: 0.5;
+    /* margin-bottom: 100px; */
+  }
+
+  /* sns 컨테이너 */
+
+  .footer__company__sns__container {
+    margin-left: 11.7188vw;
+  }
+
+  .footer__company__sns {
+    display: flex;
+    font-weight: 700;
+    font-size: 0.9375vw;
+    line-height: 150%;
+
+    letter-spacing: -0.01em;
+
+    color: #1a1a1a;
+  }
+
+  .footer__company__sns > li {
+    padding-left: 4.9479vw;
+    display: flex;
+    text-align: center;
+  }
+  .footer__company__sns li div {
+    width: 1.88vw !important;
+    height: 1.88vw !important;
+    margin-right: 0.42vw;
+  }
+  .footer__company__sns > li:nth-child(1) {
+    padding-left: 0;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .footer__container {
     display: block;
@@ -181,6 +273,12 @@
 
   .footer__company__sns > li {
     padding-left: 4.9479vw;
+  }
+
+  .footer__company__sns li div {
+    width: 4.69vw !important;
+    height: 4.69vw !important;
+    margin-right: 1.04vw;
   }
   .footer__company__sns > li:nth-child(1) {
     padding-left: 0;

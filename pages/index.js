@@ -25,7 +25,6 @@ export default function Home() {
   return (
     <>
       {resize <= 768 ? <Floating /> : ""}
-
       {/* banner */}
       <Banner />
       {/* Page1 */}
