@@ -156,6 +156,9 @@ select {
 
 #wrap {
   font-family: "Pretendard" !important;
+  width: 100vw;
+}
+#main {
   max-width: 1920px;
   margin: 0 auto;
 }
