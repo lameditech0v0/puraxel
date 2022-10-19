@@ -24,7 +24,10 @@ function Page1() {
           <p className="page2__desc__span1">에스테틱 레이저의 시작</p>
         </div>
         {resize <= 768 ? (
-          <h1>FX-5000</h1>
+          <h1>
+            PURAXEL
+            <br /> <em>FX-5000</em>
+          </h1>
         ) : (
           <h1>
             PURAXEL <em>FX-5000</em>

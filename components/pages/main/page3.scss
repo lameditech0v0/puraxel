@@ -33,13 +33,19 @@
         font-size: 3.75vw;
       }
     }
-
     .page3__desc__p2 {
       font-weight: 500;
       font-size: 1.67vw;
       line-height: 140%;
       color: #1a1a1a;
       margin-bottom: 9.74vw;
+    }
+    .page3__desc__span2 {
+      color: #1a1a1a80;
+      font-weight: 400;
+      font-size: 1.04vw;
+      line-height: 140%;
+      margin-bottom: 0.83vw;
     }
     .page3__btn {
       display: flex;
@@ -120,6 +126,13 @@
         color: #1a1a1a;
         margin-bottom: 187px;
       }
+      .page3__desc__span2 {
+        color: #1a1a1a80;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 140%;
+        margin-bottom: 16px;
+      }
       .page3__btn {
         display: flex;
         align-items: center;
@@ -158,52 +171,64 @@
 
 @media screen and (max-width: 768px) {
   #page3 {
-    margin-top: 10.05vw;
-    margin-bottom: 9.69vw;
+    margin-top: 10.42vw;
+    display: flex;
+    justify-content: space-between;
     .page3__desc {
-      width: 90%;
+      width: 50%;
       margin-left: 3.13vw;
-      position: absolute;
-      top: -25%;
-      z-index: 1;
-      .page3__desc__span1 {
-        font-weight: 500;
-        font-size: 4.17vw;
-        line-height: 128%;
-        letter-spacing: -0.02em;
-        color: #1a1a1ab2;
+      div {
+        display: flex;
+        .black {
+          width: 0.52vw;
+          height: 5.3vw;
+          background: #c06f23;
+        }
+        .page3__desc__span1 {
+          width: 33vw;
+          background-color: #fffbf4;
+          padding: 0.63vw;
+          font-weight: 500;
+          font-size: 3.13vw;
+          line-height: 128%;
+          letter-spacing: -0.02em;
+          color: #c06f23;
+          margin-bottom: 1.56vw;
+        }
       }
       h1 {
-        font-weight: 700;
-        font-size: 11.46vw;
+        font-weight: 800;
+        font-size: 6.25vw;
         line-height: 124%;
         color: #1a1a1a;
-        margin-bottom: 8.33vw;
+        margin-bottom: 2.08vw;
+        em {
+          font-size: 9.38vw;
+        }
       }
-
       .page3__desc__p2 {
         font-weight: 500;
-        font-size: 5.21vw;
+        font-size: 3.65vw;
         line-height: 140%;
         color: #1a1a1a;
-        margin-bottom: 57.68vw;
+        margin-bottom: 4.82vw;
       }
       .page3__desc__span2 {
         color: #1a1a1a80;
         font-weight: 400;
-        font-size: 1.04vw;
+        font-size: 2.6vw;
         line-height: 140%;
-        margin-bottom: 1.25vw;
+        margin-bottom: 1.04vw;
       }
       .page3__btn {
         display: flex;
         align-items: center;
         background: #1d1f36;
-        width: 45.31vw;
-        height: 12.5vw;
+        width: 33.2vw;
+        height: 10.42vw;
         box-shadow: 0px 12px 28px rgba(29, 31, 54, 0.12);
         .page3__desc__btn {
-          margin-right: 16.54vw;
+          margin-right: 4.95vw;
           margin-left: 3.65vw;
           color: #ffffff;
           font-weight: 700;
@@ -213,12 +238,12 @@
       }
     }
     .page3__img {
-      width: 72.66vw;
-      height: 102.47vw;
+      width: 45.31vw;
+      height: 59.9vw;
       background: #000;
       position: relative;
       overflow: hidden;
-      margin-left: 27.6vw;
+      margin-right: 3.13vw;
       .page3__img__bg {
         background: url(../../../public/main/page3/hair__768.webp);
         position: absolute;

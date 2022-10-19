@@ -1,7 +1,6 @@
 #page1 {
   margin-top: 2.08vw;
   display: flex;
-  align-items: center;
   .page1__desc {
     width: 32%;
     margin-left: 13.54vw;
@@ -170,61 +169,64 @@
 
 @media screen and (max-width: 768px) {
   #page1 {
-    margin-top: 39.32vw;
-    margin-bottom: 22.4vw;
-    position: relative;
+    margin-top: 10.42vw;
+    display: flex;
+    justify-content: space-between;
     .page1__desc {
-      width: 90%;
-      position: absolute;
-      top: -20%;
-      z-index: 1;
+      width: 50%;
       margin-left: 3.13vw;
-      .page1__desc__span1 {
-        font-weight: 500;
-        font-size: 4.17vw;
-        line-height: 128%;
-        letter-spacing: -0.02em;
-        color: #1a1a1ab2;
+      div {
+        display: flex;
+        .black {
+          width: 0.52vw;
+          height: 5.3vw;
+          background: #1d1f36;
+        }
+        .page1__desc__span1 {
+          width: 33vw;
+          background-color: #f0f2f9;
+          padding: 0.63vw;
+          font-weight: 500;
+          font-size: 3.13vw;
+          line-height: 128%;
+          letter-spacing: -0.02em;
+          color: #1d1f36;
+          margin-bottom: 1.56vw;
+        }
       }
       h1 {
-        font-weight: 700;
-        font-size: 11.46vw;
+        font-weight: 800;
+        font-size: 6.25vw;
         line-height: 124%;
         color: #1a1a1a;
-        margin-bottom: 8.33vw;
+        margin-bottom: 2.08vw;
+        em {
+          font-size: 9.38vw;
+        }
       }
       .page1__desc__p1 {
-        font-weight: 700;
-        font-size: 5.21vw;
-        line-height: 140%;
-        color: #1a1a1a;
-        margin-bottom: 5.21vw;
-      }
-      .page1__desc__p2 {
         font-weight: 500;
-        font-size: 5.21vw;
+        font-size: 3.65vw;
         line-height: 140%;
         color: #1a1a1a;
-        margin-bottom: 37.89vw;
+        margin-bottom: 9.11vw;
       }
       .page1__desc__span2 {
-        bottom: -8%;
-        left: 25%;
-        position: absolute;
         color: #1a1a1a80;
         font-weight: 400;
         font-size: 2.6vw;
         line-height: 140%;
+        margin-bottom: 1.04vw;
       }
       .page1__btn {
         display: flex;
         align-items: center;
         background: #1d1f36;
-        width: 45.31vw;
-        height: 12.5vw;
+        width: 33.2vw;
+        height: 10.42vw;
         box-shadow: 0px 12px 28px rgba(29, 31, 54, 0.12);
         .page1__desc__btn {
-          margin-right: 16.54vw;
+          margin-right: 4.95vw;
           margin-left: 3.65vw;
           color: #ffffff;
           font-weight: 700;
@@ -234,15 +236,14 @@
       }
     }
     .page1__img {
-      width: 72.66vw;
-      height: 102.47vw;
+      width: 45.31vw;
+      height: 59.9vw;
       background: #000;
       position: relative;
       overflow: hidden;
-      margin-left: 27.6vw;
-
+      margin-right: 3.13vw;
       .page1__img__bg {
-        background: url(../../../public/main/page1/me.webp);
+        background: url(../../../public/main/page1/home_main_me_768.png);
         position: absolute;
         width: 100%;
         height: 100%;

@@ -1,7 +1,7 @@
 #page2 {
   margin-top: 4.17vw;
   display: flex;
-  align-items: center;
+
   .page2__desc {
     width: 32%;
     margin-left: 2.08vw;
@@ -174,60 +174,63 @@
 
 @media screen and (max-width: 768px) {
   #page2 {
-    margin-top: 10.05vw;
-    margin-bottom: 52.34vw;
+    margin-top: 10.42vw;
     display: flex;
-    flex-direction: column-reverse;
-    position: relative;
     .page2__desc {
-      width: 90%;
+      width: 50%;
       margin-left: 3.13vw;
-      .page2__desc__span1 {
-        font-weight: 500;
-        font-size: 4.17vw;
-        line-height: 128%;
-        letter-spacing: -0.02em;
-        color: #1a1a1ab2;
+      div {
+        display: flex;
+        .black {
+          width: 0.52vw;
+          height: 5.3vw;
+          background: #b86e64;
+        }
+        .page2__desc__span1 {
+          width: 33vw;
+          background-color: #fffbf4;
+          padding: 0.63vw;
+          font-weight: 500;
+          font-size: 3.13vw;
+          line-height: 128%;
+          letter-spacing: -0.02em;
+          color: #c06f23;
+          margin-bottom: 1.56vw;
+        }
       }
       h1 {
-        font-weight: 700;
-        font-size: 11.46vw;
+        font-weight: 800;
+        font-size: 6.25vw;
         line-height: 124%;
         color: #1a1a1a;
-        margin-bottom: 3.13vw;
+        margin-bottom: 2.08vw;
+        em {
+          font-size: 9.38vw;
+        }
       }
-
       .page2__desc__p2 {
-        font-weight: 700;
-        font-size: 5.21vw;
+        font-weight: 500;
+        font-size: 3.65vw;
         line-height: 140%;
         color: #1a1a1a;
-        margin-bottom: 5.21vw;
+        margin-bottom: 9.4vw;
       }
       .page2__desc__span2 {
-        bottom: -4%;
-        margin-left: 3.13vw;
-        left: 0;
-        position: absolute;
         color: #1a1a1a80;
         font-weight: 400;
         font-size: 2.6vw;
         line-height: 140%;
+        margin-bottom: 1.04vw;
       }
       .page2__btn {
-        position: absolute;
-        right: 0;
-        bottom: 0;
         display: flex;
         align-items: center;
         background: #1d1f36;
-        width: 45.31vw;
-        height: 12.5vw;
+        width: 33.2vw;
+        height: 10.42vw;
         box-shadow: 0px 12px 28px rgba(29, 31, 54, 0.12);
-        margin-bottom: 4.3vw;
-        margin-right: 3.13vw;
         .page2__desc__btn {
-          margin-right: 16.54vw;
+          margin-right: 4.95vw;
           margin-left: 3.65vw;
           color: #ffffff;
           font-weight: 700;
@@ -237,13 +240,14 @@
       }
     }
     .page2__img {
-      width: 72.66vw;
-      height: 102.47vw;
+      margin-left: 3.13vw;
+      width: 45.31vw;
+      height: 59.9vw;
       background: #000;
       position: relative;
       overflow: hidden;
       .page2__img__bg {
-        background: url(../../../public/main/page2/fx-5000_768.webp);
+        background: url(../../../public/main/page2/fx-5000.webp);
         position: absolute;
         width: 100%;
         height: 100%;
@@ -251,6 +255,13 @@
         background-position: center;
         background-size: cover;
       }
+    }
+    .page2__desc__span2 {
+      color: #1a1a1a80;
+      font-weight: 400;
+      font-size: 1.04vw;
+      line-height: 140%;
+      margin-bottom: 0.83vw;
     }
   }
 }

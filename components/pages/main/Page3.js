@@ -18,21 +18,39 @@ function Page3() {
       <article className="page3__desc">
         <div>
           <div className="black"></div>
-          <p className="page3__desc__span1">
-            레이저 기술로 두피 관리, 자신있는 삶의 회복
-          </p>
+          {resize <= 768 ? (
+            <p className="page3__desc__span1">자신있는 삶의 회복</p>
+          ) : (
+            <p className="page3__desc__span1">
+              레이저 기술로 두피 관리, 자신있는 삶의 회복
+            </p>
+          )}
         </div>
         {resize <= 768 ? (
-          <h1>HAIR</h1>
+          <h1>
+            PURAXEL
+            <br />
+            <em> HAIR</em>
+          </h1>
         ) : (
           <h1>
             PURAXEL<em> HAIR</em>
           </h1>
         )}
-        <p className="page3__desc__p2">
-          프락셔널 레이저는 기능성 앰플의 두피
-          <br /> 흡수를 도와 탈모관리에 효과적입니다.
-        </p>
+        {resize <= 768 ? (
+          <p className="page3__desc__p2">
+            프락셔널 레이저는 <br />
+            기능성 앰플의 두피 흡수를 도와
+            <br /> 탈모관리에 효과적입니다.
+          </p>
+        ) : (
+          <p className="page3__desc__p2">
+            프락셔널 레이저는 기능성 앰플의 두피
+            <br /> 흡수를 도와 탈모관리에 효과적입니다.
+          </p>
+        )}
+
+        <p className="page3__desc__span2">※ 본 기기는 두피관리기기 입니다.</p>
         <div className="page3__btn">
           <Link href="/hair">
             <a className="page3__desc__btn">자세히 보기</a>

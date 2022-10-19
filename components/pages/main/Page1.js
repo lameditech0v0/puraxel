@@ -21,10 +21,24 @@ function Page1() {
           <div className="black"></div>
           <p className="page1__desc__span1">홈 에스테틱 레이저의 시작</p>
         </div>
-        <h1>
-          PURAXEL <em>ME</em>
-        </h1>
-        <p className="page1__desc__p1">하루 10분, 이제 집에서 관리하세요.</p>
+        {resize <= 768 ? (
+          <h1>
+            PURAXEL <br />
+            <em>ME</em>
+          </h1>
+        ) : (
+          <h1>
+            PURAXEL <em>ME</em>
+          </h1>
+        )}
+        {resize <= 768 ? (
+          <p className="page1__desc__p1">
+            하루 10분,
+            <br /> 이제 집에서 관리하세요.
+          </p>
+        ) : (
+          <p className="page1__desc__p1">하루 10분, 이제 집에서 관리하세요.</p>
+        )}
 
         <p className="page1__desc__span2">
           ※ 본 기기는 피부미용관리기기 입니다.
