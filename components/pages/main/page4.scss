@@ -1,5 +1,8 @@
 #page4 {
-  margin-bottom: 10.42vw;
+  margin-top: 4.17vw;
+  padding-top: 2.08vw;
+  padding-bottom: 2.08vw;
+  background: linear-gradient(180deg, #42476f 0%, #a98876 100%);
   .page4__header {
     text-align: center;
 
@@ -7,58 +10,125 @@
       position: relative;
       p {
         font-weight: 500;
-        font-size: 2.5vw;
+        font-size: 1.67vw;
         line-height: 150%;
-        color: #1a1a1a;
+        color: #fff;
       }
       h1 {
         font-weight: 700;
-        font-size: 5vw;
+        font-size: 3.33vw;
         line-height: 120%;
-        color: #1a1a1a;
-        padding-bottom: 6.46vw;
+        color: #fff;
+        padding-bottom: 3.33vw;
       }
       .page4__header__bg {
-        z-index: -1;
         position: absolute;
         top: 30%;
-        left: 30%;
-        width: 42vw;
-        height: 12.5vw;
-        background: url(../../../public/main/page4/best_product.webp);
+        left: 38%;
+        width: 23.44vw;
+        height: 7.81vw;
+        background-image: url(../../../public/main/page4/best_product.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
       }
     }
   }
-
+  .swiper {
+    .swiper-wrapper {
+      width: 61.25vw !important;
+    }
+  }
   .swiper-slide.swiper__product {
     .swiper__product__text {
       h1 {
         font-weight: 700;
-        font-size: 1.46vw;
+        font-size: 1.04vw;
         line-height: 124%;
-        margin-top: 1.72vw;
-        margin-bottom: 0.83vw;
+        margin-top: 0.83vw;
+        margin-bottom: 0.42vw;
+        color: #fff;
       }
       .swiper__product__text__p1 {
         font-weight: 400;
-        font-size: 0.94vw;
+        font-size: 0.83vw;
         line-height: 150%;
-        color: #1a1a1a;
-        margin-bottom: 2.08vw;
+        color: #fff;
+        margin-bottom: 0.83vw;
       }
       .swiper__product__text__p2 {
         font-weight: 700;
-        font-size: 1.25vw;
+        font-size: 0.83vw;
         line-height: 150%;
-        color: #447bce;
+        color: #fff;
       }
     }
   }
 }
+@media screen and (min-width: 1921px) {
+  #page4 {
+    margin-top: 80px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: linear-gradient(180deg, #42476f 0%, #a98876 100%);
+    .page4__header {
+      text-align: center;
 
+      .page4__header__text {
+        position: relative;
+        p {
+          font-weight: 500;
+          font-size: 32px;
+          line-height: 150%;
+          color: #fff;
+        }
+        h1 {
+          font-weight: 700;
+          font-size: 64px;
+          line-height: 120%;
+          color: #fff;
+          padding-bottom: 64px;
+        }
+        .page4__header__bg {
+          position: absolute;
+          top: 30%;
+          left: 38%;
+          width: 450px;
+          height: 150px;
+          background-image: url(../../../public/main/page4/best_product.png);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+        }
+      }
+    }
+    .swiper-slide.swiper__product {
+      .swiper__product__text {
+        h1 {
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 124%;
+          margin-top: 16px;
+          margin-bottom: 8px;
+          color: #fff;
+        }
+        .swiper__product__text__p1 {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 150%;
+          color: #fff;
+          margin-bottom: 16px;
+        }
+        .swiper__product__text__p2 {
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 150%;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
 @media screen and (max-width: 768px) {
   #page4 {
     margin-top: 10.42vw;
@@ -71,13 +141,13 @@
           font-weight: 500;
           font-size: 4.69vw;
           line-height: 150%;
-          color: #1a1a1a;
+          color: #fff;
         }
         h1 {
           font-weight: 700;
           font-size: 10.42vw;
           line-height: 120%;
-          color: #1a1a1a;
+          color: #fff;
           padding-bottom: 6.46vw;
         }
         .page4__header__bg {
@@ -87,7 +157,7 @@
           left: 15%;
           width: 70.31vw;
           height: 23.44vw;
-          background: url(../../../public/main/page4/best_product.webp);
+          background: url(../../../public/main/page4/best_product.png);
           background-repeat: no-repeat;
           background-position: center;
           background-size: contain;
@@ -108,7 +178,7 @@
           font-weight: 400;
           font-size: 3.13vw;
           line-height: 150%;
-          color: #1a1a1a;
+          color: #fff;
           margin-bottom: 2.08vw;
         }
         .swiper__product__text__p2 {

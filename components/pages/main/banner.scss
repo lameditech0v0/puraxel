@@ -2,6 +2,7 @@
   position: relative;
 }
 .swiper.swiper__banner {
+  height: 43.75vw;
   .desc {
     position: absolute;
     top: 0;
@@ -16,7 +17,6 @@
     padding-top: 2.0833vw;
     padding-right: 2.0833vw;
     text-align: center;
-
     h1 {
       font-weight: 700;
       font-size: 4.1667vw;
@@ -70,6 +70,84 @@
       padding: 1.15vw 5.625vw 1.25vw 1.25vw;
       font-weight: 700;
       font-size: 1.4583vw;
+    }
+  }
+}
+
+@media screen and (min-width: 1921px) {
+  #banner {
+    position: relative;
+  }
+  .swiper.swiper__banner {
+    height: 840px;
+    .desc {
+      position: absolute;
+      top: 0;
+      z-index: 2;
+      margin-left: 285px;
+      margin-top: 42px;
+      background: #ffffffe5;
+      box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.06);
+      backdrop-filter: blur(40px);
+      border-radius: 2%;
+      padding-left: 40px;
+      padding-top: 40px;
+      padding-right: 40px;
+      text-align: center;
+      h1 {
+        font-weight: 700;
+        font-size: 80px;
+      }
+      p {
+        margin-top: 24px;
+        margin-bottom: 40px;
+        font-weight: 500;
+        font-size: 24px;
+      }
+    }
+    .btn__top {
+      bottom: 0;
+      z-index: 2;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      width: 369px;
+      background: #f6f6f6;
+      border: 1px solid #e4e7eb;
+      margin-bottom: 64px;
+      margin-left: 285px;
+      .red {
+        width: 16px;
+        height: 85px;
+        background: red;
+      }
+      .shop {
+        padding: 22px 91px 24px 24px;
+        font-weight: 700;
+        font-size: 28px;
+      }
+    }
+    .btn__bottom {
+      bottom: 0;
+      z-index: 2;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      width: 369px;
+      background: #f6f6f6;
+      border: 1px solid #e4e7eb;
+      margin-bottom: 64px;
+      margin-left: 669px;
+      .black {
+        width: 16px;
+        height: 85px;
+        background: black;
+      }
+      .inquery {
+        padding: 22px 108px 24px 24px;
+        font-weight: 700;
+        font-size: 28px;
+      }
     }
   }
 }

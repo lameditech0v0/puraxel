@@ -23,7 +23,7 @@ export default function Home() {
     handleResize();
   });
   return (
-    <div>
+    <>
       {resize <= 768 ? <Floating /> : ""}
 
       {/* banner */}
@@ -40,6 +40,6 @@ export default function Home() {
       <Page5 />
       {/* Page6 */}
       <Page6 />
-    </div>
+    </>
   );
 }

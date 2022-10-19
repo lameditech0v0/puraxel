@@ -15,8 +15,8 @@ const Swiper1 = () => {
       loop={true}
       speed={2000}
       navigation={true}
-      spaceBetween={15}
-      slidesPerView={4.5}
+      spaceBetween={24}
+      slidesPerView={5}
     >
       <SwiperSlide className="swiper__product">
         <section>

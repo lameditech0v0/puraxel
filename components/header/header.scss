@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 10%;
+  padding: 0.83vw 13.54vw;
   z-index: 100;
   position: sticky;
   top: 0;
@@ -59,6 +59,69 @@
   }
 }
 
+@media screen and (min-width: 1921px) {
+  #header {
+    width: 100%;
+    font-weight: 500;
+    color: #1d1f36;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(20px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 260px;
+    z-index: 100;
+    position: sticky;
+    top: 0;
+
+    .header__left {
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+
+      .logo {
+        padding-right: 64px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+      }
+      .nav__left {
+        display: flex;
+        ul {
+          display: flex;
+          :nth-child(1) {
+            padding-right: 40px;
+          }
+          :nth-child(2) {
+            padding-right: 40px;
+          }
+        }
+      }
+    }
+    .header__right {
+      .nav__right {
+        display: flex;
+        align-items: center;
+        .nav__right__left {
+          font-size: 24px;
+          display: flex;
+          padding-right: 80px;
+          :nth-child(1) {
+            padding-right: 40px;
+          }
+        }
+        .nav__right__right {
+          font-size: 18px;
+          display: flex;
+          :nth-child(1) {
+            padding-right: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 768px) {
   #header {
     width: 100%;
@@ -69,7 +132,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2.34vw 2.08vw;
+    padding: 20px 260px;
     z-index: 100;
     position: sticky;
     top: 0;
